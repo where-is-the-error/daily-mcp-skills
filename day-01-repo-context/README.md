@@ -113,18 +113,21 @@ repo-context --root . pack repo_context --max-tokens 900
 
 ```markdown
 # repo-context · `day-01-repo-context` / `repo_context`
-> branch `main` · HEAD `fc6b8b6` (2026-11-17) · 커밋 2개 · 변경 0개
+> branch `main` · HEAD `611d149` (2026-11-17) · 커밋 6개 · 변경 1개
 
-## 최근 커밋 (최근 2개)
-- `fc6b8b6` 2026-11-17 feat(day-01): …
-  ↳ .gitignore, pyproject.toml, repo_context/__init__.py 외 12개
+## 최근 커밋 (최근 6개)
+- `611d149` 2026-11-17 fix(day-01): TODO는 주석 안의 것만 수집 …  
+  ↳ repo_context/pack.py
 
 ## 핫 파일 (최근 20커밋에서 자주 바뀐 순)
-### 1. `repo_context/pack.py` — 3회
-- def `context_pack` (L122) — A repository digest that fits a token budget
+### 1. `repo_context/pack.py` — 2회
+- def `context_pack` (L134) — A repository digest that fits a token budget, newest-and-hottest
 
-## TODO / FIXME (소스 12개 스캔)
-- `repo_context/sandbox.py:41` TODO — 심링크 탈출 테스트
+## TODO / FIXME (소스 15개 스캔)
+- `tests/conftest.py:38` TODO — 인자 파싱 추가
+
+---
+_repo-context · 추정 567 tokens / 예산 900 · 파일 20개 추적 중_
 ```
 
 ## 8. 토큰 예산은 이렇게 동작합니다
@@ -142,6 +145,11 @@ repo-context --root . pack repo_context --max-tokens 900
 그래도 넘치면 문자 단위로 잘라 `… (토큰 예산에 맞춰 잘림)`을 붙입니다.
 **어떤 경우에도 추정 토큰 수가 예산을 넘지 않는다**는 것을 테스트로 고정했습니다
 (200·400·800·1,200·2,000 토큰).
+
+같은 저장소를 `--max-tokens 200`으로 부르면 헤더와 최근 커밋 2개만 남습니다
+(실제 출력: [`examples/sample_output.md`](examples/sample_output.md) 5번).
+
+> `핫 파일` 섹션은 커밋이 적어 모든 파일이 1회씩 바뀐 저장소에서는 통째로 생략됩니다.
 
 > 추정치는 의존성 없는 근사입니다: ASCII 4글자 ≈ 1토큰, 한글 1글자 ≈ 1토큰.
 
