@@ -16,7 +16,13 @@ from dataclasses import dataclass
 from . import gitio, outline
 from .sandbox import Sandbox, SandboxError, is_secret_file
 
-TODO_PATTERN = re.compile(r"\b(TODO|FIXME|XXX|HACK)\b[:\s]*(.*)$")
+#: Only TODOs that sit in a comment count — a string that merely mentions
+#: "TODO" (like this file's own pattern, or a test fixture) is noise. The marker
+#: has to start the line or follow whitespace, so ``f"## TODO`` does not match.
+TODO_PATTERN = re.compile(
+    r"(?:(?<=\s)|^)(?:#|//|/\*|\*+|<!--|--|;)\s*(TODO|FIXME|XXX|HACK)\b[:\s]*(.*)$"
+)
+
 MAX_SCAN_FILES = 300
 MAX_SCAN_BYTES = 120_000
 DEFAULT_MAX_TOKENS = 1200
@@ -60,7 +66,13 @@ def _hot_files(
             if is_secret_file(path):
                 continue
             counts[path] = counts.get(path, 0) + 1
-    ranked = sorted(counts.items(), key=lambda item: (-item[1], item[0]))
+    if not counts or max(counts.values()) < 2:
+        # A young repository has no "hot" files yet; one touch each says nothing.
+        return []
+    ranked = sorted(
+        (item for item in counts.items() if item[1] >= 2),
+        key=lambda item: (-item[1], item[0]),
+    )
     hot: list[HotFile] = []
     for path, touches in ranked:
         if len(hot) >= limit:
