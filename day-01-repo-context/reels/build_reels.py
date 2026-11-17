@@ -357,12 +357,22 @@ def scene_result(t: float) -> Image.Image:
         ("비밀 유지", ".env · *.pem은 목록에도 내용도 올리지 않음"),
         ("경로 탈출 차단", "../ · 심링크 · 절대경로 전부 거부"),
     ]
-    yy = 880
+    yy = 860
     for index, (title, body) in enumerate(bullets):
         alpha = fade(t, 1.15 + index * 0.35)
         draw.text((80, yy), "✓ " + title, font=font(40), fill=GREEN + (int(255 * alpha),))
         draw_paragraph(draw, (80, yy + 58), body, font(32), fill=MUTED, alpha=alpha)
-        yy += 190
+        yy += 180
+    tip_a = fade(t, 1.95)
+    draw.text((80, yy + 20), "TIP · 활용 팁", font=font(36), fill=PURPLE + (int(255 * tip_a),))
+    draw_paragraph(
+        draw,
+        (80, yy + 78),
+        "코딩 시작 전 context_pack 한 번 →\n파일은 file_outline으로 좁히면 토큰이 남습니다.",
+        font(32),
+        fill=MUTED,
+        alpha=tip_a,
+    )
     watermark(draw, t)
     progress(draw, t)
     return image

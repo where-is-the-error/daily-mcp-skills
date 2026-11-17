@@ -32,6 +32,9 @@ git은 그 파일 안에 뭐가 들었는지 모릅니다.
 버린 것: write/edit/commit/reset 툴 25개
 가져온 것: 경로 샌드박스 + 이력 읽기
 
+💡 활용 팁
+코딩 시작 전에 context_pack 한 번 → 파일은 file_outline으로 좁히면 토큰이 남습니다.
+
 코드·README·테스트 40개·영상 생성 스크립트까지 저장소에 있어요.
 👉 github.com/where-is-the-error/daily-mcp-skills
 
