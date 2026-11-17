@@ -197,10 +197,26 @@ python -m repo_context.server --root .
 
 | 파일 | 내용 |
 |---|---|
-| [`reels-day01.mp4`](reels-day01.mp4) | 1080×1920 · 21.6초 · 30fps · 무음(인스타에서 음원 추가) |
-| [`reels-day01-poster.png`](reels-day01-poster.png) | 커버 이미지 |
+| [`reels-day01.mp4`](reels-day01.mp4) | 1080×1920 · **21.5초** · 30fps · H.264 + AAC 256k 스테레오 — 자체 제작 사운드트랙 포함 |
+| [`reels-day01-poster.png`](reels-day01-poster.png) | 커버 이미지 (훅 + 삐에로 반전 문구) |
+| [`reels-day01-audio.wav`](reels-day01-audio.wav) | 사운드트랙 48kHz 스테레오 24bit (피크 -3dBFS) |
 | [`instagram-caption.md`](instagram-caption.md) | 본문 + 해시태그 초안 |
-| [`reels/build_reels.py`](reels/build_reels.py) | 영상 생성 스크립트(Pillow + ffmpeg) — `python3 reels/build_reels.py` |
+| [`reels/build_reels.py`](reels/build_reels.py) | 영상 생성(Pillow + ffmpeg) — `python3 reels/build_reels.py` |
+| [`reels/build_audio.py`](reels/build_audio.py) | 사운드트랙 합성(numpy) — `python3 reels/build_audio.py` |
+
+컷 구성 — 120 BPM 마디 경계에 씬 경계를 맞춤:
+
+| 시간 | 씬 | 내용 |
+|---|---|---|
+| 0.0~1.5 | 훅 | 붉은 경고·글리치 + “아직도 29개 물려서 날리세요?” |
+| 1.5~3.5 | 드롭 | “삐에로가 MCP 2개 뜯어서 합쳤습니다” (Filesystem + Git → repo-context) |
+| 3.5~7.5 | 29 → 4 | 원본 두 서버 카드, 툴 정의 29개에 취소선 → 4 |
+| 7.5~13.5 | 툴 + 터미널 | 4개 툴 목록, `context_pack` 실행 출력과 1,200 토큰 예산 게이지 |
+| 13.5~17.5 | 안전장치 | `.env`/`*.pem` 차단, commit 불가, 경로 탈출 거부 |
+| 17.5~21.5 | CTA | GitHub 저장소 · @pierrot.dev.kr |
+
+이모지는 폰트에서 네모로 깨지므로 쓰지 않습니다. 아이콘(경고·자물쇠·방패·삐에로 얼굴)은 전부 도형으로 그립니다.
+글꼴은 `reels/fonts/Pretendard-*.otf`(OFL)를 쓰고, 없으면 시스템 Noto Sans CJK KR로 대체합니다.
 
 ## 라이선스
 
