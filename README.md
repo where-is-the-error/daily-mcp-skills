@@ -21,6 +21,17 @@
 
 *(Day 02부터 이 표에 한 줄씩 추가됩니다.)*
 
+## 다음 화 만드는 법 (Day 02~)
+
+1. **공개 MCP/스킬 2개 선정** — `gh repo view`로 실제 존재·라이선스·툴 수를 확인한다.
+2. **`day-NN-슬러그/` 폴더** — `repo_context` 같은 패키지 + `tests/` + README(출처 링크·라이선스·아키텍처·설치·실행·한계).
+3. **테스트 통과** — `python -m pytest`. 통과 못 한 항목은 올리지 않는다.
+4. **릴스** — `day-01-repo-context/reels/build_reels.py`를 복사해 문구만 교체 → `reels-dayNN.mp4`(1080×1920 · 15~25초 · 30fps).
+5. **캡션** — `instagram-caption.md`에 본문·해시태그·업로드 체크리스트.
+6. **목록 표에 한 줄 추가**하고 커밋. 커밋은 `feat(day-NN)` / `test(day-NN)` / `docs(day-NN)` / `content(day-NN)`으로 나눈다.
+
+> 릴스 제작에는 `ffmpeg`가 필요하다. 없으면 `pip install imageio-ffmpeg`로 받은 바이너리 경로를 `ffmpeg`로 심볼릭 링크해 쓴다.
+
 ## Day 01 미리보기
 
 ```bash
