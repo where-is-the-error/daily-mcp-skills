@@ -93,6 +93,16 @@ python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"      # mcp>=2.3, pytest
 ```
 
+설치 없이 바로 돌려 보려면 이 디렉터리에서:
+
+```bash
+PYTHONPATH=. python -m web_memo.cli remember https://example.com/
+PYTHONPATH=. python -m web_memo.server       # stdio MCP 서버
+```
+
+> 이 저장소를 만든 샌드박스에는 `setuptools`가 없어 `pip install -e .` 경로 자체는 실행 검증하지 못했습니다.
+> 테스트 117개, CLI, stdio 서버는 `PYTHONPATH=.`로 실제 실행해 확인했습니다.
+
 ## 6. MCP 클라이언트에 연결
 
 ```json
