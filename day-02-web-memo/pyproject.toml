@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "web-memo-mcp"
+version = "0.1.0"
+description = "Fetch MCP × Memory MCP — remember a page once, then read only what changed."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "where-is-the-error" }]
+keywords = ["mcp", "model-context-protocol", "fetch", "memory", "diff"]
+dependencies = ["mcp>=2.3,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+web-memo = "web_memo.cli:main"
+web-memo-mcp = "web_memo.server:main"
+
+[tool.setuptools.packages.find]
+include = ["web_memo*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
