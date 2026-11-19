@@ -19,6 +19,7 @@
 |---|---|---|---|---|---|
 | 01 | [Filesystem MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) + [Git MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/git) | [`repo-context`](day-01-repo-context/) — 읽기 전용, 토큰 예산 저장소 맥락 팩 | 29 → 4 | 40 passed | 21.6s |
 | 02 | [Fetch MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) + [Memory MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) | [`web-memo`](day-02-web-memo/) — 한 번 읽고 **바뀐 줄만**, 메모는 기억 그래프에 | 10 → 5 | 117 passed | 21.5s |
+| 03 | [Time MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/time) + [SQLite MCP](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/sqlite) | [`deadline-clock`](day-03-deadline-clock/) — 마감을 **시각+시간대**로, 남은 시간·D-day·평일 | 9 → 6 | 198 passed | 21.5s |
 
 ## 다음 화 만드는 법 (Day 02~)
 
@@ -30,6 +31,26 @@
 6. **목록 표에 한 줄 추가**하고 커밋. 커밋은 `feat(day-NN)` / `test(day-NN)` / `docs(day-NN)` / `content(day-NN)`으로 나눈다.
 
 > 릴스 제작에는 `ffmpeg`가 필요하다. 없으면 `pip install imageio-ffmpeg`로 받은 바이너리 경로를 `ffmpeg`로 심볼릭 링크해 쓴다.
+
+## Day 03 미리보기
+
+```bash
+cd day-03-deadline-clock
+pip install -e ".[dev]"
+deadline-clock add "공모전 제출" "내일 오후 6시"
+deadline-clock add "해커톤 마감" "2026-11-21 18:00 UTC"
+deadline-clock ls
+```
+
+```text
+[등록] 해커톤 마감
+  dl_357e75 · 2026-11-22(일) 03:00 KST · D-3 · 2일 17시간 남음
+                     ↑ UTC 21일 18:00 = 한국 시간 22일 새벽 3시
+```
+
+- 6개 툴: `add_deadline` · `list_deadlines` · `deadline_status` · `mark_done` · `preview_when` · `overview`
+- 안전: IANA 대소문자 엄격 · 서머타임 **두 번/없음**을 숨기지 않음 · 임의 SQL 없음 · 같은 마감 중복 차단
+- 자세한 설명: [day-03-deadline-clock/README.md](day-03-deadline-clock/README.md)
 
 ## Day 02 미리보기
 
