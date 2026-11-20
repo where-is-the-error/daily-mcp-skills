@@ -20,6 +20,7 @@
 | 01 | [Filesystem MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) + [Git MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/git) | [`repo-context`](day-01-repo-context/) — 읽기 전용, 토큰 예산 저장소 맥락 팩 | 29 → 4 | 40 passed | 21.6s |
 | 02 | [Fetch MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) + [Memory MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) | [`web-memo`](day-02-web-memo/) — 한 번 읽고 **바뀐 줄만**, 메모는 기억 그래프에 | 10 → 5 | 117 passed | 21.5s |
 | 03 | [Time MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/time) + [SQLite MCP](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/sqlite) | [`deadline-clock`](day-03-deadline-clock/) — 마감을 **시각+시간대**로, 남은 시간·D-day·평일 | 9 → 6 | 198 passed | 21.5s |
+| 04 | [chrome-devtools-mcp 의 `a11y-debugging` 스킬](https://github.com/ChromeDevTools/chrome-devtools-mcp/tree/main/skills/a11y-debugging) + [Playwright MCP](https://github.com/microsoft/playwright-mcp) | [`a11y-lens`](day-04-a11y-lens/) — 브라우저 없이 **접근성 트리**와 WCAG 위반, 고친 뒤 확인 | 63+72 → 7 | 308 passed | 21.0s |
 
 ## 다음 화 만드는 법 (Day 02~)
 
@@ -31,6 +32,30 @@
 6. **목록 표에 한 줄 추가**하고 커밋. 커밋은 `feat(day-NN)` / `test(day-NN)` / `docs(day-NN)` / `content(day-NN)`으로 나눈다.
 
 > 릴스 제작에는 `ffmpeg`가 필요하다. 없으면 `pip install imageio-ffmpeg`로 받은 바이너리 경로를 `ffmpeg`로 심볼릭 링크해 쓴다.
+
+## Day 04 미리보기
+
+```bash
+cd day-04-a11y-lens
+pip install -e ".[dev]"
+a11y-lens snapshot examples/demo/before.html --depth 3
+a11y-lens audit    examples/demo/before.html --max-per-rule 2
+a11y-lens verify   examples/demo/before.html --baseline demo --save   # 고치기 전
+a11y-lens verify   examples/demo/after.html  --baseline demo          # 고친 뒤
+```
+
+```text
+document "예제몰 – 로그인"
+  heading "로그인" level=1 · ref=e4 · L14
+  heading "회원" level=4 · ref=e5 · L15      ← h2 단계가 없다
+  textbox type=email · ref=e6 · L17          ← 이름이 없다
+```
+
+- 7개 툴: `snapshot_page` · `find_in_snapshot` · `audit_page` · `audit_site` · `fix_plan` · `verify_fixes` · `overview`
+- 규칙 20종(WCAG 2.2 A·AA) · 브라우저 없음 → **원본 줄 번호 + CSS 선택자** · CI 종료 코드
+- 안전·정직: 색 대비·터치 크기·키보드 순서는 **판정하지 않는다고 말함**, JS 렌더링 없음, 점수는 규칙 종류 기준
+- 실측: W3C 접근성 데모 0 → 96점, github.com/login 100점(거짓 양성 0), 정부24 1007요소 0.23초
+- 자세한 설명: [day-04-a11y-lens/README.md](day-04-a11y-lens/README.md)
 
 ## Day 03 미리보기
 

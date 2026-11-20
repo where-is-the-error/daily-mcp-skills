@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>예제몰 – 로그인</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+  <nav aria-label="주요 메뉴">
+    <a href="/"><img src="/img/logo.png" alt="예제몰"></a>
+    <a href="/cart" aria-label="장바구니"><svg aria-hidden="true" width="20" height="20"></svg></a>
+  </nav>
+</header>
+<main>
+  <h1>로그인</h1>
+  <h2>회원</h2>
+  <form accept-charset="utf-8">
+    <label for="email">이메일</label>
+    <input id="email" type="email" autocomplete="email">
+    <label for="password">비밀번호</label>
+    <input id="password" type="password" autocomplete="current-password">
+    <button type="submit">로그인</button>
+  </form>
+  <p>비밀번호를 잊으셨나요? <a href="/find">비밀번호 찾기</a></p>
+  <table>
+    <caption>오늘의 추천 상품</caption>
+    <tr><th scope="col">상품</th><th scope="col">가격</th></tr>
+    <tr><td>텀블러</td><td>12,000원</td></tr>
+  </table>
+  <iframe src="https://map.example/embed" title="매장 위치 지도"></iframe>
+  <ul>
+    <li><a href="/notice">공지사항</a></li>
+    <li><a href="/event">이벤트</a></li>
+  </ul>
+</main>
+</body>
+</html>
