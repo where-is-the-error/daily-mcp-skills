@@ -20,7 +20,7 @@
 | 01 | [Filesystem MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/filesystem) + [Git MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/git) | [`repo-context`](day-01-repo-context/) — 읽기 전용, 토큰 예산 저장소 맥락 팩 | 29 → 4 | 40 passed | 21.6s |
 | 02 | [Fetch MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) + [Memory MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) | [`web-memo`](day-02-web-memo/) — 한 번 읽고 **바뀐 줄만**, 메모는 기억 그래프에 | 10 → 5 | 117 passed | 21.5s |
 | 03 | [Time MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/time) + [SQLite MCP](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/sqlite) | [`deadline-clock`](day-03-deadline-clock/) — 마감을 **시각+시간대**로, 남은 시간·D-day·평일 | 9 → 6 | 198 passed | 21.5s |
-| 04 | [chrome-devtools-mcp 의 `a11y-debugging` 스킬](https://github.com/ChromeDevTools/chrome-devtools-mcp/tree/main/skills/a11y-debugging) + [Playwright MCP](https://github.com/microsoft/playwright-mcp) | [`a11y-lens`](day-04-a11y-lens/) — 브라우저 없이 **접근성 트리**와 WCAG 위반, 고친 뒤 확인 | 63+72 → 7 | 308 passed | 21.0s |
+| 04 | [chrome-devtools-mcp 의 `a11y-debugging` 스킬](https://github.com/ChromeDevTools/chrome-devtools-mcp/tree/main/skills/a11y-debugging) + [Playwright MCP](https://github.com/microsoft/playwright-mcp) | [`a11y-lens`](day-04-a11y-lens/) — 브라우저 없이 **접근성 트리**와 WCAG 위반, 고친 뒤 확인 | 63+72 → 7 | 308 passed | 21.5s |
 
 ## 다음 화 만드는 법 (Day 02~)
 
