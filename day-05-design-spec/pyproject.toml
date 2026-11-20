@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "design-spec-mcp"
+version = "0.1.0"
+description = "Figma-Context-MCP × Stitch design-md — count colors, spacing steps and type scales from a design file, then write DESIGN.md."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "where-is-the-error" }]
+keywords = ["mcp", "model-context-protocol", "figma", "design-system", "design-tokens", "contrast"]
+dependencies = ["mcp>=2.3,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+design-spec = "design_spec.cli:main"
+design-spec-mcp = "design_spec.server:main"
+
+[tool.setuptools.packages.find]
+include = ["design_spec*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
