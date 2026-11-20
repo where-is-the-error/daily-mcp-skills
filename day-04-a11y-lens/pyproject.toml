@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "a11y-lens-mcp"
+version = "0.1.0"
+description = "Chrome DevTools a11y-debugging skill × Playwright MCP — accessibility tree snapshots and WCAG-mapped violations without a browser."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "where-is-the-error" }]
+keywords = ["mcp", "model-context-protocol", "accessibility", "a11y", "wcag", "aria", "snapshot"]
+dependencies = ["mcp>=2.3,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+a11y-lens = "a11y_lens.cli:main"
+a11y-lens-mcp = "a11y_lens.server:main"
+
+[tool.setuptools.packages.find]
+include = ["a11y_lens*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
