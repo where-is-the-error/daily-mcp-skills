@@ -21,6 +21,7 @@
 | 02 | [Fetch MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/fetch) + [Memory MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/memory) | [`web-memo`](day-02-web-memo/) — 한 번 읽고 **바뀐 줄만**, 메모는 기억 그래프에 | 10 → 5 | 117 passed | 21.5s |
 | 03 | [Time MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/time) + [SQLite MCP](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/sqlite) | [`deadline-clock`](day-03-deadline-clock/) — 마감을 **시각+시간대**로, 남은 시간·D-day·평일 | 9 → 6 | 198 passed | 21.5s |
 | 04 | [chrome-devtools-mcp 의 `a11y-debugging` 스킬](https://github.com/ChromeDevTools/chrome-devtools-mcp/tree/main/skills/a11y-debugging) + [Playwright MCP](https://github.com/microsoft/playwright-mcp) | [`a11y-lens`](day-04-a11y-lens/) — 브라우저 없이 **접근성 트리**와 WCAG 위반, 고친 뒤 확인 | 63+72 → 7 | 308 passed | 21.5s |
+| 05 | [Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) + [Stitch `design-md` 스킬](https://github.com/google-labs-code/stitch-skills/tree/main/plugins/stitch-utilities/skills/design-md) | [`design-spec`](day-05-design-spec/) — 디자인 파일에서 **색·간격·글자**를 세고 DESIGN.md | 2+1 → 8 | 321 passed | 21.5s |
 
 ## 다음 화 만드는 법 (Day 02~)
 
@@ -32,6 +33,33 @@
 6. **목록 표에 한 줄 추가**하고 커밋. 커밋은 `feat(day-NN)` / `test(day-NN)` / `docs(day-NN)` / `content(day-NN)`으로 나눈다.
 
 > 릴스 제작에는 `ffmpeg`가 필요하다. 없으면 `pip install imageio-ffmpeg`로 받은 바이너리 경로를 `ffmpeg`로 심볼릭 링크해 쓴다.
+
+## Day 05 미리보기
+
+```bash
+cd day-05-design-spec
+pip install -e ".[dev]"
+design-spec audit examples/demo/before.json   # 0/100 · 위반 17건 · 규칙 12종
+design-spec audit examples/demo/after.json    # 100/100 · 위반 0건
+design-spec design-md examples/demo/after.json
+```
+
+```text
+- 화면 1개 · 노드 34개 · 글자 14개 · 색 10종 · 크기 6단계 · 간격 값 7종 (기준 4px)
+- 점수 **0/100** (심각) · 위반 **17건** (치명 6 · 심각 2 · 보통 9) · 규칙 12종
+
+1. **contrast-text** 글자 대비 2.53:1 (필요 4.5:1) — 치명
+   - `e12` Body > Card/Order > 금액 안내
+     고치기: #6F7378 로 바꾸면 4.56:1
+3. **touch-target** 누를 수 있는 요소가 250×32 — 최소 44×44 — 치명
+```
+
+- 8개 툴: `read_design` · `find_in_design` · `palette_report` · `scale_report` · `audit_design` · `fix_order` · `write_design_md` · `overview`
+- 규칙 17종(글자 대비·터치 44·글자 겹침·넘침·간격 스케일·거의 같은 색·글자 단계·1px 어긋남…) · 점수는 **규칙 종류당 한 번**만 감점
+- 색 역할 추정 · WCAG 대비 계산 · 기준 단위 추정 · **DESIGN.md 다섯 칸** 자동 작성
+- 실측: 같은 화면을 고치자 0 → 100점, 색 10 → 6종, 크기 6 → 4단계, 반경 5 → 2종, 토큰 커버리지 40% → 100%
+- 안전·정직: 그라디언트·이미지 위 대비와 `lineHeight: auto` 는 **판정하지 않는다고 말함**, 색 이름은 기하 규칙으로만
+- 자세한 설명: [day-05-design-spec/README.md](day-05-design-spec/README.md)
 
 ## Day 04 미리보기
 

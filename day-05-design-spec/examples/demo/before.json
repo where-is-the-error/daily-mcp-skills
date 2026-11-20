@@ -1,0 +1,329 @@
+{
+  "name": "예제몰 – 주문/결제 (before)",
+  "document": {
+    "id": "0:0",
+    "name": "Page 1",
+    "type": "DOCUMENT",
+    "children": [
+      {
+        "id": "1:0",
+        "name": "Page 1",
+        "type": "CANVAS",
+        "children": [
+          {
+            "id": "1:1",
+            "name": "Checkout / Mobile",
+            "type": "FRAME",
+            "absoluteBoundingBox": { "x": 0, "y": 0, "width": 390, "height": 844 },
+            "fills": [{ "type": "SOLID", "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }],
+            "styles": { "fills": "S:surface" },
+            "children": [
+              {
+                "id": "1:2",
+                "name": "Header",
+                "type": "FRAME",
+                "absoluteBoundingBox": { "x": 0, "y": 0, "width": 390, "height": 64 },
+                "layoutMode": "HORIZONTAL",
+                "itemSpacing": 8,
+                "paddingLeft": 16, "paddingRight": 16, "paddingTop": 20, "paddingBottom": 20,
+                "children": [
+                  {
+                    "id": "1:3",
+                    "name": "Icon/Back",
+                    "type": "INSTANCE",
+                    "absoluteBoundingBox": { "x": 16, "y": 20, "width": 24, "height": 24 },
+                    "cornerRadius": 4,
+                    "strokes": [{ "type": "SOLID", "color": { "r": 0.067, "g": 0.094, "b": 0.153, "a": 1 } }],
+                    "strokeWeight": 2,
+                    "styles": { "strokes": "S:ink" }
+                  },
+                  {
+                    "id": "1:4",
+                    "name": "주문/결제",
+                    "type": "TEXT",
+                    "absoluteBoundingBox": { "x": 60, "y": 22, "width": 120, "height": 24 },
+                    "characters": "주문/결제",
+                    "fills": [{ "type": "SOLID", "color": { "r": 0.067, "g": 0.094, "b": 0.153, "a": 1 } }],
+                    "styles": { "fills": "S:ink", "text": "T:title" },
+                    "style": { "fontFamily": "Pretendard", "fontSize": 20, "fontWeight": 700, "lineHeightPx": 24, "letterSpacing": -0.2 }
+                  },
+                  {
+                    "id": "1:5",
+                    "name": "Icon/Cart",
+                    "type": "INSTANCE",
+                    "absoluteBoundingBox": { "x": 350, "y": 20, "width": 24, "height": 24 },
+                    "strokes": [{ "type": "SOLID", "color": { "r": 0.067, "g": 0.094, "b": 0.153, "a": 1 } }],
+                    "strokeWeight": 2,
+                    "styles": { "strokes": "S:ink" }
+                  }
+                ]
+              },
+              {
+                "id": "1:6",
+                "name": "Body",
+                "type": "FRAME",
+                "absoluteBoundingBox": { "x": 0, "y": 64, "width": 390, "height": 700 },
+                "layoutMode": "VERTICAL",
+                "itemSpacing": 13,
+                "paddingLeft": 24, "paddingRight": 24, "paddingTop": 24, "paddingBottom": 24,
+                "children": [
+                  {
+                    "id": "1:7",
+                    "name": "Card/Order",
+                    "type": "FRAME",
+                    "absoluteBoundingBox": { "x": 24, "y": 88, "width": 342, "height": 120 },
+                    "cornerRadius": 12,
+                    "fills": [{ "type": "SOLID", "color": { "r": 0.976, "g": 0.98, "b": 0.984, "a": 1 } }],
+                    "strokes": [{ "type": "SOLID", "color": { "r": 0.933, "g": 0.941, "b": 0.953, "a": 1 } }],
+                    "strokeWeight": 1,
+                    "children": [
+                      {
+                        "id": "1:8",
+                        "name": "총 결제 금액",
+                        "type": "TEXT",
+                        "absoluteBoundingBox": { "x": 48, "y": 108, "width": 120, "height": 22 },
+                        "characters": "총 결제 금액",
+                        "fills": [{ "type": "SOLID", "color": { "r": 0.42, "g": 0.447, "b": 0.502, "a": 1 } }],
+                        "style": { "fontFamily": "Pretendard", "fontSize": 15, "fontWeight": 600, "lineHeightPx": 22 }
+                      },
+                      {
+                        "id": "1:9",
+                        "name": "39,800원",
+                        "type": "TEXT",
+                        "absoluteBoundingBox": { "x": 48, "y": 136, "width": 140, "height": 32 },
+                        "characters": "39,800원",
+                        "fills": [{ "type": "SOLID", "color": { "r": 0.067, "g": 0.094, "b": 0.153, "a": 1 } }],
+                        "style": { "fontFamily": "Pretendard", "fontSize": 20, "fontWeight": 700, "lineHeightPx": 28 }
+                      },
+                      {
+                        "id": "1:10",
+                        "name": "금액 안내",
+                        "type": "TEXT",
+                        "absoluteBoundingBox": { "x": 48, "y": 176, "width": 220, "height": 26 },
+                        "characters": "결제 금액은 배송비와 할인을 모두 반영한 금액입니다",
+                        "fills": [{ "type": "SOLID", "color": { "r": 0.604, "g": 0.627, "b": 0.651, "a": 1 } }],
+                        "style": { "fontFamily": "Pretendard", "fontSize": 13, "fontWeight": 400, "lineHeightPx": 14 }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "1:11",
+                    "name": "Card/Coupon",
+                    "type": "FRAME",
+                    "absoluteBoundingBox": { "x": 24, "y": 221, "width": 342, "height": 96 },
+                    "cornerRadius": 12,
+                    "clipsContent": true,
+                    "fills": [{ "type": "SOLID", "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }],
+                    "strokes": [{ "type": "SOLID", "color": { "r": 0.933, "g": 0.941, "b": 0.953, "a": 1 } }],
+                    "strokeWeight": 1,
+                    "children": [
+                      {
+                        "id": "1:12",
+                        "name": "쿠폰",
+                        "type": "TEXT",
+                        "absoluteBoundingBox": { "x": 48, "y": 241, "width": 40, "height": 22 },
+                        "characters": "쿠폰",
+                        "fills": [{ "type": "SOLID", "color": { "r": 0.067, "g": 0.094, "b": 0.153, "a": 1 } }],
+                        "style": { "fontFamily": "Pretendard", "fontSize": 15, "fontWeight": 600, "lineHeightPx": 22 }
+                      },
+                      {
+                        "id": "1:13",
+                        "name": "쿠폰 안내",
+                        "type": "TEXT",
+                        "absoluteBoundingBox": { "x": 48, "y": 269, "width": 160, "height": 20 },
+                        "characters": "적용 가능한 쿠폰 2장",
+                        "fills": [{ "type": "SOLID", "color": { "r": 0.42, "g": 0.447, "b": 0.502, "a": 1 } }],
+                        "style": { "fontFamily": "Pretendard", "fontSize": 13, "fontWeight": 400, "lineHeightPx": 18 }
+                      },
+                      {
+                        "id": "1:14",
+                        "name": "쿠폰 설명",
+                        "type": "TEXT",
+                        "absoluteBoundingBox": { "x": 48, "y": 295, "width": 380, "height": 18 },
+                        "characters": "쿠폰을 선택하면 할인이 적용됩니다. 자세한 내용은 쿠폰함에서 확인하세요.",
+                        "fills": [{ "type": "SOLID", "color": { "r": 0.42, "g": 0.447, "b": 0.502, "a": 1 } }],
+                        "style": { "fontFamily": "Pretendard", "fontSize": 13, "fontWeight": 400, "lineHeightPx": 18 }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "1:15",
+                    "name": "List/Items",
+                    "type": "FRAME",
+                    "absoluteBoundingBox": { "x": 24, "y": 332, "width": 342, "height": 180 },
+                    "layoutMode": "VERTICAL",
+                    "itemSpacing": 16,
+                    "paddingLeft": 16, "paddingRight": 16, "paddingTop": 16, "paddingBottom": 16,
+                    "children": [
+                      {
+                        "id": "1:16",
+                        "name": "Item/이어폰",
+                        "type": "FRAME",
+                        "absoluteBoundingBox": { "x": 40, "y": 348, "width": 310, "height": 40 },
+                        "children": [
+                          {
+                            "id": "1:17",
+                            "name": "무선 이어폰",
+                            "type": "TEXT",
+                            "absoluteBoundingBox": { "x": 40, "y": 352, "width": 140, "height": 22 },
+                            "characters": "무선 이어폰",
+                            "fills": [{ "type": "SOLID", "color": { "r": 0.067, "g": 0.094, "b": 0.153, "a": 1 } }],
+                            "style": { "fontFamily": "Pretendard", "fontSize": 15, "fontWeight": 400, "lineHeightPx": 22 }
+                          },
+                          {
+                            "id": "1:18",
+                            "name": "품절 배지",
+                            "type": "TEXT",
+                            "absoluteBoundingBox": { "x": 60, "y": 354, "width": 48, "height": 22 },
+                            "characters": "품절",
+                            "fills": [{ "type": "SOLID", "color": { "r": 0.851, "g": 0.176, "b": 0.125, "a": 1 } }],
+                            "style": { "fontFamily": "Pretendard", "fontSize": 11, "fontWeight": 700, "lineHeightPx": 12 }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1:19",
+                        "name": "Item/케이스",
+                        "type": "FRAME",
+                        "absoluteBoundingBox": { "x": 41, "y": 404, "width": 310, "height": 40 },
+                        "children": [
+                          {
+                            "id": "1:20",
+                            "name": "휴대폰 케이스",
+                            "type": "TEXT",
+                            "absoluteBoundingBox": { "x": 41, "y": 408, "width": 140, "height": 22 },
+                            "characters": "휴대폰 케이스",
+                            "fills": [{ "type": "SOLID", "color": { "r": 0.067, "g": 0.094, "b": 0.153, "a": 1 } }],
+                            "style": { "fontFamily": "Pretendard", "fontSize": 15, "fontWeight": 400, "lineHeightPx": 22 }
+                          }
+                        ]
+                      },
+                      {
+                        "id": "1:21",
+                        "name": "Item/충전기",
+                        "type": "FRAME",
+                        "absoluteBoundingBox": { "x": 40, "y": 460, "width": 310, "height": 40 },
+                        "children": [
+                          {
+                            "id": "1:22",
+                            "name": "충전기",
+                            "type": "TEXT",
+                            "absoluteBoundingBox": { "x": 40, "y": 464, "width": 100, "height": 22 },
+                            "characters": "충전기",
+                            "fills": [{ "type": "SOLID", "color": { "r": 0.067, "g": 0.094, "b": 0.153, "a": 1 } }],
+                            "style": { "fontFamily": "Pretendard", "fontSize": 15, "fontWeight": 400, "lineHeightPx": 22 }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "1:23",
+                    "name": "Frame 12",
+                    "type": "FRAME",
+                    "absoluteBoundingBox": { "x": 24, "y": 528, "width": 342, "height": 60 },
+                    "cornerRadius": 10,
+                    "fills": [{ "type": "SOLID", "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }],
+                    "children": [
+                      {
+                        "id": "1:24",
+                        "name": "Rectangle 5",
+                        "type": "RECTANGLE",
+                        "absoluteBoundingBox": { "x": 24, "y": 528, "width": 342, "height": 60 },
+                        "cornerRadius": 10,
+                        "fills": [{ "type": "SOLID", "color": { "r": 0.949, "g": 0.957, "b": 0.969, "a": 1 } }]
+                      },
+                      {
+                        "id": "1:25",
+                        "name": "쿠폰 받기",
+                        "type": "TEXT",
+                        "absoluteBoundingBox": { "x": 40, "y": 548, "width": 80, "height": 20 },
+                        "characters": "쿠폰 받기",
+                        "fills": [{ "type": "SOLID", "color": { "r": 0.039, "g": 0.361, "b": 1, "a": 1 } }],
+                        "style": { "fontFamily": "Pretendard", "fontSize": 17, "fontWeight": 600, "lineHeightPx": 20 }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "1:26",
+                "name": "BottomBar",
+                "type": "FRAME",
+                "absoluteBoundingBox": { "x": 0, "y": 784, "width": 390, "height": 60 },
+                "layoutMode": "HORIZONTAL",
+                "itemSpacing": 12,
+                "paddingLeft": 16, "paddingRight": 16, "paddingTop": 10, "paddingBottom": 10,
+                "fills": [{ "type": "SOLID", "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }],
+                "styles": { "fills": "S:surface" },
+                "children": [
+                  {
+                    "id": "1:27",
+                    "name": "Button/Pay",
+                    "type": "FRAME",
+                    "absoluteBoundingBox": { "x": 16, "y": 794, "width": 250, "height": 32 },
+                    "cornerRadius": 8,
+                    "fills": [{ "type": "SOLID", "color": { "r": 0, "g": 0.341, "b": 1, "a": 1 } }],
+                    "styles": { "fills": "S:primary" },
+                    "children": [
+                      {
+                        "id": "1:28",
+                        "name": "결제 라벨",
+                        "type": "TEXT",
+                        "absoluteBoundingBox": { "x": 90, "y": 800, "width": 100, "height": 20 },
+                        "characters": "39,800원 결제",
+                        "fills": [{ "type": "SOLID", "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }],
+                        "styles": { "fills": "S:surface" },
+                        "style": { "fontFamily": "Pretendard", "fontSize": 16, "fontWeight": 700, "lineHeightPx": 20 }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "1:29",
+                    "name": "Button/Coupon",
+                    "type": "FRAME",
+                    "absoluteBoundingBox": { "x": 278, "y": 794, "width": 96, "height": 32 },
+                    "cornerRadius": 8,
+                    "fills": [{ "type": "SOLID", "color": { "r": 1, "g": 1, "b": 1, "a": 1 } }],
+                    "styles": { "fills": "S:surface" },
+                    "strokes": [{ "type": "SOLID", "color": { "r": 0, "g": 0.341, "b": 1, "a": 1 } }],
+                    "strokeWeight": 1,
+                    "children": [
+                      {
+                        "id": "1:30",
+                        "name": "쿠폰 버튼 라벨",
+                        "type": "TEXT",
+                        "absoluteBoundingBox": { "x": 308, "y": 800, "width": 36, "height": 20 },
+                        "characters": "쿠폰",
+                        "fills": [{ "type": "SOLID", "color": { "r": 0, "g": 0.341, "b": 1, "a": 1 } }],
+                        "styles": { "fills": "S:primary" },
+                        "style": { "fontFamily": "Pretendard", "fontSize": 16, "fontWeight": 600, "lineHeightPx": 20 }
+                      }
+                    ]
+                  },
+                  {
+                    "id": "1:31",
+                    "name": "Frame 7",
+                    "type": "FRAME",
+                    "absoluteBoundingBox": { "x": 16, "y": 838, "width": 358, "height": 4 },
+                    "fills": [{ "type": "SOLID", "color": { "r": 0.933, "g": 0.941, "b": 0.953, "a": 1 } }],
+                    "children": [
+                      {
+                        "id": "1:32",
+                        "name": "Rectangle 9",
+                        "type": "RECTANGLE",
+                        "absoluteBoundingBox": { "x": 174, "y": 839, "width": 40, "height": 4 },
+                        "cornerRadius": 2,
+                        "fills": [{ "type": "SOLID", "color": { "r": 0.42, "g": 0.447, "b": 0.502, "a": 1 } }]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
