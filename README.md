@@ -22,6 +22,7 @@
 | 03 | [Time MCP](https://github.com/modelcontextprotocol/servers/tree/main/src/time) + [SQLite MCP](https://github.com/modelcontextprotocol/servers-archived/tree/main/src/sqlite) | [`deadline-clock`](day-03-deadline-clock/) — 마감을 **시각+시간대**로, 남은 시간·D-day·평일 | 9 → 6 | 198 passed | 21.5s |
 | 04 | [chrome-devtools-mcp 의 `a11y-debugging` 스킬](https://github.com/ChromeDevTools/chrome-devtools-mcp/tree/main/skills/a11y-debugging) + [Playwright MCP](https://github.com/microsoft/playwright-mcp) | [`a11y-lens`](day-04-a11y-lens/) — 브라우저 없이 **접근성 트리**와 WCAG 위반, 고친 뒤 확인 | 63+72 → 7 | 308 passed | 21.5s |
 | 05 | [Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) + [Stitch `design-md` 스킬](https://github.com/google-labs-code/stitch-skills/tree/main/plugins/stitch-utilities/skills/design-md) | [`design-spec`](day-05-design-spec/) — 디자인 파일에서 **색·간격·글자**를 세고 DESIGN.md | 2+1 → 8 | 321 passed | 21.5s |
+| 06 | [Terraform MCP](https://github.com/hashicorp/terraform-mcp-server) + [AWS IaC MCP](https://github.com/awslabs/mcp/tree/main/src/aws-iac-mcp-server) | [`plan-guard`](day-06-plan-guard/) — apply 전에 plan: **사라지는 것·열린 포트·되돌리기** | 14+8 → 9 | 242 passed | 21.5s |
 
 ## 다음 화 만드는 법 (Day 02~)
 
@@ -33,6 +34,35 @@
 6. **목록 표에 한 줄 추가**하고 커밋. 커밋은 `feat(day-NN)` / `test(day-NN)` / `docs(day-NN)` / `content(day-NN)`으로 나눈다.
 
 > 릴스 제작에는 `ffmpeg`가 필요하다. 없으면 `pip install imageio-ffmpeg`로 받은 바이너리 경로를 `ffmpeg`로 심볼릭 링크해 쓴다.
+
+## Day 06 미리보기
+
+```bash
+cd day-06-plan-guard
+pip install -e ".[dev]"
+plan-guard risk examples/proposal-plan.json --fail-on 치명   # 판정 보류 · 치명 4 · 심각 2 (exit 2)
+plan-guard risk examples/fixed-plan.json                     # 판정 통과 · 0건 (exit 0)
+plan-guard compare examples/proposal-plan.json examples/fixed-plan.json
+```
+
+```text
+판정 **보류** · 치명 4 · 심각 2 · 보통 0 · 참고 0 · 규칙 6종
+
+**치명 · 관리 포트가 인터넷에 열림** — `aws_security_group.api`
+- 근거: tcp · 22 · 열린 관리 포트 22(SSH) · 출처 0.0.0.0/0
+
+**치명 · 데이터가 있는 리소스가 재생성됨** — `aws_db_instance.main`
+- 근거: aws_db_instance · 재생성 · 바꾼 속성 storage_encrypted (데이터 리소스)
+
+치명 4 → 0 · 사라지는 리소스 2 → 0 · 판정 보류 → 통과
+```
+
+- 9개 툴: `read_plan` · `list_changes` · `diff_resource` · `risk_report` · `apply_order` · `rollback_plan` · `compare_plans` · `redact_plan` · `rule_catalog`
+- 규칙 15종(데이터 재생성·관리 포트 개방·공개 버킷·IAM `*`·암호화 끔·스냅샷 없이 삭제…) · **바뀐 것만** 잡는다
+- 예제 plan 은 **terraform 1.9.8 이 실제로 계산**한 것 (state 는 스키마에 맞춰 만든 예제 — `examples/infra/README.md`)
+- 같은 비밀번호가 plan 파일 **5곳**에 평문으로 있다 → `redact` 후 0회
+- 판정하지 않음: 비용·apply 결과·drift·처음 보는 리소스 타입
+- 자세한 설명: [day-06-plan-guard/README.md](day-06-plan-guard/README.md)
 
 ## Day 05 미리보기
 
