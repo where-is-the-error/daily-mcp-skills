@@ -1,0 +1,281 @@
+{
+ "version": 4,
+ "terraform_version": "1.9.8",
+ "serial": 12,
+ "lineage": "3f6a1c2e-8b7d-4a51-9c33-0d1e2f3a4b5c",
+ "outputs": {},
+ "resources": [
+  {
+   "mode": "managed",
+   "type": "aws_s3_bucket",
+   "name": "assets",
+   "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+   "instances": [
+    {
+     "schema_version": 0,
+     "attributes": {
+      "acceleration_status": "",
+      "acl": "private",
+      "arn": "arn:aws:s3:::acme-prod-assets",
+      "bucket": "acme-prod-assets",
+      "bucket_domain_name": "",
+      "bucket_prefix": "",
+      "bucket_regional_domain_name": "",
+      "force_destroy": false,
+      "hosted_zone_id": "",
+      "id": "acme-prod-assets",
+      "object_lock_enabled": false,
+      "policy": "",
+      "region": "",
+      "request_payer": "",
+      "tags": {
+       "Team": "platform"
+      },
+      "tags_all": {
+       "Team": "platform"
+      },
+      "website_domain": "",
+      "website_endpoint": "",
+      "versioning": [
+       {
+        "enabled": false,
+        "mfa_delete": false
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "mode": "managed",
+   "type": "aws_security_group",
+   "name": "api",
+   "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+   "instances": [
+    {
+     "schema_version": 1,
+     "attributes": {
+      "arn": "",
+      "description": "api",
+      "egress": [
+       {
+        "cidr_blocks": [
+         "0.0.0.0/0"
+        ],
+        "description": "",
+        "from_port": 0,
+        "ipv6_cidr_blocks": [],
+        "prefix_list_ids": [],
+        "protocol": "-1",
+        "security_groups": [],
+        "self": false,
+        "to_port": 0
+       }
+      ],
+      "id": "sg-0a1b2c3d4e5f60718",
+      "ingress": [
+       {
+        "cidr_blocks": [
+         "10.0.0.0/8"
+        ],
+        "description": "",
+        "from_port": 22,
+        "ipv6_cidr_blocks": [],
+        "prefix_list_ids": [],
+        "protocol": "tcp",
+        "security_groups": [],
+        "self": false,
+        "to_port": 22
+       },
+       {
+        "cidr_blocks": [
+         "10.0.0.0/8"
+        ],
+        "description": "",
+        "from_port": 443,
+        "ipv6_cidr_blocks": [],
+        "prefix_list_ids": [],
+        "protocol": "tcp",
+        "security_groups": [],
+        "self": false,
+        "to_port": 443
+       }
+      ],
+      "name": "acme-api",
+      "name_prefix": "",
+      "owner_id": "",
+      "revoke_rules_on_delete": false,
+      "tags": {
+       "Name": "acme-api"
+      },
+      "tags_all": {
+       "Name": "acme-api"
+      },
+      "vpc_id": "vpc-0f1e2d3c4b5a69788"
+     }
+    }
+   ]
+  },
+  {
+   "mode": "managed",
+   "type": "aws_db_instance",
+   "name": "main",
+   "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+   "instances": [
+    {
+     "schema_version": 1,
+     "attributes": {
+      "address": "acme-prod-db.abc123.ap-northeast-2.rds.amazonaws.com",
+      "allocated_storage": 100,
+      "allow_major_version_upgrade": false,
+      "apply_immediately": false,
+      "arn": "",
+      "auto_minor_version_upgrade": true,
+      "availability_zone": "",
+      "backup_retention_period": 0,
+      "backup_window": "",
+      "ca_cert_identifier": "",
+      "character_set_name": "",
+      "copy_tags_to_snapshot": false,
+      "customer_owned_ip_enabled": false,
+      "db_subnet_group_name": "",
+      "delete_automated_backups": true,
+      "deletion_protection": false,
+      "domain": "",
+      "domain_iam_role_name": "",
+      "enabled_cloudwatch_logs_exports": [],
+      "endpoint": "acme-prod-db.abc123.ap-northeast-2.rds.amazonaws.com:5432",
+      "engine": "postgres",
+      "engine_version": "13.14",
+      "engine_version_actual": "",
+      "final_snapshot_identifier": "",
+      "hosted_zone_id": "",
+      "iam_database_authentication_enabled": false,
+      "id": "acme-prod-db",
+      "identifier": "acme-prod-db",
+      "identifier_prefix": "",
+      "instance_class": "db.t3.medium",
+      "iops": 0,
+      "kms_key_id": "",
+      "latest_restorable_time": "",
+      "license_model": "",
+      "maintenance_window": "",
+      "max_allocated_storage": 0,
+      "monitoring_interval": 0,
+      "monitoring_role_arn": "",
+      "multi_az": false,
+      "name": "acme",
+      "nchar_character_set_name": "",
+      "option_group_name": "",
+      "parameter_group_name": "",
+      "password": "correcthorsebatterystaple",
+      "performance_insights_enabled": false,
+      "performance_insights_kms_key_id": "",
+      "performance_insights_retention_period": 0,
+      "port": 5432,
+      "publicly_accessible": false,
+      "replica_mode": "",
+      "replicas": [],
+      "replicate_source_db": "",
+      "resource_id": "",
+      "security_group_names": [],
+      "skip_final_snapshot": true,
+      "snapshot_identifier": "",
+      "status": "",
+      "storage_encrypted": false,
+      "storage_type": "gp2",
+      "tags": {
+       "Team": "platform"
+      },
+      "tags_all": {
+       "Team": "platform"
+      },
+      "timezone": "",
+      "username": "acme",
+      "vpc_security_group_ids": []
+     }
+    }
+   ]
+  },
+  {
+   "mode": "managed",
+   "type": "aws_instance",
+   "name": "worker",
+   "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+   "instances": [
+    {
+     "schema_version": 1,
+     "attributes": {
+      "ami": "ami-0d5bb1d3b6b3f2e5a",
+      "arn": "",
+      "associate_public_ip_address": false,
+      "availability_zone": "",
+      "cpu_core_count": 0,
+      "cpu_threads_per_core": 0,
+      "disable_api_termination": false,
+      "ebs_optimized": false,
+      "get_password_data": false,
+      "hibernation": false,
+      "host_id": "",
+      "iam_instance_profile": "",
+      "id": "i-0d4c2b1a9f8e7d6c5",
+      "instance_initiated_shutdown_behavior": "",
+      "instance_state": "",
+      "instance_type": "t3.small",
+      "ipv6_address_count": 0,
+      "ipv6_addresses": [],
+      "key_name": "",
+      "monitoring": false,
+      "outpost_arn": "",
+      "password_data": "",
+      "placement_group": "",
+      "placement_partition_number": 0,
+      "primary_network_interface_id": "",
+      "private_dns": "",
+      "private_ip": "",
+      "public_dns": "",
+      "public_ip": "",
+      "secondary_private_ips": [],
+      "security_groups": [],
+      "source_dest_check": true,
+      "subnet_id": "subnet-0a1b2c3d4e5f60719",
+      "tags": {
+       "Name": "acme-worker"
+      },
+      "tags_all": {
+       "Name": "acme-worker"
+      },
+      "tenancy": "",
+      "user_data": "",
+      "user_data_base64": "",
+      "volume_tags": {},
+      "vpc_security_group_ids": []
+     }
+    }
+   ]
+  },
+  {
+   "mode": "managed",
+   "type": "aws_iam_policy",
+   "name": "app",
+   "provider": "provider[\"registry.terraform.io/hashicorp/aws\"]",
+   "instances": [
+    {
+     "schema_version": 0,
+     "attributes": {
+      "arn": "arn:aws:iam::123456789012:policy/acme-app",
+      "description": "",
+      "id": "arn:aws:iam::123456789012:policy/acme-app",
+      "name": "acme-app",
+      "name_prefix": "",
+      "path": "/",
+      "policy": "{\"Version\":\"2012-10-17\",\"Statement\":[{\"Effect\":\"Allow\",\"Action\":[\"s3:GetObject\"],\"Resource\":\"arn:aws:s3:::acme-prod-assets/*\"}]}",
+      "policy_id": "",
+      "tags": {},
+      "tags_all": {}
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plan-guard-mcp"
+version = "0.1.0"
+description = "Terraform plan MCP × AWS IaC MCP — read a terraform plan before you apply: what disappears, what opens, what you can roll back."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "where-is-the-error" }]
+keywords = ["mcp", "model-context-protocol", "terraform", "iac", "plan", "rollback"]
+dependencies = ["mcp>=2.3,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+plan-guard = "plan_guard.cli:main"
+plan-guard-mcp = "plan_guard.server:main"
+
+[tool.setuptools.packages.find]
+include = ["plan_guard*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
