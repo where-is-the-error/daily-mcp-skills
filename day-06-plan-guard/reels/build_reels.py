@@ -418,7 +418,7 @@ def scene_reveal(u: float) -> Image.Image:
 def scene_merge(u: float) -> Image.Image:
     img = DARK_BG.copy()
     floor_rings(img)
-    brand(img, "14 + 8 → 9")
+    brand(img, "2 MCP → 9")
 
     def block(y, tag, name, what, color, start):
         alpha = fade(u, start, 0.26)

@@ -62,7 +62,7 @@ plan-guard compare examples/proposal-plan.json examples/fixed-plan.json
 
 - 두 저장소의 라이선스·규모는 `gh repo view` 로 확인했습니다 — terraform-mcp-server **MPL-2.0**, stars **1,561**, 마지막 푸시 2026-11-20 / awslabs/mcp **Apache-2.0**, stars **9,939**, 마지막 푸시 2026-11-21.
 - **원본 코드는 한 줄도 복사하지 않았습니다.** 위에 적은 설계와 태도만 가져와 Python 표준 라이브러리로 새로 썼습니다.
-- 툴 수: terraform-mcp-server 14개 안팎(registry·provider docs·TFE 계열) + aws-iac-mcp-server 8개 안팎 → 이 서버 **9개**.
+- 툴 수: terraform-mcp-server 는 registry·module·policy·HCP Terraform 워크스페이스까지 여러 툴셋, aws-iac-mcp-server 는 **9개**(README 의 툴 목록) → 이 서버 **9개**.
 
 ### 원본과 이 서버는 무엇이 다른가
 

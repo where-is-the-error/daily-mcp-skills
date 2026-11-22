@@ -313,7 +313,7 @@ def test_rules_used_are_in_catalog() -> None:
     assert "open-non-admin-port" in risks.CATALOG_BY_ID
 
 
-def test_catalog_has_fourteen_rules() -> None:
+def test_catalog_has_fifteen_rules() -> None:
     assert len(risks.CATALOG) == 15
     assert len({r.rule_id for r in risks.CATALOG}) == 15
 
