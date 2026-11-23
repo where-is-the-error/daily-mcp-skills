@@ -23,6 +23,7 @@
 | 04 | [chrome-devtools-mcp 의 `a11y-debugging` 스킬](https://github.com/ChromeDevTools/chrome-devtools-mcp/tree/main/skills/a11y-debugging) + [Playwright MCP](https://github.com/microsoft/playwright-mcp) | [`a11y-lens`](day-04-a11y-lens/) — 브라우저 없이 **접근성 트리**와 WCAG 위반, 고친 뒤 확인 | 63+72 → 7 | 308 passed | 21.5s |
 | 05 | [Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) + [Stitch `design-md` 스킬](https://github.com/google-labs-code/stitch-skills/tree/main/plugins/stitch-utilities/skills/design-md) | [`design-spec`](day-05-design-spec/) — 디자인 파일에서 **색·간격·글자**를 세고 DESIGN.md | 2+1 → 8 | 321 passed | 21.5s |
 | 06 | [Terraform MCP](https://github.com/hashicorp/terraform-mcp-server) + [AWS IaC MCP](https://github.com/awslabs/mcp/tree/main/src/aws-iac-mcp-server) | [`plan-guard`](day-06-plan-guard/) — apply 전에 plan: **사라지는 것·열린 포트·되돌리기** | 2 → 9 | 242 passed | 21.5s |
+| 07 | [DBHub](https://github.com/bytebase/dbhub) + [Postgres MCP Pro](https://github.com/crystaldba/postgres-mcp) | [`migrate-guard`](day-07-migrate-guard/) — 마이그레이션 실행 전: **락·재작성·되돌리기** | 5+9 → 9 | 322 passed | 21.5s |
 
 ## 다음 화 만드는 법 (Day 02~)
 
@@ -34,6 +35,32 @@
 6. **목록 표에 한 줄 추가**하고 커밋. 커밋은 `feat(day-NN)` / `test(day-NN)` / `docs(day-NN)` / `content(day-NN)`으로 나눈다.
 
 > 릴스 제작에는 `ffmpeg`가 필요하다. 없으면 `pip install imageio-ffmpeg`로 받은 바이너리 경로를 `ffmpeg`로 심볼릭 링크해 쓴다.
+
+## Day 07 미리보기
+
+```bash
+cd day-07-migrate-guard
+pip install -e ".[dev]"
+migrate-guard summary examples/0012_add_email_verified.up.sql --baseline examples/schema.sql --rows examples/stats.json
+migrate-guard rollout examples/0012_add_email_verified.up.sql --baseline examples/schema.sql --rows examples/stats.json
+migrate-guard compare examples/0012_add_email_verified.up.sql examples/0012_add_email_verified.fixed.up.sql \
+  --baseline examples/schema.sql --rows examples/stats.json
+```
+
+```text
+# 0012_add_email_verified.up.sql
+문장 8개 · 표 4개 · 판정 **보류** · 최대 잠금 12분 (events · ACCESS EXCLUSIVE)
+- BEGIN…COMMIT 하나로 묶여 있음 → 락이 커밋까지 유지 (합계 13분)
+
+치명: 3 → 0 · 심각: 8 → 0 · 락 유지 13분 → 0.02초 · 판정 보류 → 통과
+```
+
+- 9개 툴: `read_migration` · `list_statements` · `lock_report` · `risk_report` · `rollout_plan` · `rollback_plan` · `schema_change` · `compare_migrations` · `rule_catalog`
+- 규칙 24종(조건 없는 UPDATE·휘발성 기본값 재작성·`SET NOT NULL` 스캔·트랜잭션 안 CONCURRENTLY·외래키 전체 검증…)
+- 하는 일: 문장을 나누고(주석·문자열·`$$` 안의 `;` 무시) → PostgreSQL 락 모드와 비용을 붙이고 → 확장·백필·전환으로 다시 씀
+- 실측: **실제 마이그레이션 241개 612문장**(mattermost) 예외 0 · 분류 밖 0 · SQLite 카탈로그 20컬럼 **불일치 0**
+- 판정하지 않음: 실행 시간의 실측·지금 잡힌 락·복제 지연·데이터 분포(모델 가정을 결과에 명시)
+- 자세한 설명: [day-07-migrate-guard/README.md](day-07-migrate-guard/README.md)
 
 ## Day 06 미리보기
 
