@@ -1,0 +1,11 @@
+{
+  "note": "2026-11-23 운영 DB 실측 행 수(pg_class.reltuples 근사값)라고 가정한 예제입니다. 테스트는 이 파일을 쓰지 않습니다.",
+  "tables": {
+    "users": 1400000,
+    "orders": 8200000,
+    "events": 42000000,
+    "sessions": 900000,
+    "invoices": 310000,
+    "products": 48000
+  }
+}

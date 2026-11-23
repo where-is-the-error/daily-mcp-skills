@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "migrate-guard-mcp"
+version = "0.1.0"
+description = "DBHub × Postgres MCP Pro — read a PostgreSQL migration before you run it: locks, rewrites, rollback."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "where-is-the-error" }]
+keywords = ["mcp", "model-context-protocol", "postgres", "migration", "ddl", "locks"]
+dependencies = ["mcp>=2.3,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+migrate-guard = "migrate_guard.cli:main"
+migrate-guard-mcp = "migrate_guard.server:main"
+
+[tool.setuptools.packages.find]
+include = ["migrate_guard*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
