@@ -4,3 +4,4 @@ __pycache__/
 .pytest_cache/
 reels/frames/
 reels/*.wav
+reels-day*-audio.wav

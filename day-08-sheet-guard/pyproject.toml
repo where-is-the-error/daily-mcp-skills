@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sheet-guard-mcp"
+version = "0.1.0"
+description = "Excel MCP Server × MarkItDown — read a spreadsheet before you paste it into an LLM or Excel: encoding, headers, subtotal rows, leading zeros."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "where-is-the-error" }]
+keywords = ["mcp", "model-context-protocol", "csv", "excel", "xlsx", "data-cleaning", "cp949"]
+dependencies = ["mcp>=2.3,<3"]
+
+[project.optional-dependencies]
+xlsx = ["openpyxl>=3.1"]
+dev = ["pytest>=8", "openpyxl>=3.1"]
+
+[project.scripts]
+sheet-guard = "sheet_guard.cli:main"
+sheet-guard-mcp = "sheet_guard.server:main"
+
+[tool.setuptools.packages.find]
+include = ["sheet_guard*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
