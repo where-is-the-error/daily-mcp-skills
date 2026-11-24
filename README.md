@@ -24,6 +24,7 @@
 | 05 | [Figma-Context-MCP](https://github.com/GLips/Figma-Context-MCP) + [Stitch `design-md` 스킬](https://github.com/google-labs-code/stitch-skills/tree/main/plugins/stitch-utilities/skills/design-md) | [`design-spec`](day-05-design-spec/) — 디자인 파일에서 **색·간격·글자**를 세고 DESIGN.md | 2+1 → 8 | 321 passed | 21.5s |
 | 06 | [Terraform MCP](https://github.com/hashicorp/terraform-mcp-server) + [AWS IaC MCP](https://github.com/awslabs/mcp/tree/main/src/aws-iac-mcp-server) | [`plan-guard`](day-06-plan-guard/) — apply 전에 plan: **사라지는 것·열린 포트·되돌리기** | 2 → 9 | 242 passed | 21.5s |
 | 07 | [DBHub](https://github.com/bytebase/dbhub) + [Postgres MCP Pro](https://github.com/crystaldba/postgres-mcp) | [`migrate-guard`](day-07-migrate-guard/) — 마이그레이션 실행 전: **락·재작성·되돌리기** | 5+9 → 9 | 322 passed | 21.5s |
+| 08 | [Excel MCP Server](https://github.com/haris-musa/excel-mcp-server) + [MarkItDown](https://github.com/microsoft/markitdown) | [`sheet-guard`](day-08-sheet-guard/) — 표를 쓰기 전에: **인코딩·소계 행·앞자리 0·칸 밀림** | 9 | 324 passed | 21.5s |
 
 ## 다음 화 만드는 법 (Day 02~)
 
@@ -35,6 +36,31 @@
 6. **목록 표에 한 줄 추가**하고 커밋. 커밋은 `feat(day-NN)` / `test(day-NN)` / `docs(day-NN)` / `content(day-NN)`으로 나눈다.
 
 > 릴스 제작에는 `ffmpeg`가 필요하다. 없으면 `pip install imageio-ffmpeg`로 받은 바이너리 경로를 `ffmpeg`로 심볼릭 링크해 쓴다.
+
+## Day 08 미리보기
+
+```bash
+cd day-08-sheet-guard
+pip install -e ".[xlsx,dev]"
+sheet-guard read examples/raw_population.csv        # 인코딩·머리글·열 요약
+sheet-guard problems examples/raw_population.csv    # 규칙 위반 (치명 있으면 exit 2)
+sheet-guard clean examples/raw_population.csv --out out/clean.csv
+```
+
+```text
+📄 examples/raw_population.csv
+   인코딩 CP949(확신 0.81) · 구분자 , · 48행 × 9열
+   머리글 1줄, 앞머리 2줄 뺌
+   판정: 치명 2 · 주의 9 · 참고 5
+
+✅ 적용 완료 — 값 157칸 · 뺀 행 8개 · 격리 1행 · 새 열 면적_단위
+🔍 정리 전 48행 → 정리 후 46행 · 짝지은 행 46 (95.8% 유지) · 값 손실 0
+```
+
+- 9개 툴: `read_table` · `profile_columns` · `find_problems` · `clean_plan` · `apply_plan` · `to_markdown` · `compare_tables` · `rule_catalog` · `overview`
+- 규칙 35종(CP949·BOM·제목 줄·2줄 머리글·소계 행·앞자리 0·날짜 3종·천 단위 쉼표·값 안의 단위·전각 숫자·병합 칸·칸 밀림…)
+- 실측: 행정안전부 주민등록 연령별 인구 **298행 × 79열** → 19,760칸 정리 · **값 손실 0** · 읽기 144ms
+- 원본 불변 · `changes.csv` · 단위 열 보존 · 칸 밀린 행 격리 · 적용 뒤 `compare_tables` 로 대조
 
 ## Day 07 미리보기
 
