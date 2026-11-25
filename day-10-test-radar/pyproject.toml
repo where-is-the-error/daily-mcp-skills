@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "test-radar-mcp"
+version = "0.1.0"
+description = "codebase-memory-mcp × GitHub MCP — read a diff before you run the whole suite: which tests the change can reach, what no test touches, and when to give up and run everything."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "where-is-the-error" }]
+keywords = ["mcp", "model-context-protocol", "testing", "test-selection", "ci", "impact-analysis", "diff"]
+dependencies = ["mcp>=2.3,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+test-radar = "test_radar.cli:main"
+test-radar-mcp = "test_radar.server:main"
+
+[tool.setuptools.packages.find]
+include = ["test_radar*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
