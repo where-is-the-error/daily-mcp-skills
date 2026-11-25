@@ -25,6 +25,7 @@
 | 06 | [Terraform MCP](https://github.com/hashicorp/terraform-mcp-server) + [AWS IaC MCP](https://github.com/awslabs/mcp/tree/main/src/aws-iac-mcp-server) | [`plan-guard`](day-06-plan-guard/) — apply 전에 plan: **사라지는 것·열린 포트·되돌리기** | 2 → 9 | 242 passed | 21.5s |
 | 07 | [DBHub](https://github.com/bytebase/dbhub) + [Postgres MCP Pro](https://github.com/crystaldba/postgres-mcp) | [`migrate-guard`](day-07-migrate-guard/) — 마이그레이션 실행 전: **락·재작성·되돌리기** | 5+9 → 9 | 322 passed | 21.5s |
 | 08 | [Excel MCP Server](https://github.com/haris-musa/excel-mcp-server) + [MarkItDown](https://github.com/microsoft/markitdown) | [`sheet-guard`](day-08-sheet-guard/) — 표를 쓰기 전에: **인코딩·소계 행·앞자리 0·칸 밀림** | 9 | 324 passed | 21.5s |
+| 09 | [Grafana MCP](https://github.com/grafana/mcp-grafana) + [ClickHouse MCP](https://github.com/ClickHouse/mcp-clickhouse) | [`log-triage`](day-09-log-triage/) — 로그를 넘기기 전에: **서명·폭주·첫 오류·스택·마스킹** | 109+4 → 11 | 304 passed | 21.5s |
 
 ## 다음 화 만드는 법 (Day 02~)
 
@@ -36,6 +37,31 @@
 6. **목록 표에 한 줄 추가**하고 커밋. 커밋은 `feat(day-NN)` / `test(day-NN)` / `docs(day-NN)` / `content(day-NN)`으로 나눈다.
 
 > 릴스 제작에는 `ffmpeg`가 필요하다. 없으면 `pip install imageio-ffmpeg`로 받은 바이너리 경로를 `ffmpeg`로 심볼릭 링크해 쓴다.
+
+## Day 09 미리보기
+
+```bash
+cd day-09-log-triage
+pip install -e ".[dev]"
+log-triage read examples/api-after.log                    # 요약 + 상위 서명
+log-triage compare examples/api-before.log examples/api-after.log
+log-triage problems examples/messy-export.log             # 치명 있으면 exit 2
+```
+
+```text
+↔ examples/api-before.log → examples/api-after.log
+   창 30.0분 → 30.0분 · 레코드 1,429 → 1,448
+   ERROR/CRITICAL 3 → 291 (0.1/분 → 9.7/분, 97.0배)
+   새로 생김 2 · 사라짐 1 · 사라짐(드묾) 1 · 그대로 2
+   + 새로 생김     0 → 291 (9.7/분)  PoolTimeoutError: could not get connection from pool <n> after <n>
+   + 새로 생김     0 → 125 (4.2/분)  pool in_use=<n> wait_ms=<n>
+   − 사라짐        3 →   0           ConnectionResetError: connection reset by peer
+```
+
+- 11개 툴: `read_logs` · `signature_report` · `rate_report` · `compare_logs` · `stack_report` · `timeline` · `find_text` · `redact_secrets` · `find_problems` · `rule_catalog` · `overview`
+- 규칙 25종(시각·오프셋·레벨 표기·폭주·끊김·재시도·긴 줄·제어 문자·깨진 글자·비밀·개인정보…)
+- 실측: 실제 공개 로그 **14종 28,000줄 → 26,357 레코드 · 버린 줄 0 · 파싱 717ms** (`tools/corpus_probe.py`)
+- 읽기 전용 · 원본 불변 · 마스킹본은 새 파일 · **남은 비밀 0** 확인 · 판정 못 한 것은 결과에 표기
 
 ## Day 08 미리보기
 
