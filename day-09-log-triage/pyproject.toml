@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "log-triage-mcp"
+version = "0.1.0"
+description = "Grafana MCP × ClickHouse MCP — read a log file before you paste it into an LLM: signature clusters, bursts, first error, stack frames, redaction."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "where-is-the-error" }]
+keywords = ["mcp", "model-context-protocol", "logs", "observability", "incident", "triage", "log-analysis"]
+dependencies = ["mcp>=2.3,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+log-triage = "log_triage.cli:main"
+log-triage-mcp = "log_triage.server:main"
+
+[tool.setuptools.packages.find]
+include = ["log_triage*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

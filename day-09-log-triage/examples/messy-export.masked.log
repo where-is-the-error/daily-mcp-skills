@@ -1,0 +1,60 @@
+2026-11-25 10:00:00,000 INFO  [export] nightly export started
+2026-11-25 10:00:01,100 INFO  [export] source=postgres db=orders rows=128400 duration_ms=842
+2026-11-25 10:00:02,200 INFO  [auth] login user=<redacted:email> password=<redacted:password> token=<redacted:api_key>
+2026-11-25 10:00:02,900 DEBUG [export] payload={"card":"<redacted:card>","phone":"<redacted:phone>"}
+2026-11-25 10:00:03,000 INFO  [http] Authorization: Bearer <redacted:jwt>
+2026-11-25 10:00:03,400 INFO  [aws] using key <redacted:aws_key> region=ap-northeast-2
+2026-11-25 10:00:04,000 INFO  [export] SELECT * FROM orders WHERE col_0 IS NOT NULL AND col_1 IS NOT NULL AND col_2 IS NOT NULL AND col_3 IS NOT NULL AND col_4 IS NOT NULL AND col_5 IS NOT NULL AND col_6 IS NOT NULL AND col_7 IS NOT NULL AND col_8 IS NOT NULL AND col_9 IS NOT NULL AND col_10 IS NOT NULL AND col_11 IS NOT NULL AND col_12 IS NOT NULL AND col_13 IS NOT NULL AND col_14 IS NOT NULL AND col_15 IS NOT NULL AND col_16 IS NOT NULL AND col_17 IS NOT NULL AND col_18 IS NOT NULL AND col_19 IS NOT NULL AND col_20 IS NOT NULL AND col_21 IS NOT NULL AND col_22 IS NOT NULL AND col_23 IS NOT NULL AND col_24 IS NOT NULL AND col_25 IS NOT NULL AND col_26 IS NOT NULL AND col_27 IS NOT NULL AND col_28 IS NOT NULL AND col_29 IS NOT NULL AND col_30 IS NOT NULL AND col_31 IS NOT NULL AND col_32 IS NOT NULL AND col_33 IS NOT NULL AND col_34 IS NOT NULL AND col_35 IS NOT NULL AND col_36 IS NOT NULL AND col_37 IS NOT NULL AND col_38 IS NOT NULL AND col_39 IS NOT NULL AND col_40 IS NOT NULL AND col_41 IS NOT NULL AND col_42 IS NOT NULL AND col_43 IS NOT NULL AND col_44 IS NOT NULL AND col_45 IS NOT NULL AND col_46 IS NOT NULL AND col_47 IS NOT NULL AND col_48 IS NOT NULL AND col_49 IS NOT NULL AND col_50 IS NOT NULL AND col_51 IS NOT NULL AND col_52 IS NOT NULL AND col_53 IS NOT NULL AND col_54 IS NOT NULL AND col_55 IS NOT NULL AND col_56 IS NOT NULL AND col_57 IS NOT NULL AND col_58 IS NOT NULL AND col_59 IS NOT NULL AND col_60 IS NOT NULL AND col_61 IS NOT NULL AND col_62 IS NOT NULL AND col_63 IS NOT NULL AND col_64 IS NOT NULL AND col_65 IS NOT NULL AND col_66 IS NOT NULL AND col_67 IS NOT NULL AND col_68 IS NOT NULL AND col_69 IS NOT NULL AND col_70 IS NOT NULL AND col_71 IS NOT NULL AND col_72 IS NOT NULL AND col_73 IS NOT NULL AND col_74 IS NOT NULL AND col_75 IS NOT NULL AND col_76 IS NOT NULL AND col_77 IS NOT NULL AND col_78 IS NOT NULL AND col_79 IS NOT NULL AND col_80 IS NOT NULL AND col_81 IS NOT NULL AND col_82 IS NOT NULL AND col_83 IS NOT NULL AND col_84 IS NOT NULL AND col_85 IS NOT NULL AND col_86 IS NOT NULL AND col_87 IS NOT NULL AND col_88 IS NOT NULL AND col_89 IS NOT NULL AND col_90 IS NOT NULL AND col_91 IS NOT NULL AND col_92 IS NOT NULL AND col_93 IS NOT NULL AND col_94 IS NOT NULL AND col_95 IS NOT NULL AND col_96 IS NOT NULL AND col_97 IS NOT NULL AND col_98 IS NOT NULL AND col_99 IS NOT NULL AND col_100 IS NOT NULL AND col_101 IS NOT NULL AND col_102 IS NOT NULL AND col_103 IS NOT NULL AND col_104 IS NOT NULL AND col_105 IS NOT NULL AND col_106 IS NOT NULL AND col_107 IS NOT NULL AND col_108 IS NOT NULL AND col_109 IS NOT NULL AND col_110 IS NOT NULL AND col_111 IS NOT NULL AND col_112 IS NOT NULL AND col_113 IS NOT NULL AND col_114 IS NOT NULL AND col_115 IS NOT NULL AND col_116 IS NOT NULL AND col_117 IS NOT NULL AND col_118 IS NOT NULL AND col_119 IS NOT NULL -- 1 row(s) returned
+2026-11-25 10:00:05,000 WARN  [export] row skipped  control char inside message
+2026-11-25 10:00:06,000 INFO  [export] 파일 이름: 2026년_11월_주문내역.csv
+2026-11-25 10:00:06,500 INFO  [export] 깨진 글자 □□□ — 인코딩이 섞였습니다
+2026-11-25 10:05:30,000 ERROR [export] upload failed: 503 from storage (retry 1)
+2026-11-25 10:05:30,000 ERROR [export] upload failed: 503 from storage (retry 2)
+2026-11-25 10:05:30,000 ERROR [export] upload failed: 503 from storage (retry 3)
+2026-11-25 10:05:30,000 ERROR [export] upload failed: 503 from storage (retry 4)
+2026-11-25 10:05:30,000 ERROR [export] upload failed: 503 from storage (retry 5)
+2026-11-25 10:05:31,000 ERROR [export] upload failed: 503 from storage (retry 6)
+2026-11-25 10:04:00,000 INFO  [export] clock went backwards — buffer flush
+2026-11-25 10:09:00,000 
+2026-11-25 10:09:00,100 INFO  [export] retrying with smaller batch size
+2026-11-25 10:10:00,000 INFO  [export] batch=332 rows=164
+2026-11-25 10:10:01,000 INFO  [export] batch=405 rows=676
+2026-11-25 10:10:02,000 INFO  [export] batch=50 rows=84
+2026-11-25 10:10:03,000 INFO  [export] batch=841 rows=558
+2026-11-25 10:10:04,000 INFO  [export] batch=97 rows=384
+2026-11-25 10:10:05,000 INFO  [export] batch=597 rows=69
+2026-11-25 10:10:06,000 INFO  [export] batch=520 rows=229
+2026-11-25 10:10:07,000 INFO  [export] batch=39 rows=98
+2026-11-25 10:10:08,000 INFO  [export] batch=445 rows=438
+2026-11-25 10:10:09,000 INFO  [export] batch=72 rows=256
+2026-11-25 10:10:10,000 INFO  [export] batch=93 rows=574
+2026-11-25 10:10:11,000 INFO  [export] batch=435 rows=70
+2026-11-25 10:10:12,000 INFO  [export] batch=847 rows=589
+2026-11-25 10:10:13,000 INFO  [export] batch=127 rows=238
+2026-11-25 10:10:14,000 INFO  [export] batch=646 rows=652
+2026-11-25 10:10:15,000 INFO  [export] batch=597 rows=73
+2026-11-25 10:10:16,000 INFO  [export] batch=591 rows=609
+2026-11-25 10:10:17,000 INFO  [export] batch=407 rows=60
+2026-11-25 10:10:18,000 INFO  [export] batch=227 rows=57
+2026-11-25 10:10:19,000 INFO  [export] batch=571 rows=889
+2026-11-25 10:10:20,000 INFO  [export] batch=137 rows=306
+2026-11-25 10:10:21,000 INFO  [export] batch=430 rows=157
+2026-11-25 10:10:22,000 INFO  [export] batch=554 rows=130
+2026-11-25 10:10:23,000 INFO  [export] batch=585 rows=325
+2026-11-25 10:10:24,000 INFO  [export] batch=574 rows=845
+2026-11-25 10:10:25,000 INFO  [export] batch=699 rows=195
+2026-11-25 10:10:26,000 INFO  [export] batch=106 rows=605
+2026-11-25 10:10:27,000 INFO  [export] batch=585 rows=664
+2026-11-25 10:10:28,000 INFO  [export] batch=193 rows=391
+2026-11-25 10:10:29,000 INFO  [export] batch=100 rows=570
+2026-11-25 10:10:30,000 INFO  [export] batch=730 rows=74
+2026-11-25 10:10:31,000 INFO  [export] batch=578 rows=71
+2026-11-25 10:10:32,000 INFO  [export] batch=634 rows=220
+2026-11-25 10:10:33,000 INFO  [export] batch=509 rows=706
+2026-11-25 10:10:34,000 INFO  [export] batch=545 rows=447
+2026-11-25 10:10:35,000 INFO  [export] batch=796 rows=331
+2026-11-25 10:10:36,000 INFO  [export] batch=477 rows=609
+2026-11-25 10:10:37,000 INFO  [export] batch=465 rows=380
+2026-11-25 10:10:38,000 INFO  [export] batch=307 rows=264
+2026-11-25 10:10:39,000 INFO  [export] batch=814 rows=194
+2026-11-25 10:10:40,000 INFO  [export] batch=716 rows=808

@@ -1,0 +1,8 @@
+2026-11-25 09:01:00,001 INFO  [주문] 주문 접수 완료 - 주문번호 202611250001
+2026-11-25 09:01:02,334 WARN  [재고] 재고가 부족합니다: 상품 A-1042, 남은 수량 2
+2026-11-25 09:01:05,777 ERROR [결제] 결제 승인 실패: 카드사 응답 지연 (3,000ms)
+Traceback (most recent call last):
+  File "/srv/app/pay/card.py", line 44, in authorize
+    raise PaymentTimeoutError("카드사 응답 지연")
+app.pay.card.PaymentTimeoutError: 카드사 응답 지연
+2026-11-25 09:01:09,010 INFO  [주문] 주문 취소 처리 - 주문번호 202611250001

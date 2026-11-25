@@ -1,0 +1,1447 @@
+2026-11-25 09:00:01,545 INFO  [api] request_id=71c5f39e1910 method=GET path=/v1/users/me status=200 duration_ms=87 user=jung
+2026-11-25 09:00:03,603 INFO  [api] request_id=278da7bb8a0a method=GET path=/v1/orders/1042 status=200 duration_ms=89 user=yoon
+2026-11-25 09:00:04,749 INFO  [api] request_id=e47de6e169f2 method=GET path=/health status=200 duration_ms=23 user=lee
+2026-11-25 09:00:06,475 INFO  [api] request_id=5ae6e90052a3 method=GET path=/health status=200 duration_ms=40 user=han
+2026-11-25 09:00:08,220 INFO  [api] request_id=277bdef11357 method=GET path=/v1/users/me status=200 duration_ms=69 user=jung
+2026-11-25 09:00:09,337 INFO  [api] request_id=d7761a1100ff method=GET path=/v1/orders status=200 duration_ms=78 user=lee
+2026-11-25 09:00:10,301 INFO  [api] request_id=968bba316ec5 method=GET path=/health status=200 duration_ms=34 user=han
+2026-11-25 09:00:12,349 INFO  [api] request_id=cdffdea03b30 method=GET path=/health status=200 duration_ms=52 user=kim
+2026-11-25 09:00:14,146 INFO  [api] request_id=d5c8b574f8a1 method=GET path=/v1/search status=200 duration_ms=88 user=seo
+2026-11-25 09:00:16,053 INFO  [api] request_id=cae6a0ae0348 method=GET path=/v1/users/me status=200 duration_ms=69 user=jung
+2026-11-25 09:00:17,756 INFO  [api] request_id=409fba12ba68 method=GET path=/v1/search status=200 duration_ms=71 user=park
+2026-11-25 09:00:19,504 INFO  [api] request_id=c43ff6c2477a method=GET path=/v1/orders status=200 duration_ms=32 user=lee
+2026-11-25 09:00:19,507 INFO  [api] request_id=f839deb628ab db=orders rows=28 duration_ms=6
+2026-11-25 09:00:21,497 INFO  [api] request_id=21a607b18096 method=GET path=/v1/orders status=200 duration_ms=64 user=yoon
+2026-11-25 09:00:22,722 INFO  [api] request_id=b3a21b3d6ae5 method=GET path=/v1/orders status=200 duration_ms=38 user=seo
+2026-11-25 09:00:22,724 INFO  [api] request_id=1cbb51d5f818 db=orders rows=19 duration_ms=6
+2026-11-25 09:00:24,601 INFO  [api] request_id=75fce97dbf30 method=GET path=/v1/orders/1042 status=200 duration_ms=41 user=han
+2026-11-25 09:00:24,607 INFO  [api] request_id=f9f980bc9f5e db=orders rows=9 duration_ms=12
+2026-11-25 09:00:25,552 INFO  [api] request_id=c5ba562d8cce method=GET path=/v1/cart status=200 duration_ms=54 user=yoon
+2026-11-25 09:00:26,948 INFO  [api] request_id=931b819769e1 method=GET path=/v1/users/me status=200 duration_ms=55 user=park
+2026-11-25 09:00:26,953 INFO  [api] request_id=967deb111298 db=orders rows=10 duration_ms=19
+2026-11-25 09:00:28,669 INFO  [api] request_id=8569fcb6cc20 method=GET path=/v1/search status=200 duration_ms=54 user=han
+2026-11-25 09:00:29,756 INFO  [api] request_id=7c4044d10165 method=GET path=/v1/cart status=200 duration_ms=49 user=seo
+2026-11-25 09:00:31,644 INFO  [api] request_id=435db50d2fd0 method=GET path=/v1/search status=200 duration_ms=60 user=lee
+2026-11-25 09:00:33,115 INFO  [api] request_id=18eb8b660840 method=GET path=/v1/users/me status=200 duration_ms=89 user=seo
+2026-11-25 09:00:35,089 INFO  [api] request_id=1c6ffa9b58bf method=GET path=/v1/search status=200 duration_ms=10 user=park
+2026-11-25 09:00:36,501 INFO  [api] request_id=812d6d83bf81 method=GET path=/v1/cart status=200 duration_ms=36 user=choi
+2026-11-25 09:00:36,502 INFO  [api] request_id=ed1557f32afa db=orders rows=37 duration_ms=21
+2026-11-25 09:00:37,705 INFO  [api] request_id=312c8310ce84 method=GET path=/health status=200 duration_ms=41 user=park
+2026-11-25 09:00:39,338 INFO  [api] request_id=7d20d2f96e36 method=GET path=/health status=200 duration_ms=61 user=han
+2026-11-25 09:00:40,783 INFO  [api] request_id=375d924fc39b method=GET path=/v1/cart status=200 duration_ms=26 user=park
+2026-11-25 09:00:42,284 INFO  [api] request_id=d414d68a4468 method=GET path=/v1/users/me status=200 duration_ms=57 user=seo
+2026-11-25 09:00:43,427 INFO  [api] request_id=64ee38ac14b0 method=GET path=/health status=200 duration_ms=20 user=kim
+2026-11-25 09:00:44,692 INFO  [api] request_id=72e58f748ed0 method=GET path=/v1/orders status=200 duration_ms=78 user=choi
+2026-11-25 09:00:45,730 INFO  [api] request_id=bc8ba730d52a method=GET path=/v1/orders/1042 status=200 duration_ms=32 user=lee
+2026-11-25 09:00:47,573 INFO  [api] request_id=1f28147624a2 method=GET path=/v1/cart status=200 duration_ms=66 user=han
+2026-11-25 09:00:48,567 INFO  [api] request_id=fbfe235dcfb6 method=GET path=/health status=200 duration_ms=45 user=lee
+2026-11-25 09:00:50,353 INFO  [api] request_id=29afb0d915b6 method=GET path=/health status=200 duration_ms=17 user=choi
+2026-11-25 09:00:51,878 INFO  [api] request_id=ca058e8a676c method=GET path=/v1/search status=200 duration_ms=56 user=park
+2026-11-25 09:00:53,830 INFO  [api] request_id=0538ca926e4a method=GET path=/v1/search status=304 duration_ms=37 user=park
+2026-11-25 09:00:53,834 INFO  [api] request_id=0df8b1c34121 db=orders rows=25 duration_ms=12
+2026-11-25 09:00:55,174 INFO  [api] request_id=b9c75aecf4bc method=GET path=/v1/search status=200 duration_ms=33 user=han
+2026-11-25 09:00:56,377 INFO  [api] request_id=7d2622815000 method=GET path=/v1/orders/1042 status=200 duration_ms=76 user=yoon
+2026-11-25 09:00:58,443 INFO  [api] request_id=d21d20d71d36 method=GET path=/v1/orders/1042 status=200 duration_ms=27 user=park
+2026-11-25 09:01:00,217 INFO  [api] request_id=188ef491f8bf method=GET path=/v1/orders/1042 status=200 duration_ms=25 user=lee
+2026-11-25 09:01:02,035 INFO  [api] request_id=3823247bb833 method=GET path=/v1/users/me status=200 duration_ms=75 user=jung
+2026-11-25 09:01:03,187 INFO  [api] request_id=df40853ae7ab method=GET path=/health status=200 duration_ms=23 user=jung
+2026-11-25 09:01:04,385 INFO  [api] request_id=b01fa288e17a method=GET path=/health status=200 duration_ms=33 user=yoon
+2026-11-25 09:01:06,179 INFO  [api] request_id=3044b94af98c method=GET path=/health status=200 duration_ms=78 user=lee
+2026-11-25 09:01:06,180 INFO  [api] request_id=e3686bf8ec87 db=orders rows=36 duration_ms=8
+2026-11-25 09:01:08,132 INFO  [api] request_id=a715ec107d2a method=GET path=/v1/orders/1042 status=200 duration_ms=38 user=seo
+2026-11-25 09:01:09,940 INFO  [api] request_id=36ce2fa0777b method=GET path=/v1/orders status=200 duration_ms=73 user=park
+2026-11-25 09:01:11,797 INFO  [api] request_id=d1883163f149 method=GET path=/v1/cart status=200 duration_ms=35 user=han
+2026-11-25 09:01:11,798 INFO  [api] request_id=53d35b04a8c3 db=orders rows=16 duration_ms=16
+2026-11-25 09:01:12,969 INFO  [api] request_id=2496f627df4b method=GET path=/v1/cart status=200 duration_ms=67 user=yoon
+2026-11-25 09:01:14,504 INFO  [api] request_id=98d5b6f05870 method=GET path=/v1/search status=304 duration_ms=71 user=choi
+2026-11-25 09:01:15,968 INFO  [api] request_id=5f0efd562b7d method=GET path=/v1/orders/1042 status=200 duration_ms=82 user=jung
+2026-11-25 09:01:17,195 INFO  [api] request_id=180bc30c7722 method=GET path=/v1/orders status=200 duration_ms=76 user=jung
+2026-11-25 09:01:18,581 INFO  [api] request_id=79e43837406c method=GET path=/v1/cart status=200 duration_ms=84 user=yoon
+2026-11-25 09:01:19,532 INFO  [api] request_id=113b7d16a34f method=GET path=/health status=200 duration_ms=84 user=han
+2026-11-25 09:01:20,569 INFO  [api] request_id=5a420a415115 method=GET path=/v1/users/me status=200 duration_ms=83 user=choi
+2026-11-25 09:01:22,292 INFO  [api] request_id=0ae5dfd3b610 method=GET path=/v1/cart status=200 duration_ms=9 user=yoon
+2026-11-25 09:01:23,220 INFO  [api] request_id=ddb10939f58d method=GET path=/v1/orders/1042 status=200 duration_ms=66 user=lee
+2026-11-25 09:01:24,460 INFO  [api] request_id=4137fcb62296 method=GET path=/health status=200 duration_ms=78 user=kim
+2026-11-25 09:01:25,371 INFO  [api] request_id=a96b0d5fb5a6 method=GET path=/v1/cart status=200 duration_ms=81 user=yoon
+2026-11-25 09:01:25,372 INFO  [api] request_id=945b8e1021d7 db=orders rows=24 duration_ms=13
+2026-11-25 09:01:26,553 INFO  [api] request_id=48a3188f4836 method=GET path=/v1/search status=200 duration_ms=77 user=park
+2026-11-25 09:01:27,686 INFO  [api] request_id=719050ed0f38 method=GET path=/v1/orders/1042 status=200 duration_ms=45 user=choi
+2026-11-25 09:01:29,522 INFO  [api] request_id=440eda978ac3 method=GET path=/v1/search status=200 duration_ms=43 user=seo
+2026-11-25 09:01:31,457 INFO  [api] request_id=ecc2c8a3bb9a method=GET path=/v1/orders status=200 duration_ms=79 user=park
+2026-11-25 09:01:32,772 INFO  [api] request_id=0bd0ed0dd9b1 method=GET path=/health status=200 duration_ms=25 user=choi
+2026-11-25 09:01:34,654 INFO  [api] request_id=ac019adfc754 method=GET path=/v1/orders/1042 status=200 duration_ms=70 user=lee
+2026-11-25 09:01:36,387 INFO  [api] request_id=82f462ad8a96 method=GET path=/v1/cart status=200 duration_ms=35 user=han
+2026-11-25 09:01:36,388 INFO  [api] request_id=fce276da0af2 db=orders rows=10 duration_ms=23
+2026-11-25 09:01:37,922 INFO  [api] request_id=49825d47858b method=GET path=/v1/orders status=200 duration_ms=38 user=jung
+2026-11-25 09:01:39,152 INFO  [api] request_id=c9fd48780fa8 method=GET path=/health status=200 duration_ms=10 user=kim
+2026-11-25 09:01:40,990 INFO  [api] request_id=9b7f5d57e3fd method=GET path=/v1/orders/1042 status=200 duration_ms=42 user=seo
+2026-11-25 09:01:42,977 INFO  [api] request_id=8562a13922a0 method=GET path=/health status=200 duration_ms=18 user=kim
+2026-11-25 09:01:42,979 INFO  [api] request_id=d059c1fee203 db=orders rows=36 duration_ms=4
+2026-11-25 09:01:44,628 INFO  [api] request_id=743f7836019b method=GET path=/v1/orders status=200 duration_ms=76 user=choi
+2026-11-25 09:01:46,664 INFO  [api] request_id=953744c0a0c2 method=GET path=/health status=200 duration_ms=27 user=han
+2026-11-25 09:01:48,718 INFO  [api] request_id=c93621f29659 method=GET path=/health status=200 duration_ms=25 user=lee
+2026-11-25 09:01:49,755 INFO  [api] request_id=baa9ae4ea8c1 method=GET path=/v1/cart status=200 duration_ms=82 user=yoon
+2026-11-25 09:01:51,494 INFO  [api] request_id=ba2a12af0c6f method=GET path=/v1/users/me status=200 duration_ms=65 user=lee
+2026-11-25 09:01:53,425 INFO  [api] request_id=624c7f5f8e54 method=GET path=/health status=200 duration_ms=18 user=han
+2026-11-25 09:01:54,534 INFO  [api] request_id=43966532cae1 method=GET path=/v1/orders status=200 duration_ms=19 user=yoon
+2026-11-25 09:01:56,195 INFO  [api] request_id=692c40614543 method=GET path=/v1/orders/1042 status=200 duration_ms=27 user=lee
+2026-11-25 09:01:57,327 INFO  [api] request_id=5312e38ed92e method=GET path=/v1/orders/1042 status=200 duration_ms=47 user=kim
+2026-11-25 09:01:58,748 INFO  [api] request_id=3efba9955305 method=GET path=/v1/orders status=200 duration_ms=9 user=han
+2026-11-25 09:02:00,073 INFO  [api] request_id=c4759110c502 method=GET path=/v1/orders status=200 duration_ms=74 user=lee
+2026-11-25 09:02:01,740 INFO  [api] request_id=2be45d09ff4e method=GET path=/v1/orders/1042 status=200 duration_ms=52 user=kim
+2026-11-25 09:02:02,725 INFO  [api] request_id=210453883e57 method=GET path=/v1/orders/1042 status=200 duration_ms=18 user=park
+2026-11-25 09:02:03,943 INFO  [api] request_id=1908894e0ddd method=GET path=/v1/users/me status=200 duration_ms=41 user=park
+2026-11-25 09:02:05,750 INFO  [api] request_id=49b8918e06a6 method=GET path=/v1/cart status=200 duration_ms=27 user=kim
+2026-11-25 09:02:05,755 INFO  [api] request_id=a24742321039 db=orders rows=31 duration_ms=2
+2026-11-25 09:02:07,749 INFO  [api] request_id=a525c70ff888 method=GET path=/health status=200 duration_ms=11 user=lee
+2026-11-25 09:02:08,856 INFO  [api] request_id=006feccfa524 method=GET path=/v1/users/me status=200 duration_ms=63 user=han
+2026-11-25 09:02:10,358 INFO  [api] request_id=7ae49408f462 method=GET path=/v1/cart status=200 duration_ms=25 user=choi
+2026-11-25 09:02:11,939 INFO  [api] request_id=f9eb9fd1ffa5 method=GET path=/v1/users/me status=200 duration_ms=32 user=park
+2026-11-25 09:02:13,670 INFO  [api] request_id=ba77190905da method=GET path=/v1/orders/1042 status=200 duration_ms=74 user=kim
+2026-11-25 09:02:15,014 INFO  [api] request_id=2d8cb29fc3a0 method=GET path=/v1/cart status=200 duration_ms=38 user=park
+2026-11-25 09:02:15,019 INFO  [api] request_id=a2ccef6f160c db=orders rows=25 duration_ms=18
+2026-11-25 09:02:16,665 INFO  [api] request_id=92afea15cb1f method=GET path=/v1/orders/1042 status=200 duration_ms=53 user=jung
+2026-11-25 09:02:17,992 INFO  [api] request_id=50776d18f18a method=GET path=/v1/users/me status=200 duration_ms=64 user=lee
+2026-11-25 09:02:19,768 INFO  [api] request_id=280e8bf02b06 method=GET path=/health status=200 duration_ms=60 user=park
+2026-11-25 09:02:21,157 INFO  [api] request_id=be41fa4a6722 method=GET path=/v1/search status=200 duration_ms=79 user=jung
+2026-11-25 09:02:22,429 INFO  [api] request_id=56ca339f7407 method=GET path=/v1/orders status=200 duration_ms=59 user=seo
+2026-11-25 09:02:24,087 INFO  [api] request_id=c8865578b8e0 method=GET path=/v1/cart status=200 duration_ms=17 user=yoon
+2026-11-25 09:02:26,153 INFO  [api] request_id=48b9d786d102 method=GET path=/v1/orders/1042 status=200 duration_ms=57 user=yoon
+2026-11-25 09:02:27,843 INFO  [api] request_id=fe7fa4bf5afc method=GET path=/v1/cart status=200 duration_ms=61 user=kim
+2026-11-25 09:02:29,895 INFO  [api] request_id=3354ccd0bd45 method=GET path=/v1/orders status=200 duration_ms=39 user=park
+2026-11-25 09:02:31,971 INFO  [api] request_id=7ae039087430 method=GET path=/v1/cart status=200 duration_ms=50 user=han
+2026-11-25 09:02:33,288 INFO  [api] request_id=540abf77f294 method=GET path=/v1/users/me status=200 duration_ms=31 user=lee
+2026-11-25 09:02:35,301 INFO  [api] request_id=d32e8cb24600 method=GET path=/health status=200 duration_ms=63 user=park
+2026-11-25 09:02:35,307 INFO  [api] request_id=87f6ad1fc67a db=orders rows=34 duration_ms=19
+2026-11-25 09:02:36,212 INFO  [api] request_id=c6f77fbc094e method=GET path=/v1/cart status=200 duration_ms=71 user=jung
+2026-11-25 09:02:37,357 INFO  [api] request_id=1b39370e9764 method=GET path=/v1/orders/1042 status=200 duration_ms=35 user=park
+2026-11-25 09:02:37,359 INFO  [api] request_id=ed282df9c6c0 db=orders rows=2 duration_ms=23
+2026-11-25 09:02:38,314 INFO  [api] request_id=771f0e015a79 method=GET path=/v1/orders/1042 status=200 duration_ms=58 user=park
+2026-11-25 09:02:39,478 INFO  [api] request_id=576db2943ef8 method=GET path=/health status=200 duration_ms=66 user=lee
+2026-11-25 09:02:41,332 INFO  [api] request_id=427a2944cb7d method=GET path=/health status=200 duration_ms=82 user=park
+2026-11-25 09:02:43,314 INFO  [api] request_id=65111093a10c method=GET path=/v1/orders status=200 duration_ms=10 user=kim
+2026-11-25 09:02:44,970 INFO  [api] request_id=c40f36dabb65 method=GET path=/v1/orders/1042 status=200 duration_ms=24 user=park
+2026-11-25 09:02:46,139 INFO  [api] request_id=21fb9402d527 method=GET path=/v1/users/me status=200 duration_ms=49 user=kim
+2026-11-25 09:02:47,393 INFO  [api] request_id=9b88e84a6337 method=GET path=/v1/search status=200 duration_ms=73 user=choi
+2026-11-25 09:02:48,504 INFO  [api] request_id=e8457474679a method=GET path=/v1/search status=200 duration_ms=58 user=lee
+2026-11-25 09:02:48,508 INFO  [api] request_id=6fc8718d6b07 db=orders rows=33 duration_ms=16
+2026-11-25 09:02:49,691 INFO  [api] request_id=82d3f1b132bc method=GET path=/v1/users/me status=200 duration_ms=20 user=seo
+2026-11-25 09:02:49,694 INFO  [api] request_id=cd81a5b6fcc0 db=orders rows=22 duration_ms=22
+2026-11-25 09:02:51,189 INFO  [api] request_id=ff62b7e7320f method=GET path=/v1/orders/1042 status=200 duration_ms=35 user=kim
+2026-11-25 09:02:52,685 INFO  [api] request_id=b6acbf9bb0bb method=GET path=/v1/orders/1042 status=200 duration_ms=58 user=han
+2026-11-25 09:02:53,680 INFO  [api] request_id=2defa1b8543f method=GET path=/v1/cart status=200 duration_ms=53 user=lee
+2026-11-25 09:02:54,700 INFO  [api] request_id=e8e154a7b5ef method=GET path=/v1/cart status=200 duration_ms=51 user=park
+2026-11-25 09:02:54,701 INFO  [api] request_id=e8011867d074 db=orders rows=36 duration_ms=12
+2026-11-25 09:02:56,005 INFO  [api] request_id=284cfb01c5cf method=GET path=/v1/orders/1042 status=200 duration_ms=57 user=han
+2026-11-25 09:02:57,425 INFO  [api] request_id=f943ae54b118 method=GET path=/v1/search status=200 duration_ms=24 user=choi
+2026-11-25 09:02:58,529 INFO  [api] request_id=8d87d7e43b0c method=GET path=/v1/search status=200 duration_ms=40 user=park
+2026-11-25 09:03:00,439 INFO  [api] request_id=0bb3249fe054 method=GET path=/v1/orders/1042 status=200 duration_ms=70 user=seo
+2026-11-25 09:03:01,754 INFO  [api] request_id=cbbf545c1b8e method=GET path=/v1/users/me status=200 duration_ms=70 user=han
+2026-11-25 09:03:01,756 INFO  [api] request_id=b762d996eeed db=orders rows=16 duration_ms=19
+2026-11-25 09:03:03,467 INFO  [api] request_id=3a0bb43fb2fa method=GET path=/v1/users/me status=200 duration_ms=73 user=yoon
+2026-11-25 09:03:05,557 INFO  [api] request_id=b39ee5b75d7c method=GET path=/v1/orders/1042 status=200 duration_ms=79 user=yoon
+2026-11-25 09:03:05,560 INFO  [api] request_id=70340bd9cfb8 db=orders rows=25 duration_ms=9
+2026-11-25 09:03:07,279 INFO  [api] request_id=150e7b93894b method=GET path=/v1/orders status=200 duration_ms=65 user=jung
+2026-11-25 09:03:08,211 INFO  [api] request_id=7000322445a8 method=GET path=/health status=200 duration_ms=64 user=jung
+2026-11-25 09:03:10,199 INFO  [api] request_id=43eecbe0d259 method=GET path=/v1/search status=200 duration_ms=8 user=jung
+2026-11-25 09:03:11,433 INFO  [api] request_id=88a06400960d method=GET path=/v1/cart status=200 duration_ms=30 user=lee
+2026-11-25 09:03:12,800 INFO  [api] request_id=3756e305d251 method=GET path=/v1/search status=200 duration_ms=67 user=lee
+2026-11-25 09:03:12,804 INFO  [api] request_id=f88cd33c39fe db=orders rows=18 duration_ms=21
+2026-11-25 09:03:14,585 INFO  [api] request_id=515a18a0974f method=GET path=/v1/orders/1042 status=200 duration_ms=22 user=kim
+2026-11-25 09:03:15,499 INFO  [api] request_id=d4cbbf46abda method=GET path=/health status=200 duration_ms=87 user=choi
+2026-11-25 09:03:15,502 INFO  [api] request_id=b9dbf6f9ebd9 db=orders rows=27 duration_ms=5
+2026-11-25 09:03:16,747 INFO  [api] request_id=e70911f6cffd method=GET path=/v1/orders status=200 duration_ms=80 user=han
+2026-11-25 09:03:18,400 INFO  [api] request_id=ee36ce2399c9 method=GET path=/v1/cart status=200 duration_ms=76 user=han
+2026-11-25 09:03:18,401 INFO  [api] request_id=f0deaaf87924 db=orders rows=20 duration_ms=21
+2026-11-25 09:03:20,478 INFO  [api] request_id=6604bbae7158 method=GET path=/v1/orders/1042 status=200 duration_ms=32 user=han
+2026-11-25 09:03:21,829 INFO  [api] request_id=d5797870dd47 method=GET path=/health status=200 duration_ms=68 user=park
+2026-11-25 09:03:21,832 INFO  [api] request_id=6903158ad842 db=orders rows=26 duration_ms=24
+2026-11-25 09:03:22,865 INFO  [api] request_id=93d6b667d0be method=GET path=/v1/orders status=200 duration_ms=18 user=kim
+2026-11-25 09:03:24,681 INFO  [api] request_id=d9207b83f4c9 method=GET path=/v1/orders/1042 status=200 duration_ms=18 user=han
+2026-11-25 09:03:25,723 INFO  [api] request_id=e330fc3d32eb method=GET path=/v1/orders status=200 duration_ms=83 user=seo
+2026-11-25 09:03:26,664 INFO  [api] request_id=417a4a42415b method=GET path=/v1/search status=304 duration_ms=62 user=han
+2026-11-25 09:03:28,026 INFO  [api] request_id=0bc52e818cf0 method=GET path=/v1/orders/1042 status=200 duration_ms=58 user=jung
+2026-11-25 09:03:28,962 INFO  [api] request_id=1278a5a5fe78 method=GET path=/v1/users/me status=200 duration_ms=24 user=lee
+2026-11-25 09:03:30,775 INFO  [api] request_id=038da9258784 method=GET path=/v1/users/me status=200 duration_ms=31 user=lee
+2026-11-25 09:03:31,870 INFO  [api] request_id=07ab8d5d60d7 method=GET path=/v1/users/me status=200 duration_ms=8 user=park
+2026-11-25 09:03:32,801 INFO  [api] request_id=ea01dc37f18d method=GET path=/v1/orders/1042 status=200 duration_ms=28 user=jung
+2026-11-25 09:03:34,437 INFO  [api] request_id=7b7036c85de9 method=GET path=/v1/users/me status=200 duration_ms=56 user=kim
+2026-11-25 09:03:35,926 INFO  [api] request_id=a1e129938dc1 method=GET path=/v1/cart status=200 duration_ms=62 user=seo
+2026-11-25 09:03:35,928 INFO  [api] request_id=921099f5ee0c db=orders rows=21 duration_ms=19
+2026-11-25 09:03:37,131 INFO  [api] request_id=91c37bdcc522 method=GET path=/v1/users/me status=200 duration_ms=24 user=kim
+2026-11-25 09:03:38,804 INFO  [api] request_id=5a3f456000ba method=GET path=/v1/cart status=200 duration_ms=8 user=jung
+2026-11-25 09:03:40,504 INFO  [api] request_id=4322dbc8ad7b method=GET path=/v1/orders status=200 duration_ms=15 user=choi
+2026-11-25 09:03:40,507 INFO  [api] request_id=f7f8f7d5a8b0 db=orders rows=28 duration_ms=6
+2026-11-25 09:03:41,760 INFO  [api] request_id=e75a9d1e6bb2 method=GET path=/v1/orders/1042 status=200 duration_ms=65 user=seo
+2026-11-25 09:03:42,666 INFO  [api] request_id=9012cfea20a2 method=GET path=/v1/orders/1042 status=200 duration_ms=18 user=han
+2026-11-25 09:03:42,667 INFO  [api] request_id=84590a2da22e db=orders rows=4 duration_ms=9
+2026-11-25 09:03:44,535 INFO  [api] request_id=59e640165760 method=GET path=/v1/orders/1042 status=200 duration_ms=46 user=seo
+2026-11-25 09:03:46,565 INFO  [api] request_id=f0b053aa67e0 method=GET path=/v1/orders status=200 duration_ms=85 user=lee
+2026-11-25 09:03:48,045 INFO  [api] request_id=b88da5959e18 method=GET path=/v1/cart status=200 duration_ms=36 user=seo
+2026-11-25 09:03:50,121 INFO  [api] request_id=0767dfc407ae method=GET path=/v1/cart status=200 duration_ms=71 user=yoon
+2026-11-25 09:03:52,039 INFO  [api] request_id=0b5f69993b0a method=GET path=/v1/cart status=200 duration_ms=27 user=choi
+2026-11-25 09:03:53,609 INFO  [api] request_id=072df75aa091 method=GET path=/health status=200 duration_ms=68 user=park
+2026-11-25 09:03:53,611 INFO  [api] request_id=8eeb3d0a0962 db=orders rows=26 duration_ms=7
+2026-11-25 09:03:54,731 INFO  [api] request_id=e00e1d4b43a9 method=GET path=/v1/orders status=200 duration_ms=26 user=yoon
+2026-11-25 09:03:54,733 INFO  [api] request_id=12b28f521e2c db=orders rows=13 duration_ms=21
+2026-11-25 09:03:56,222 INFO  [api] request_id=ed8fc28e13d3 method=GET path=/v1/users/me status=200 duration_ms=80 user=yoon
+2026-11-25 09:03:58,038 INFO  [api] request_id=2e9a43881051 method=GET path=/v1/orders status=200 duration_ms=19 user=choi
+2026-11-25 09:03:59,657 INFO  [api] request_id=4616d01e1fea method=GET path=/health status=200 duration_ms=15 user=seo
+2026-11-25 09:04:00,872 INFO  [api] request_id=a635e4c84146 method=GET path=/health status=200 duration_ms=51 user=seo
+2026-11-25 09:04:00,878 INFO  [api] request_id=2a1734dd21ce db=orders rows=30 duration_ms=6
+2026-11-25 09:04:02,431 INFO  [api] request_id=7a55de27e5e2 method=GET path=/health status=200 duration_ms=64 user=seo
+2026-11-25 09:04:04,415 INFO  [api] request_id=ed408ff4aa3c method=GET path=/v1/users/me status=200 duration_ms=55 user=choi
+2026-11-25 09:04:06,078 INFO  [api] request_id=6356e22a2520 method=GET path=/v1/users/me status=200 duration_ms=71 user=lee
+2026-11-25 09:04:07,738 INFO  [api] request_id=4cd8f6bbcd9e method=GET path=/v1/users/me status=200 duration_ms=73 user=yoon
+2026-11-25 09:04:08,993 INFO  [api] request_id=4d3fce19ca28 method=GET path=/v1/search status=200 duration_ms=90 user=han
+2026-11-25 09:04:10,963 INFO  [api] request_id=1a0097529e0b method=GET path=/v1/orders/1042 status=200 duration_ms=26 user=lee
+2026-11-25 09:04:12,660 INFO  [api] request_id=0e523ca0c469 method=GET path=/v1/search status=200 duration_ms=10 user=park
+2026-11-25 09:04:14,286 INFO  [api] request_id=1c2f55408e4f method=GET path=/v1/users/me status=200 duration_ms=72 user=yoon
+2026-11-25 09:04:14,287 INFO  [api] request_id=16b2826715e0 db=orders rows=1 duration_ms=17
+2026-11-25 09:04:15,566 INFO  [api] request_id=b91d4170707a method=GET path=/health status=200 duration_ms=45 user=seo
+2026-11-25 09:04:16,976 INFO  [api] request_id=8e4b35338f63 method=GET path=/v1/orders status=200 duration_ms=69 user=seo
+2026-11-25 09:04:18,069 INFO  [api] request_id=31361ad0f11c method=GET path=/v1/orders/1042 status=200 duration_ms=71 user=seo
+2026-11-25 09:04:19,998 INFO  [api] request_id=d27f5f68ae29 method=GET path=/v1/search status=304 duration_ms=26 user=jung
+2026-11-25 09:04:21,133 INFO  [api] request_id=1d00aacf7ab7 method=GET path=/v1/orders status=200 duration_ms=34 user=kim
+2026-11-25 09:04:22,384 INFO  [api] request_id=4a6225725922 method=GET path=/v1/search status=200 duration_ms=55 user=yoon
+2026-11-25 09:04:23,575 INFO  [api] request_id=82dfb2d6596d method=GET path=/health status=200 duration_ms=88 user=seo
+2026-11-25 09:04:25,363 INFO  [api] request_id=98023748993a method=GET path=/v1/orders status=200 duration_ms=81 user=lee
+2026-11-25 09:04:26,857 INFO  [api] request_id=be72a3bc8943 method=GET path=/v1/orders status=200 duration_ms=71 user=choi
+2026-11-25 09:04:26,861 INFO  [api] request_id=9034cdba9927 db=orders rows=36 duration_ms=24
+2026-11-25 09:04:28,733 INFO  [api] request_id=c0b34b6f857f method=GET path=/v1/cart status=200 duration_ms=46 user=kim
+2026-11-25 09:04:28,734 INFO  [api] request_id=38e8c3582e89 db=orders rows=33 duration_ms=15
+2026-11-25 09:04:30,219 INFO  [api] request_id=8d1512aec04d method=GET path=/v1/users/me status=200 duration_ms=8 user=park
+2026-11-25 09:04:31,994 INFO  [api] request_id=b3ef2cc2151a method=GET path=/v1/orders/1042 status=200 duration_ms=11 user=lee
+2026-11-25 09:04:33,938 INFO  [api] request_id=bfcfb04d7a50 method=GET path=/health status=200 duration_ms=82 user=jung
+2026-11-25 09:04:35,881 INFO  [api] request_id=a7250dc86fc5 method=GET path=/v1/orders status=200 duration_ms=16 user=kim
+2026-11-25 09:04:35,886 INFO  [api] request_id=af22ea2e4401 db=orders rows=30 duration_ms=10
+2026-11-25 09:04:36,987 INFO  [api] request_id=3899ebf7ba67 method=GET path=/v1/orders status=200 duration_ms=36 user=choi
+2026-11-25 09:04:38,427 INFO  [api] request_id=5b26f5acbc2e method=GET path=/v1/users/me status=200 duration_ms=31 user=choi
+2026-11-25 09:04:38,429 INFO  [api] request_id=f7ee85c057ec db=orders rows=32 duration_ms=7
+2026-11-25 09:04:39,390 INFO  [api] request_id=cb209c056f0e method=GET path=/v1/orders status=200 duration_ms=72 user=yoon
+2026-11-25 09:04:40,325 INFO  [api] request_id=f2264bafd24f method=GET path=/v1/users/me status=200 duration_ms=9 user=choi
+2026-11-25 09:04:41,416 INFO  [api] request_id=490b5c6dbf8d method=GET path=/v1/search status=200 duration_ms=34 user=park
+2026-11-25 09:04:42,878 INFO  [api] request_id=39422b107ecc method=GET path=/health status=200 duration_ms=38 user=park
+2026-11-25 09:04:44,832 INFO  [api] request_id=1abc59d3d0c1 method=GET path=/v1/orders status=200 duration_ms=49 user=seo
+2026-11-25 09:04:46,704 INFO  [api] request_id=d90667566887 method=GET path=/v1/orders/1042 status=200 duration_ms=28 user=seo
+2026-11-25 09:04:48,764 INFO  [api] request_id=0ebead0641ba method=GET path=/v1/search status=200 duration_ms=84 user=choi
+2026-11-25 09:04:48,769 INFO  [api] request_id=590e9c905ddf db=orders rows=31 duration_ms=18
+2026-11-25 09:04:50,529 INFO  [api] request_id=5aef5bca3536 method=GET path=/v1/orders/1042 status=200 duration_ms=29 user=han
+2026-11-25 09:04:52,252 INFO  [api] request_id=7e52fc82f784 method=GET path=/v1/orders status=200 duration_ms=11 user=choi
+2026-11-25 09:04:53,915 INFO  [api] request_id=6f40f7a126ad method=GET path=/v1/users/me status=200 duration_ms=32 user=jung
+2026-11-25 09:04:56,002 INFO  [api] request_id=2c97b8a29785 method=GET path=/v1/orders/1042 status=200 duration_ms=56 user=choi
+2026-11-25 09:04:57,539 INFO  [api] request_id=ed64e5dc8c33 method=GET path=/v1/orders/1042 status=200 duration_ms=13 user=kim
+2026-11-25 09:04:59,412 INFO  [api] request_id=1ca89e6f94a7 method=GET path=/v1/users/me status=200 duration_ms=67 user=seo
+2026-11-25 09:05:00,873 INFO  [api] request_id=bc8f85758994 method=GET path=/health status=200 duration_ms=28 user=choi
+2026-11-25 09:05:01,915 INFO  [api] request_id=45cdbc8a04c1 method=GET path=/v1/orders/1042 status=200 duration_ms=89 user=han
+2026-11-25 09:05:03,468 INFO  [api] request_id=07badd10513e method=GET path=/v1/users/me status=200 duration_ms=63 user=han
+2026-11-25 09:05:04,583 INFO  [api] request_id=8dc801d40a08 method=GET path=/v1/users/me status=200 duration_ms=16 user=choi
+2026-11-25 09:05:04,588 INFO  [api] request_id=e02335eed967 db=orders rows=8 duration_ms=5
+2026-11-25 09:05:06,615 INFO  [api] request_id=2028dd63414e method=GET path=/v1/cart status=200 duration_ms=36 user=seo
+2026-11-25 09:05:07,546 INFO  [api] request_id=1a8c002ef3f3 method=GET path=/v1/orders status=200 duration_ms=76 user=lee
+2026-11-25 09:05:08,652 INFO  [api] request_id=00aa5bd83594 method=GET path=/v1/users/me status=200 duration_ms=54 user=jung
+2026-11-25 09:05:09,571 INFO  [api] request_id=922f5cb8767e method=GET path=/v1/cart status=200 duration_ms=87 user=han
+2026-11-25 09:05:11,446 INFO  [api] request_id=f0ba087aa154 method=GET path=/v1/orders status=200 duration_ms=43 user=yoon
+2026-11-25 09:05:13,485 INFO  [api] request_id=bc5713ffeb8a method=GET path=/v1/search status=200 duration_ms=67 user=yoon
+2026-11-25 09:05:15,264 INFO  [api] request_id=d23b05e077ef method=GET path=/v1/orders status=200 duration_ms=78 user=lee
+2026-11-25 09:05:16,742 INFO  [api] request_id=422f81c6d54a method=GET path=/v1/users/me status=200 duration_ms=49 user=jung
+2026-11-25 09:05:17,648 INFO  [api] request_id=3adc1b1d9a96 method=GET path=/health status=200 duration_ms=28 user=park
+2026-11-25 09:05:19,033 INFO  [api] request_id=253ff7f25183 method=GET path=/health status=200 duration_ms=82 user=choi
+2026-11-25 09:05:20,558 INFO  [api] request_id=37c7a7102d9b method=GET path=/v1/orders status=200 duration_ms=76 user=han
+2026-11-25 09:05:21,825 INFO  [api] request_id=3f0994358bf7 method=GET path=/v1/cart status=200 duration_ms=82 user=choi
+2026-11-25 09:05:23,734 INFO  [api] request_id=78bf1a4b7ea8 method=GET path=/v1/orders/1042 status=200 duration_ms=85 user=choi
+2026-11-25 09:05:25,551 INFO  [api] request_id=db609018900c method=GET path=/v1/users/me status=200 duration_ms=65 user=choi
+2026-11-25 09:05:25,557 INFO  [api] request_id=3bccc665c983 db=orders rows=1 duration_ms=20
+2026-11-25 09:05:26,638 INFO  [api] request_id=b09ab6a8c0a8 method=GET path=/v1/users/me status=200 duration_ms=58 user=jung
+2026-11-25 09:05:26,639 INFO  [api] request_id=0aa800d8f55e db=orders rows=24 duration_ms=21
+2026-11-25 09:05:28,424 INFO  [api] request_id=6fedac0cd683 method=GET path=/v1/users/me status=200 duration_ms=32 user=lee
+2026-11-25 09:05:28,426 INFO  [api] request_id=6c42b463df31 db=orders rows=8 duration_ms=13
+2026-11-25 09:05:30,040 INFO  [api] request_id=75d0a5e942b6 method=GET path=/v1/users/me status=200 duration_ms=46 user=han
+2026-11-25 09:05:31,419 INFO  [api] request_id=fe87eb48b5dd method=GET path=/v1/orders/1042 status=200 duration_ms=24 user=yoon
+2026-11-25 09:05:32,709 INFO  [api] request_id=2a41c3b9a208 method=GET path=/v1/orders/1042 status=200 duration_ms=40 user=jung
+2026-11-25 09:05:34,112 INFO  [api] request_id=c44ce9e48b76 method=GET path=/v1/orders status=200 duration_ms=36 user=park
+2026-11-25 09:05:35,265 INFO  [api] request_id=2fb79f531732 method=GET path=/v1/cart status=200 duration_ms=90 user=han
+2026-11-25 09:05:36,961 INFO  [api] request_id=1ed3618b2df2 method=GET path=/v1/cart status=200 duration_ms=87 user=kim
+2026-11-25 09:05:36,963 INFO  [api] request_id=886c9184a045 db=orders rows=32 duration_ms=14
+2026-11-25 09:05:38,057 INFO  [api] request_id=d840ec8cfdb8 method=GET path=/v1/users/me status=200 duration_ms=81 user=kim
+2026-11-25 09:05:39,409 INFO  [api] request_id=207a408cdbcb method=GET path=/v1/cart status=200 duration_ms=77 user=han
+2026-11-25 09:05:40,553 INFO  [api] request_id=df19d26532b2 method=GET path=/v1/search status=304 duration_ms=23 user=lee
+2026-11-25 09:05:42,631 INFO  [api] request_id=e70695290268 method=GET path=/v1/users/me status=200 duration_ms=78 user=yoon
+2026-11-25 09:05:43,965 INFO  [api] request_id=1cf564349d85 method=GET path=/v1/cart status=200 duration_ms=57 user=park
+2026-11-25 09:05:45,632 INFO  [api] request_id=dbcdb469d2f2 method=GET path=/v1/orders status=200 duration_ms=75 user=han
+2026-11-25 09:05:46,864 INFO  [api] request_id=54f49d91e909 method=GET path=/health status=200 duration_ms=46 user=kim
+2026-11-25 09:05:48,921 INFO  [api] request_id=8ccdab54beec method=GET path=/health status=200 duration_ms=15 user=han
+2026-11-25 09:05:50,299 INFO  [api] request_id=b20f3d0feece method=GET path=/v1/orders status=200 duration_ms=22 user=jung
+2026-11-25 09:05:51,317 INFO  [api] request_id=6c234af8843b method=GET path=/v1/orders/1042 status=200 duration_ms=86 user=kim
+2026-11-25 09:05:52,299 INFO  [api] request_id=a54673bc25ef method=GET path=/v1/orders status=200 duration_ms=15 user=yoon
+2026-11-25 09:05:52,300 INFO  [api] request_id=d1e984a62b5a db=orders rows=35 duration_ms=18
+2026-11-25 09:05:53,808 INFO  [api] request_id=3a1284e883f3 method=GET path=/health status=200 duration_ms=34 user=han
+2026-11-25 09:05:54,780 INFO  [api] request_id=f3e0303202f8 method=GET path=/health status=200 duration_ms=49 user=lee
+2026-11-25 09:05:56,247 INFO  [api] request_id=fbc54619a808 method=GET path=/health status=200 duration_ms=45 user=seo
+2026-11-25 09:05:57,510 INFO  [api] request_id=0a56e8859e04 method=GET path=/v1/search status=200 duration_ms=51 user=han
+2026-11-25 09:05:58,852 INFO  [api] request_id=4becee0e3b3d method=GET path=/v1/users/me status=200 duration_ms=50 user=han
+2026-11-25 09:06:00,233 INFO  [api] request_id=618b3fb415d9 method=GET path=/v1/cart status=200 duration_ms=57 user=kim
+2026-11-25 09:06:01,548 INFO  [api] request_id=3afe100f87e0 method=GET path=/v1/search status=200 duration_ms=28 user=park
+2026-11-25 09:06:03,048 INFO  [api] request_id=833fc4aef2c7 method=GET path=/v1/orders status=200 duration_ms=25 user=yoon
+2026-11-25 09:06:04,452 INFO  [api] request_id=1f469047d668 method=GET path=/v1/search status=304 duration_ms=18 user=kim
+2026-11-25 09:06:04,458 INFO  [api] request_id=b1dae8877459 db=orders rows=15 duration_ms=17
+2026-11-25 09:06:05,633 INFO  [api] request_id=f7e3c20ca598 method=GET path=/v1/search status=200 duration_ms=35 user=yoon
+2026-11-25 09:06:07,527 INFO  [api] request_id=c284ae555a2b method=GET path=/v1/search status=200 duration_ms=84 user=lee
+2026-11-25 09:06:09,004 INFO  [api] request_id=a52de8670171 method=GET path=/v1/search status=200 duration_ms=13 user=yoon
+2026-11-25 09:06:10,772 INFO  [api] request_id=76ea19fa6df8 method=GET path=/v1/orders status=200 duration_ms=56 user=yoon
+2026-11-25 09:06:12,075 INFO  [api] request_id=47ede973f0b2 method=GET path=/v1/search status=200 duration_ms=64 user=park
+2026-11-25 09:06:13,880 INFO  [api] request_id=b7415c60bd59 method=GET path=/v1/orders/1042 status=200 duration_ms=28 user=park
+2026-11-25 09:06:14,953 INFO  [api] request_id=9b5c5a6fce15 method=GET path=/v1/orders status=200 duration_ms=45 user=jung
+2026-11-25 09:06:16,567 INFO  [api] request_id=661103cdaecb method=GET path=/v1/search status=304 duration_ms=50 user=seo
+2026-11-25 09:06:17,660 INFO  [api] request_id=bc615f2d4f79 method=GET path=/v1/search status=200 duration_ms=49 user=yoon
+2026-11-25 09:06:17,665 INFO  [api] request_id=4026e7971ba9 db=orders rows=31 duration_ms=3
+2026-11-25 09:06:18,881 INFO  [api] request_id=d823915aa12e method=GET path=/v1/cart status=200 duration_ms=53 user=yoon
+2026-11-25 09:06:20,674 INFO  [api] request_id=65c1dd10f23c method=GET path=/health status=200 duration_ms=19 user=lee
+2026-11-25 09:06:22,043 INFO  [api] request_id=30824d3dbcfd method=GET path=/v1/users/me status=200 duration_ms=42 user=choi
+2026-11-25 09:06:23,427 INFO  [api] request_id=d63cda6b5131 method=GET path=/v1/cart status=200 duration_ms=53 user=yoon
+2026-11-25 09:06:24,370 INFO  [api] request_id=d2dd05d382e5 method=GET path=/v1/orders/1042 status=200 duration_ms=86 user=han
+2026-11-25 09:06:25,493 INFO  [api] request_id=2064454a0ca3 method=GET path=/v1/search status=200 duration_ms=24 user=yoon
+2026-11-25 09:06:25,496 INFO  [api] request_id=6720fdd26335 db=orders rows=31 duration_ms=4
+2026-11-25 09:06:27,459 INFO  [api] request_id=a1d3516d19b8 method=GET path=/health status=200 duration_ms=90 user=seo
+2026-11-25 09:06:28,992 INFO  [api] request_id=d66a3dd0960d method=GET path=/health status=200 duration_ms=15 user=seo
+2026-11-25 09:06:30,218 INFO  [api] request_id=8f21a49d918e method=GET path=/v1/cart status=200 duration_ms=27 user=choi
+2026-11-25 09:06:32,150 INFO  [api] request_id=67310a8e088d method=GET path=/health status=200 duration_ms=37 user=park
+2026-11-25 09:06:33,365 INFO  [api] request_id=ceffade41680 method=GET path=/v1/search status=200 duration_ms=46 user=seo
+2026-11-25 09:06:35,383 INFO  [api] request_id=a21109a8c4a7 method=GET path=/health status=200 duration_ms=47 user=seo
+2026-11-25 09:06:36,316 INFO  [api] request_id=5032ff769211 method=GET path=/v1/orders status=200 duration_ms=47 user=han
+2026-11-25 09:06:37,799 INFO  [api] request_id=cd3d8d29cbba method=GET path=/v1/orders status=200 duration_ms=62 user=jung
+2026-11-25 09:06:37,800 INFO  [api] request_id=9c18e551420b db=orders rows=10 duration_ms=15
+2026-11-25 09:06:39,167 INFO  [api] request_id=3a870d4dfd5a method=GET path=/v1/search status=200 duration_ms=65 user=lee
+2026-11-25 09:06:40,253 INFO  [api] request_id=4df562d6d9ea method=GET path=/v1/search status=304 duration_ms=62 user=jung
+2026-11-25 09:06:41,210 INFO  [api] request_id=a486d8a7d302 method=GET path=/health status=200 duration_ms=78 user=jung
+2026-11-25 09:06:43,200 INFO  [api] request_id=2a57d557f5a5 method=GET path=/v1/users/me status=200 duration_ms=9 user=jung
+2026-11-25 09:06:43,206 INFO  [api] request_id=9649a5a840f6 db=orders rows=38 duration_ms=12
+2026-11-25 09:06:44,536 INFO  [api] request_id=2ca02bf8124c method=GET path=/v1/cart status=200 duration_ms=69 user=choi
+2026-11-25 09:06:46,241 INFO  [api] request_id=8f15ce19abfe method=GET path=/health status=200 duration_ms=84 user=choi
+2026-11-25 09:06:47,336 INFO  [api] request_id=8f0c9a3b5510 method=GET path=/health status=200 duration_ms=18 user=lee
+2026-11-25 09:06:47,337 INFO  [api] request_id=3b9684f50924 db=orders rows=22 duration_ms=21
+2026-11-25 09:06:48,708 INFO  [api] request_id=89ebffb0fe8a method=GET path=/v1/users/me status=200 duration_ms=75 user=jung
+2026-11-25 09:06:50,082 INFO  [api] request_id=3e91da65dbc9 method=GET path=/v1/cart status=200 duration_ms=41 user=kim
+2026-11-25 09:06:51,039 INFO  [api] request_id=40ef329179d6 method=GET path=/v1/orders status=200 duration_ms=36 user=seo
+2026-11-25 09:06:52,417 INFO  [api] request_id=5e4263ad3fc8 method=GET path=/v1/users/me status=200 duration_ms=79 user=yoon
+2026-11-25 09:06:53,737 INFO  [api] request_id=a1becf553695 method=GET path=/v1/orders status=200 duration_ms=46 user=jung
+2026-11-25 09:06:55,825 INFO  [api] request_id=54334c8cf71e method=GET path=/health status=200 duration_ms=29 user=lee
+2026-11-25 09:06:57,165 INFO  [api] request_id=d46ba8b6b950 method=GET path=/v1/cart status=200 duration_ms=64 user=kim
+2026-11-25 09:06:59,011 INFO  [api] request_id=77e5e8c0165b method=GET path=/v1/search status=200 duration_ms=56 user=yoon
+2026-11-25 09:07:00,513 INFO  [api] request_id=710dfcd0e135 method=GET path=/health status=200 duration_ms=11 user=choi
+2026-11-25 09:07:02,460 INFO  [api] request_id=5c4da1c6632d method=GET path=/v1/orders/1042 status=200 duration_ms=25 user=yoon
+2026-11-25 09:07:03,784 INFO  [api] request_id=74507d218673 method=GET path=/v1/search status=200 duration_ms=26 user=seo
+2026-11-25 09:07:05,445 INFO  [api] request_id=3b229fa6bed2 method=GET path=/v1/users/me status=200 duration_ms=72 user=han
+2026-11-25 09:07:05,451 INFO  [api] request_id=75730ee5eaf8 db=orders rows=17 duration_ms=23
+2026-11-25 09:07:06,459 INFO  [api] request_id=0657c5e0d218 method=GET path=/v1/search status=304 duration_ms=78 user=choi
+2026-11-25 09:07:07,654 INFO  [api] request_id=2c320538cb08 method=GET path=/v1/cart status=200 duration_ms=65 user=kim
+2026-11-25 09:07:08,565 INFO  [api] request_id=c6cd1f969736 method=GET path=/v1/users/me status=200 duration_ms=19 user=jung
+2026-11-25 09:07:10,485 INFO  [api] request_id=0caaa2c2803a method=GET path=/v1/orders/1042 status=200 duration_ms=79 user=lee
+2026-11-25 09:07:10,488 INFO  [api] request_id=aac7ffd49d93 db=orders rows=11 duration_ms=19
+2026-11-25 09:07:12,192 INFO  [api] request_id=69fa6d6cd92a method=GET path=/v1/orders status=200 duration_ms=43 user=lee
+2026-11-25 09:07:13,574 INFO  [api] request_id=97ec4798b602 method=GET path=/v1/orders status=200 duration_ms=86 user=jung
+2026-11-25 09:07:15,332 INFO  [api] request_id=0e241c7e4f00 method=GET path=/v1/search status=304 duration_ms=79 user=han
+2026-11-25 09:07:17,249 INFO  [api] request_id=e0c0ea704270 method=GET path=/health status=200 duration_ms=31 user=han
+2026-11-25 09:07:18,965 INFO  [api] request_id=3b368ad9a0e1 method=GET path=/v1/orders status=200 duration_ms=66 user=jung
+2026-11-25 09:07:20,564 INFO  [api] request_id=a2369d43c38e method=GET path=/v1/orders status=200 duration_ms=12 user=han
+2026-11-25 09:07:21,739 INFO  [api] request_id=f986ca82d9b9 method=GET path=/v1/orders/1042 status=200 duration_ms=18 user=kim
+2026-11-25 09:07:23,153 INFO  [api] request_id=d8a3bb4da3f3 method=GET path=/v1/search status=200 duration_ms=13 user=kim
+2026-11-25 09:07:24,152 INFO  [api] request_id=a79d3cf5cd8f method=GET path=/health status=200 duration_ms=67 user=seo
+2026-11-25 09:07:24,158 INFO  [api] request_id=4991de2f23e5 db=orders rows=10 duration_ms=22
+2026-11-25 09:07:25,843 INFO  [api] request_id=d1a404bfa4a2 method=GET path=/health status=200 duration_ms=74 user=park
+2026-11-25 09:07:25,847 INFO  [api] request_id=ea1814a81503 db=orders rows=9 duration_ms=8
+2026-11-25 09:07:27,011 INFO  [api] request_id=8ad7dda2eb5a method=GET path=/v1/users/me status=200 duration_ms=61 user=jung
+2026-11-25 09:07:28,109 INFO  [api] request_id=fc0600a14c50 method=GET path=/v1/cart status=200 duration_ms=64 user=lee
+2026-11-25 09:07:29,041 INFO  [api] request_id=31fd303339cc method=GET path=/v1/search status=200 duration_ms=77 user=jung
+2026-11-25 09:07:29,990 INFO  [api] request_id=a405b45a03eb method=GET path=/v1/cart status=200 duration_ms=20 user=jung
+2026-11-25 09:07:29,994 INFO  [api] request_id=0ad30025e7ef db=orders rows=36 duration_ms=10
+2026-11-25 09:07:31,546 INFO  [api] request_id=72de5078f9b3 method=GET path=/v1/users/me status=200 duration_ms=30 user=han
+2026-11-25 09:07:33,335 INFO  [api] request_id=b91e466ded09 method=GET path=/v1/orders/1042 status=200 duration_ms=15 user=kim
+2026-11-25 09:07:34,998 INFO  [api] request_id=d06c23df0d3f method=GET path=/v1/users/me status=200 duration_ms=24 user=lee
+2026-11-25 09:07:34,999 INFO  [api] request_id=6fa973ef3a83 db=orders rows=31 duration_ms=19
+2026-11-25 09:07:36,783 INFO  [api] request_id=1086b3d92eec method=GET path=/v1/cart status=200 duration_ms=16 user=park
+2026-11-25 09:07:38,304 INFO  [api] request_id=d09e5a2e9e2c method=GET path=/health status=200 duration_ms=54 user=jung
+2026-11-25 09:07:39,832 INFO  [api] request_id=a0ceec48b44b method=GET path=/v1/cart status=200 duration_ms=43 user=han
+2026-11-25 09:07:41,470 INFO  [api] request_id=503e8c5a9ee5 method=GET path=/v1/orders/1042 status=200 duration_ms=39 user=kim
+2026-11-25 09:07:42,536 INFO  [api] request_id=be4bd804ad8f method=GET path=/v1/cart status=200 duration_ms=43 user=choi
+2026-11-25 09:07:43,449 INFO  [api] request_id=9e6b348d4a91 method=GET path=/v1/cart status=200 duration_ms=34 user=kim
+2026-11-25 09:07:45,293 INFO  [api] request_id=d4592a865a51 method=GET path=/v1/users/me status=200 duration_ms=36 user=kim
+2026-11-25 09:07:46,853 INFO  [api] request_id=7929ffe575e9 method=GET path=/v1/orders/1042 status=200 duration_ms=83 user=kim
+2026-11-25 09:07:48,087 INFO  [api] request_id=3476313088bf method=GET path=/v1/users/me status=200 duration_ms=44 user=park
+2026-11-25 09:07:49,559 INFO  [api] request_id=e7c16b79249d method=GET path=/health status=200 duration_ms=63 user=lee
+2026-11-25 09:07:51,565 INFO  [api] request_id=abeaaa0db9fd method=GET path=/v1/search status=200 duration_ms=50 user=seo
+2026-11-25 09:07:51,570 INFO  [api] request_id=c30eeaf2d553 db=orders rows=16 duration_ms=19
+2026-11-25 09:07:53,138 INFO  [api] request_id=59aff9d56bff method=GET path=/v1/orders status=200 duration_ms=90 user=park
+2026-11-25 09:07:55,079 INFO  [api] request_id=3375399e2723 method=GET path=/v1/users/me status=200 duration_ms=49 user=kim
+2026-11-25 09:07:56,096 INFO  [api] request_id=56e0f8ecc32d method=GET path=/v1/orders status=200 duration_ms=51 user=kim
+2026-11-25 09:07:57,909 INFO  [api] request_id=d2ebacbdb8c1 method=GET path=/v1/search status=200 duration_ms=59 user=yoon
+2026-11-25 09:07:57,911 INFO  [api] request_id=1165bc154588 db=orders rows=23 duration_ms=15
+2026-11-25 09:07:59,820 INFO  [api] request_id=c359c35ded05 method=GET path=/health status=200 duration_ms=52 user=lee
+2026-11-25 09:08:01,111 INFO  [api] request_id=0c017cd907a7 method=GET path=/v1/users/me status=200 duration_ms=48 user=kim
+2026-11-25 09:08:02,659 INFO  [api] request_id=4042055d3efe method=GET path=/v1/orders/1042 status=200 duration_ms=27 user=yoon
+2026-11-25 09:08:02,662 INFO  [api] request_id=5d91d4f2c064 db=orders rows=2 duration_ms=5
+2026-11-25 09:08:04,529 INFO  [api] request_id=6cffb47ddb6c method=GET path=/v1/search status=200 duration_ms=68 user=choi
+2026-11-25 09:08:06,163 INFO  [api] request_id=e15dff7ecb7a method=GET path=/v1/users/me status=200 duration_ms=37 user=han
+2026-11-25 09:08:07,989 INFO  [api] request_id=d8f726b3578d method=GET path=/v1/orders/1042 status=200 duration_ms=11 user=kim
+2026-11-25 09:08:09,567 INFO  [api] request_id=ca86e57acb2b method=GET path=/v1/users/me status=200 duration_ms=80 user=kim
+2026-11-25 09:08:09,567 ERROR [api] ConnectionResetError: connection reset by peer client=203.0.113.77 request_id=a2991573bf68 path=/v1/orders
+Traceback (most recent call last):
+  File "/srv/app/handlers/orders.py", line 142, in create
+    return gateway.forward(request)
+  File "/srv/app/gateway.py", line 88, in forward
+    raise ConnectionResetError("connection reset by peer")
+ConnectionResetError: connection reset by peer
+2026-11-25 09:08:14,231 INFO  [api] request_id=ca9807573a86 method=GET path=/v1/orders status=200 duration_ms=59 user=yoon
+2026-11-25 09:08:15,625 INFO  [api] request_id=77a9b86e4b9e method=GET path=/v1/orders status=200 duration_ms=56 user=jung
+2026-11-25 09:08:17,030 INFO  [api] request_id=232f59838ebb method=GET path=/health status=200 duration_ms=29 user=lee
+2026-11-25 09:08:18,417 INFO  [api] request_id=ead9d5a5336d method=GET path=/health status=200 duration_ms=74 user=jung
+2026-11-25 09:08:19,538 INFO  [api] request_id=f2c8a03b2ced method=GET path=/v1/users/me status=200 duration_ms=35 user=yoon
+2026-11-25 09:08:20,763 INFO  [api] request_id=a09b6a0e1074 method=GET path=/v1/users/me status=200 duration_ms=75 user=choi
+2026-11-25 09:08:21,894 INFO  [api] request_id=14a6ba667c20 method=GET path=/health status=200 duration_ms=9 user=jung
+2026-11-25 09:08:23,527 INFO  [api] request_id=a64372c65419 method=GET path=/v1/search status=200 duration_ms=73 user=yoon
+2026-11-25 09:08:23,533 INFO  [api] request_id=7535a95ab2aa db=orders rows=30 duration_ms=22
+2026-11-25 09:08:25,346 INFO  [api] request_id=9b77af5d4ca6 method=GET path=/v1/search status=200 duration_ms=45 user=jung
+2026-11-25 09:08:26,597 INFO  [api] request_id=c18976243c5f method=GET path=/v1/users/me status=200 duration_ms=21 user=han
+2026-11-25 09:08:27,910 INFO  [api] request_id=88cb836fbcd0 method=GET path=/v1/orders/1042 status=200 duration_ms=29 user=seo
+2026-11-25 09:08:27,916 INFO  [api] request_id=c9622cf71eae db=orders rows=23 duration_ms=20
+2026-11-25 09:08:29,009 INFO  [api] request_id=62f79dff9cc4 method=GET path=/v1/search status=200 duration_ms=29 user=han
+2026-11-25 09:08:29,012 INFO  [api] request_id=522ac69b1e04 db=orders rows=4 duration_ms=11
+2026-11-25 09:08:30,742 INFO  [api] request_id=a67578ae1bd8 method=GET path=/health status=200 duration_ms=33 user=lee
+2026-11-25 09:08:30,747 INFO  [api] request_id=e149c7728c14 db=orders rows=6 duration_ms=8
+2026-11-25 09:08:31,977 INFO  [api] request_id=57a9bed83ff7 method=GET path=/v1/search status=304 duration_ms=60 user=choi
+2026-11-25 09:08:33,493 INFO  [api] request_id=5bc9c1118c19 method=GET path=/v1/cart status=200 duration_ms=59 user=seo
+2026-11-25 09:08:35,030 INFO  [api] request_id=62e70194514c method=GET path=/v1/search status=200 duration_ms=76 user=lee
+2026-11-25 09:08:36,655 INFO  [api] request_id=80f34d42feab method=GET path=/v1/orders status=200 duration_ms=66 user=yoon
+2026-11-25 09:08:38,032 INFO  [api] request_id=9bd2a906547b method=GET path=/v1/users/me status=200 duration_ms=19 user=seo
+2026-11-25 09:08:38,034 INFO  [api] request_id=c0ed182785b9 db=orders rows=5 duration_ms=23
+2026-11-25 09:08:39,143 INFO  [api] request_id=659c78457404 method=GET path=/v1/users/me status=200 duration_ms=20 user=kim
+2026-11-25 09:08:40,783 INFO  [api] request_id=59ff24b31aec method=GET path=/v1/users/me status=200 duration_ms=58 user=choi
+2026-11-25 09:08:42,577 INFO  [api] request_id=4022cae4e6ea method=GET path=/v1/search status=304 duration_ms=63 user=jung
+2026-11-25 09:08:44,361 INFO  [api] request_id=966e391a273e method=GET path=/v1/cart status=200 duration_ms=55 user=kim
+2026-11-25 09:08:45,871 INFO  [api] request_id=1a3c21fa46d3 method=GET path=/v1/users/me status=200 duration_ms=15 user=han
+2026-11-25 09:08:47,452 INFO  [api] request_id=8f0680082f01 method=GET path=/v1/cart status=200 duration_ms=89 user=yoon
+2026-11-25 09:08:49,545 INFO  [api] request_id=03b870248854 method=GET path=/v1/users/me status=200 duration_ms=12 user=park
+2026-11-25 09:08:50,494 INFO  [api] request_id=5e681a78a024 method=GET path=/v1/users/me status=200 duration_ms=45 user=park
+2026-11-25 09:08:50,498 INFO  [api] request_id=b2516ffa5667 db=orders rows=11 duration_ms=11
+2026-11-25 09:08:51,924 INFO  [api] request_id=7311c5c11cc5 method=GET path=/v1/users/me status=200 duration_ms=84 user=kim
+2026-11-25 09:08:53,844 INFO  [api] request_id=0e395f29d4ba method=GET path=/v1/orders status=200 duration_ms=11 user=kim
+2026-11-25 09:08:55,935 INFO  [api] request_id=5072c2f985d3 method=GET path=/v1/cart status=200 duration_ms=25 user=lee
+2026-11-25 09:08:57,953 INFO  [api] request_id=24ba033e9ee5 method=GET path=/v1/orders/1042 status=200 duration_ms=36 user=kim
+2026-11-25 09:08:57,956 INFO  [api] request_id=cbe7ae87e442 db=orders rows=22 duration_ms=13
+2026-11-25 09:08:59,896 INFO  [api] request_id=8d4ce5a77bb8 method=GET path=/v1/search status=200 duration_ms=73 user=han
+2026-11-25 09:08:59,899 INFO  [api] request_id=cece0ff7dcab db=orders rows=29 duration_ms=5
+2026-11-25 09:09:01,736 INFO  [api] request_id=b7e6117a2906 method=GET path=/v1/search status=304 duration_ms=54 user=kim
+2026-11-25 09:09:02,867 INFO  [api] request_id=7086153e3d6f method=GET path=/v1/users/me status=200 duration_ms=80 user=yoon
+2026-11-25 09:09:04,399 INFO  [api] request_id=bbff928e4184 method=GET path=/v1/orders/1042 status=200 duration_ms=12 user=choi
+2026-11-25 09:09:05,382 INFO  [api] request_id=eadce16446a4 method=GET path=/v1/orders/1042 status=200 duration_ms=81 user=jung
+2026-11-25 09:09:07,047 INFO  [api] request_id=b23cafa81d21 method=GET path=/v1/users/me status=200 duration_ms=32 user=han
+2026-11-25 09:09:08,344 INFO  [api] request_id=2fe1204c1b40 method=GET path=/v1/cart status=200 duration_ms=57 user=lee
+2026-11-25 09:09:10,026 INFO  [api] request_id=f9ee0d87871f method=GET path=/v1/users/me status=200 duration_ms=86 user=seo
+2026-11-25 09:09:11,312 INFO  [api] request_id=5a3bd9ce85dc method=GET path=/v1/orders status=200 duration_ms=59 user=lee
+2026-11-25 09:09:12,734 INFO  [api] request_id=b0aa7660c639 method=GET path=/v1/cart status=200 duration_ms=82 user=han
+2026-11-25 09:09:14,144 INFO  [api] request_id=04237b0c14cd method=GET path=/v1/cart status=200 duration_ms=37 user=yoon
+2026-11-25 09:09:16,076 INFO  [api] request_id=b2c73f91c2a3 method=GET path=/v1/orders/1042 status=200 duration_ms=81 user=yoon
+2026-11-25 09:09:16,077 INFO  [api] request_id=c07599e8c39c db=orders rows=32 duration_ms=7
+2026-11-25 09:09:17,126 INFO  [api] request_id=ac2aee20f3a4 method=GET path=/v1/search status=304 duration_ms=89 user=park
+2026-11-25 09:09:18,721 INFO  [api] request_id=1ac1bc4e5696 method=GET path=/v1/orders status=200 duration_ms=78 user=yoon
+2026-11-25 09:09:20,248 INFO  [api] request_id=bc697ab905ad method=GET path=/health status=200 duration_ms=88 user=park
+2026-11-25 09:09:21,765 INFO  [api] request_id=29dbd50aa40a method=GET path=/v1/cart status=200 duration_ms=57 user=yoon
+2026-11-25 09:09:23,509 INFO  [api] request_id=404d609983c3 method=GET path=/v1/users/me status=200 duration_ms=49 user=kim
+2026-11-25 09:09:24,920 INFO  [api] request_id=56427cbc7087 method=GET path=/v1/orders/1042 status=200 duration_ms=39 user=lee
+2026-11-25 09:09:24,926 INFO  [api] request_id=21ec1383e53f db=orders rows=31 duration_ms=16
+2026-11-25 09:09:26,457 INFO  [api] request_id=b1c24aa1c694 method=GET path=/health status=200 duration_ms=85 user=lee
+2026-11-25 09:09:26,462 INFO  [api] request_id=ab82140860ff db=orders rows=3 duration_ms=18
+2026-11-25 09:09:28,488 INFO  [api] request_id=6ae1cc9e4a5b method=GET path=/v1/orders status=200 duration_ms=87 user=yoon
+2026-11-25 09:09:30,073 INFO  [api] request_id=0a227ab93744 method=GET path=/health status=200 duration_ms=35 user=seo
+2026-11-25 09:09:31,420 INFO  [api] request_id=66680aaa0b94 method=GET path=/v1/users/me status=200 duration_ms=18 user=lee
+2026-11-25 09:09:33,230 INFO  [api] request_id=34b5a37c80ab method=GET path=/v1/orders/1042 status=200 duration_ms=36 user=jung
+2026-11-25 09:09:33,232 INFO  [api] request_id=c317484ea08b db=orders rows=5 duration_ms=20
+2026-11-25 09:09:35,088 INFO  [api] request_id=cfd2ad72119e method=GET path=/v1/orders/1042 status=200 duration_ms=49 user=kim
+2026-11-25 09:09:36,431 INFO  [api] request_id=e309071a9b84 method=GET path=/v1/orders status=200 duration_ms=77 user=park
+2026-11-25 09:09:38,474 INFO  [api] request_id=28007615bba0 method=GET path=/v1/cart status=200 duration_ms=26 user=yoon
+2026-11-25 09:09:39,659 INFO  [api] request_id=806ec5efae5c method=GET path=/v1/users/me status=200 duration_ms=39 user=jung
+2026-11-25 09:09:41,082 INFO  [api] request_id=a3222aaf6b0c method=GET path=/health status=200 duration_ms=60 user=park
+2026-11-25 09:09:43,009 INFO  [api] request_id=4061859117c9 method=GET path=/v1/users/me status=200 duration_ms=24 user=lee
+2026-11-25 09:09:44,970 INFO  [api] request_id=22f21e360a28 method=GET path=/v1/users/me status=200 duration_ms=28 user=jung
+2026-11-25 09:09:45,976 INFO  [api] request_id=7349f6d5bbf8 method=GET path=/v1/orders/1042 status=200 duration_ms=34 user=jung
+2026-11-25 09:09:47,943 INFO  [api] request_id=69987ad891ec method=GET path=/v1/users/me status=200 duration_ms=86 user=yoon
+2026-11-25 09:09:49,549 INFO  [api] request_id=5ba7a718ec1a method=GET path=/health status=200 duration_ms=25 user=han
+2026-11-25 09:09:51,130 INFO  [api] request_id=de1a3dd375df method=GET path=/health status=200 duration_ms=69 user=kim
+2026-11-25 09:09:52,660 INFO  [api] request_id=81ceb6889671 method=GET path=/v1/orders status=200 duration_ms=48 user=park
+2026-11-25 09:09:52,661 INFO  [api] request_id=325bb477a563 db=orders rows=38 duration_ms=2
+2026-11-25 09:09:53,709 INFO  [api] request_id=62b8b8a16755 method=GET path=/v1/users/me status=200 duration_ms=11 user=choi
+2026-11-25 09:09:53,715 INFO  [api] request_id=f0a4efcb04b2 db=orders rows=17 duration_ms=15
+2026-11-25 09:09:54,880 INFO  [api] request_id=6880305ea82d method=GET path=/v1/cart status=200 duration_ms=83 user=choi
+2026-11-25 09:09:56,727 INFO  [api] request_id=fc5936804f80 method=GET path=/v1/cart status=200 duration_ms=25 user=jung
+2026-11-25 09:09:56,728 INFO  [api] request_id=674f952e3a8f db=orders rows=15 duration_ms=17
+2026-11-25 09:09:58,315 INFO  [api] request_id=32bdb582070c method=GET path=/v1/cart status=200 duration_ms=58 user=han
+2026-11-25 09:09:59,406 INFO  [api] request_id=3d9f5bd28705 method=GET path=/v1/cart status=200 duration_ms=15 user=choi
+2026-11-25 09:10:01,448 INFO  [api] request_id=15f74277f789 method=GET path=/health status=200 duration_ms=29 user=lee
+2026-11-25 09:10:02,409 INFO  [api] request_id=fff70c734b90 method=GET path=/health status=200 duration_ms=10 user=han
+2026-11-25 09:10:03,349 INFO  [api] request_id=4a870f8692fe method=GET path=/v1/orders/1042 status=200 duration_ms=15 user=park
+2026-11-25 09:10:05,202 INFO  [api] request_id=31024e0b0b7c method=GET path=/v1/cart status=200 duration_ms=72 user=yoon
+2026-11-25 09:10:06,925 INFO  [api] request_id=8cd4fa384f31 method=GET path=/v1/search status=200 duration_ms=37 user=seo
+2026-11-25 09:10:08,335 INFO  [api] request_id=104e761dadcf method=GET path=/health status=200 duration_ms=26 user=jung
+2026-11-25 09:10:09,792 INFO  [api] request_id=c04018995c49 method=GET path=/v1/orders status=200 duration_ms=86 user=lee
+2026-11-25 09:10:11,433 INFO  [api] request_id=8b16229defcc method=GET path=/v1/users/me status=200 duration_ms=75 user=choi
+2026-11-25 09:10:11,437 INFO  [api] request_id=f06bf1678b37 db=orders rows=14 duration_ms=13
+2026-11-25 09:10:12,444 INFO  [api] request_id=46ade762f1af method=GET path=/v1/cart status=200 duration_ms=48 user=choi
+2026-11-25 09:10:13,664 INFO  [api] request_id=22542c99fc87 method=GET path=/v1/cart status=200 duration_ms=74 user=lee
+2026-11-25 09:10:15,120 INFO  [api] request_id=d3af8081a38d method=GET path=/v1/orders/1042 status=200 duration_ms=82 user=seo
+2026-11-25 09:10:16,741 INFO  [api] request_id=01a43ccb1fae method=GET path=/v1/cart status=200 duration_ms=20 user=park
+2026-11-25 09:10:17,964 INFO  [api] request_id=abc76d1bf5a5 method=GET path=/v1/search status=304 duration_ms=20 user=yoon
+2026-11-25 09:10:19,903 INFO  [api] request_id=1ffa14347ea9 method=GET path=/v1/cart status=200 duration_ms=36 user=park
+2026-11-25 09:10:21,801 INFO  [api] request_id=82d30a85adb5 method=GET path=/v1/orders/1042 status=200 duration_ms=74 user=seo
+2026-11-25 09:10:22,711 INFO  [api] request_id=c335de556089 method=GET path=/v1/orders status=200 duration_ms=11 user=han
+2026-11-25 09:10:22,712 INFO  [api] request_id=e7ddc0fe4985 db=orders rows=24 duration_ms=7
+2026-11-25 09:10:23,795 INFO  [api] request_id=7dfbfb0433fa method=GET path=/v1/cart status=200 duration_ms=33 user=jung
+2026-11-25 09:10:25,491 INFO  [api] request_id=ae1d0469bdea method=GET path=/v1/cart status=200 duration_ms=53 user=park
+2026-11-25 09:10:27,498 INFO  [api] request_id=5a80623c7c17 method=GET path=/v1/search status=304 duration_ms=12 user=choi
+2026-11-25 09:10:28,461 INFO  [api] request_id=b4ab6220b936 method=GET path=/v1/orders/1042 status=200 duration_ms=10 user=park
+2026-11-25 09:10:29,785 INFO  [api] request_id=b93e1526514b method=GET path=/v1/cart status=200 duration_ms=25 user=park
+2026-11-25 09:10:31,010 INFO  [api] request_id=60db10899fc5 method=GET path=/v1/cart status=200 duration_ms=19 user=park
+2026-11-25 09:10:32,949 INFO  [api] request_id=140c4b7c0d39 method=GET path=/v1/users/me status=200 duration_ms=28 user=kim
+2026-11-25 09:10:34,995 INFO  [api] request_id=35ce96d2bb65 method=GET path=/v1/orders/1042 status=200 duration_ms=60 user=choi
+2026-11-25 09:10:36,580 INFO  [api] request_id=da004573eac1 method=GET path=/v1/cart status=200 duration_ms=39 user=choi
+2026-11-25 09:10:38,010 INFO  [api] request_id=ab5ef8327d4a method=GET path=/health status=200 duration_ms=88 user=seo
+2026-11-25 09:10:38,014 INFO  [api] request_id=befa377c2dfa db=orders rows=24 duration_ms=6
+2026-11-25 09:10:39,947 INFO  [api] request_id=8b7f69de6bf7 method=GET path=/v1/orders/1042 status=200 duration_ms=65 user=lee
+2026-11-25 09:10:39,952 INFO  [api] request_id=6f4093f98514 db=orders rows=20 duration_ms=23
+2026-11-25 09:10:41,818 INFO  [api] request_id=9317282ea5c8 method=GET path=/v1/users/me status=200 duration_ms=34 user=choi
+2026-11-25 09:10:43,239 INFO  [api] request_id=bc0e7ac0c2f0 method=GET path=/health status=200 duration_ms=50 user=han
+2026-11-25 09:10:45,115 INFO  [api] request_id=7cfaa1618d39 method=GET path=/v1/orders status=200 duration_ms=34 user=choi
+2026-11-25 09:10:45,121 INFO  [api] request_id=10283bd663dc db=orders rows=1 duration_ms=21
+2026-11-25 09:10:46,802 INFO  [api] request_id=cb9ffdb36239 method=GET path=/health status=200 duration_ms=58 user=park
+2026-11-25 09:10:48,015 INFO  [api] request_id=892a163831b2 method=GET path=/health status=200 duration_ms=78 user=choi
+2026-11-25 09:10:49,104 INFO  [api] request_id=1cac524d95e8 method=GET path=/v1/orders status=200 duration_ms=84 user=lee
+2026-11-25 09:10:49,109 INFO  [api] request_id=1ee7fcff8f35 db=orders rows=36 duration_ms=24
+2026-11-25 09:10:50,245 INFO  [api] request_id=5e0d0ff16cbd method=GET path=/v1/orders status=200 duration_ms=8 user=kim
+2026-11-25 09:10:52,274 INFO  [api] request_id=cafd00891057 method=GET path=/v1/users/me status=200 duration_ms=15 user=kim
+2026-11-25 09:10:54,243 INFO  [api] request_id=b5f7284608fd method=GET path=/v1/orders status=200 duration_ms=38 user=choi
+2026-11-25 09:10:55,404 INFO  [api] request_id=72218f02b24d method=GET path=/v1/orders/1042 status=200 duration_ms=63 user=kim
+2026-11-25 09:10:56,498 INFO  [api] request_id=79dee057e4b7 method=GET path=/v1/orders/1042 status=200 duration_ms=14 user=park
+2026-11-25 09:10:57,902 INFO  [api] request_id=4da3749478e9 method=GET path=/v1/search status=200 duration_ms=68 user=kim
+2026-11-25 09:10:59,278 INFO  [api] request_id=3000791050d8 method=GET path=/v1/search status=200 duration_ms=28 user=kim
+2026-11-25 09:11:00,715 INFO  [api] request_id=9345e168bfee method=GET path=/v1/orders status=200 duration_ms=72 user=choi
+2026-11-25 09:11:02,557 INFO  [api] request_id=4ec1f24a25a6 method=GET path=/v1/orders/1042 status=200 duration_ms=50 user=jung
+2026-11-25 09:11:02,558 INFO  [api] request_id=e1993a31a13c db=orders rows=23 duration_ms=12
+2026-11-25 09:11:04,507 INFO  [api] request_id=66e7ec6850cb method=GET path=/v1/cart status=200 duration_ms=38 user=lee
+2026-11-25 09:11:06,038 INFO  [api] request_id=1b3fa98f0261 method=GET path=/v1/orders status=200 duration_ms=49 user=kim
+2026-11-25 09:11:07,861 INFO  [api] request_id=1fccc3a62528 method=GET path=/v1/users/me status=200 duration_ms=71 user=kim
+2026-11-25 09:11:07,865 INFO  [api] request_id=2baa860fa36a db=orders rows=39 duration_ms=3
+2026-11-25 09:11:08,959 INFO  [api] request_id=3442b7af5804 method=GET path=/v1/cart status=200 duration_ms=34 user=jung
+2026-11-25 09:11:08,963 INFO  [api] request_id=996aa981c692 db=orders rows=1 duration_ms=16
+2026-11-25 09:11:10,610 INFO  [api] request_id=a399a58405fc method=GET path=/v1/orders/1042 status=200 duration_ms=50 user=choi
+2026-11-25 09:11:12,688 INFO  [api] request_id=7dfe42e7fc64 method=GET path=/health status=200 duration_ms=12 user=lee
+2026-11-25 09:11:12,690 INFO  [api] request_id=701747985d47 db=orders rows=8 duration_ms=15
+2026-11-25 09:11:13,944 INFO  [api] request_id=be630ff743c9 method=GET path=/v1/search status=200 duration_ms=80 user=jung
+2026-11-25 09:11:15,312 INFO  [api] request_id=07b22d5c64e7 method=GET path=/health status=200 duration_ms=59 user=lee
+2026-11-25 09:11:15,315 INFO  [api] request_id=7a97fc686984 db=orders rows=12 duration_ms=21
+2026-11-25 09:11:16,485 INFO  [api] request_id=bd2d84730427 method=GET path=/v1/users/me status=200 duration_ms=39 user=seo
+2026-11-25 09:11:18,464 INFO  [api] request_id=be956be5db50 method=GET path=/v1/orders/1042 status=200 duration_ms=89 user=han
+2026-11-25 09:11:19,465 INFO  [api] request_id=c773e8515bb4 method=GET path=/v1/orders/1042 status=200 duration_ms=60 user=seo
+2026-11-25 09:11:20,506 INFO  [api] request_id=38a69c952ae8 method=GET path=/v1/search status=200 duration_ms=9 user=park
+2026-11-25 09:11:22,453 INFO  [api] request_id=18b14dfb7ec3 method=GET path=/v1/search status=200 duration_ms=81 user=han
+2026-11-25 09:11:23,682 INFO  [api] request_id=dd9f5e388886 method=GET path=/v1/users/me status=200 duration_ms=17 user=park
+2026-11-25 09:11:25,624 INFO  [api] request_id=2d14bcae300d method=GET path=/v1/cart status=200 duration_ms=11 user=kim
+2026-11-25 09:11:27,275 INFO  [api] request_id=bbc8a6fb967c method=GET path=/v1/orders/1042 status=200 duration_ms=63 user=jung
+2026-11-25 09:11:29,033 INFO  [api] request_id=b172d5243281 method=GET path=/v1/orders status=200 duration_ms=52 user=seo
+2026-11-25 09:11:30,524 INFO  [api] request_id=fac7476ee8b4 method=GET path=/v1/orders/1042 status=200 duration_ms=40 user=park
+2026-11-25 09:11:32,133 INFO  [api] request_id=cfca5ee618f4 method=GET path=/v1/users/me status=200 duration_ms=82 user=choi
+2026-11-25 09:11:33,349 INFO  [api] request_id=a1bf8ff165f9 method=GET path=/v1/orders status=200 duration_ms=87 user=choi
+2026-11-25 09:11:35,203 INFO  [api] request_id=fe78ad1f3b6d method=GET path=/v1/search status=200 duration_ms=58 user=lee
+2026-11-25 09:11:37,066 INFO  [api] request_id=48412fe8892f method=GET path=/v1/orders/1042 status=200 duration_ms=41 user=choi
+2026-11-25 09:11:37,072 INFO  [api] request_id=3dbf98499119 db=orders rows=10 duration_ms=23
+2026-11-25 09:11:38,790 INFO  [api] request_id=1b6c51f3cebf method=GET path=/v1/cart status=200 duration_ms=24 user=yoon
+2026-11-25 09:11:40,162 INFO  [api] request_id=9f45839e8a02 method=GET path=/v1/cart status=200 duration_ms=28 user=han
+2026-11-25 09:11:42,165 INFO  [api] request_id=0024ed0b7340 method=GET path=/v1/users/me status=200 duration_ms=18 user=jung
+2026-11-25 09:11:43,995 INFO  [api] request_id=b02e09a8639b method=GET path=/v1/orders status=200 duration_ms=82 user=park
+2026-11-25 09:11:45,639 INFO  [api] request_id=dc8f002e02e1 method=GET path=/v1/cart status=200 duration_ms=71 user=lee
+2026-11-25 09:11:47,090 INFO  [api] request_id=f94935024956 method=GET path=/v1/orders status=200 duration_ms=64 user=yoon
+2026-11-25 09:11:48,638 INFO  [api] request_id=00bb952cd609 method=GET path=/v1/search status=200 duration_ms=51 user=lee
+2026-11-25 09:11:49,654 INFO  [api] request_id=2f60cf0056bc method=GET path=/v1/cart status=200 duration_ms=79 user=lee
+2026-11-25 09:11:51,645 INFO  [api] request_id=aacca8e52a45 method=GET path=/v1/cart status=200 duration_ms=11 user=han
+2026-11-25 09:11:53,094 INFO  [api] request_id=1890bbb37f23 method=GET path=/v1/search status=200 duration_ms=42 user=kim
+2026-11-25 09:11:53,095 INFO  [api] request_id=e5ef710c4bea db=orders rows=13 duration_ms=22
+2026-11-25 09:11:54,377 INFO  [api] request_id=bf2ed1a7fdb4 method=GET path=/v1/users/me status=200 duration_ms=55 user=choi
+2026-11-25 09:11:55,992 INFO  [api] request_id=23d1d6fe79f0 method=GET path=/v1/orders status=200 duration_ms=12 user=lee
+2026-11-25 09:11:57,140 INFO  [api] request_id=2bb5561975b6 method=GET path=/health status=200 duration_ms=72 user=yoon
+2026-11-25 09:11:58,767 INFO  [api] request_id=b1feb72070fb method=GET path=/health status=200 duration_ms=57 user=lee
+2026-11-25 09:11:59,670 INFO  [api] request_id=0478cdde43dd method=GET path=/v1/cart status=200 duration_ms=72 user=yoon
+2026-11-25 09:12:01,323 INFO  [api] request_id=26912c02f980 method=GET path=/health status=200 duration_ms=85 user=choi
+2026-11-25 09:12:02,490 INFO  [api] request_id=c7e6bd019221 method=GET path=/v1/search status=200 duration_ms=35 user=yoon
+2026-11-25 09:12:02,491 INFO  [api] request_id=1f505bc50c81 db=orders rows=39 duration_ms=6
+2026-11-25 09:12:04,561 INFO  [api] request_id=64ecd9b2961b method=GET path=/v1/cart status=200 duration_ms=90 user=lee
+2026-11-25 09:12:06,268 INFO  [api] request_id=634d657e1f35 method=GET path=/v1/users/me status=200 duration_ms=56 user=jung
+2026-11-25 09:12:08,165 INFO  [api] request_id=5decad8e0795 method=GET path=/v1/cart status=200 duration_ms=21 user=kim
+2026-11-25 09:12:09,647 INFO  [api] request_id=0baeed663bf9 method=GET path=/v1/orders/1042 status=200 duration_ms=75 user=lee
+2026-11-25 09:12:11,733 INFO  [api] request_id=41e224094074 method=GET path=/health status=200 duration_ms=68 user=lee
+2026-11-25 09:12:12,857 INFO  [api] request_id=bb63e57746da method=GET path=/v1/orders/1042 status=200 duration_ms=52 user=choi
+2026-11-25 09:12:14,417 INFO  [api] request_id=83b6e0e01061 method=GET path=/health status=200 duration_ms=35 user=jung
+2026-11-25 09:12:16,227 INFO  [api] request_id=4a56313dd679 method=GET path=/v1/cart status=200 duration_ms=62 user=lee
+2026-11-25 09:12:16,227 WARN  [api] slow query: 1400ms table=orders request_id=b698d1bd8bbe
+2026-11-25 09:12:19,145 INFO  [api] request_id=a21c558ef8dc method=GET path=/v1/orders/1042 status=200 duration_ms=83 user=park
+2026-11-25 09:12:19,146 INFO  [api] request_id=4043d68eb30e db=orders rows=39 duration_ms=7
+2026-11-25 09:12:20,289 INFO  [api] request_id=5567dbc2f72d method=GET path=/health status=200 duration_ms=84 user=seo
+2026-11-25 09:12:22,118 INFO  [api] request_id=3b783e85d890 method=GET path=/v1/orders/1042 status=200 duration_ms=18 user=lee
+2026-11-25 09:12:23,235 INFO  [api] request_id=7b3a68273a38 method=GET path=/v1/orders/1042 status=200 duration_ms=28 user=seo
+2026-11-25 09:12:25,066 INFO  [api] request_id=383d443c0ecc method=GET path=/v1/cart status=200 duration_ms=73 user=kim
+2026-11-25 09:12:25,067 INFO  [api] request_id=c37fd5e456d8 db=orders rows=33 duration_ms=24
+2026-11-25 09:12:26,042 INFO  [api] request_id=b651584b5de8 method=GET path=/v1/users/me status=200 duration_ms=39 user=jung
+2026-11-25 09:12:27,801 INFO  [api] request_id=4c4f9093bf29 method=GET path=/v1/orders/1042 status=200 duration_ms=55 user=han
+2026-11-25 09:12:29,108 INFO  [api] request_id=69940d4b2997 method=GET path=/v1/orders status=200 duration_ms=84 user=han
+2026-11-25 09:12:29,109 INFO  [api] request_id=a950a35ac231 db=orders rows=29 duration_ms=5
+2026-11-25 09:12:30,032 INFO  [api] request_id=24c0c50fb9cd method=GET path=/v1/orders/1042 status=200 duration_ms=23 user=han
+2026-11-25 09:12:31,260 INFO  [api] request_id=90a2ac485a74 method=GET path=/v1/search status=200 duration_ms=69 user=seo
+2026-11-25 09:12:33,352 INFO  [api] request_id=f23527cd577c method=GET path=/v1/search status=200 duration_ms=15 user=yoon
+2026-11-25 09:12:34,625 INFO  [api] request_id=cb81d796a7c9 method=GET path=/health status=200 duration_ms=74 user=choi
+2026-11-25 09:12:34,629 INFO  [api] request_id=9202e1f0d61c db=orders rows=37 duration_ms=17
+2026-11-25 09:12:35,814 INFO  [api] request_id=6645ce667345 method=GET path=/health status=200 duration_ms=29 user=lee
+2026-11-25 09:12:37,264 INFO  [api] request_id=f3c63acf282f method=GET path=/health status=200 duration_ms=59 user=jung
+2026-11-25 09:12:38,484 INFO  [api] request_id=0954e7051591 method=GET path=/v1/search status=200 duration_ms=77 user=lee
+2026-11-25 09:12:38,487 INFO  [api] request_id=2e2f7216275c db=orders rows=20 duration_ms=12
+2026-11-25 09:12:40,296 INFO  [api] request_id=dd5b8211c0e6 method=GET path=/v1/orders status=200 duration_ms=23 user=yoon
+2026-11-25 09:12:41,388 INFO  [api] request_id=4449b02c04a5 method=GET path=/v1/users/me status=200 duration_ms=77 user=jung
+2026-11-25 09:12:42,338 INFO  [api] request_id=115206084580 method=GET path=/v1/search status=304 duration_ms=27 user=choi
+2026-11-25 09:12:43,357 INFO  [api] request_id=7c146cbaff1e method=GET path=/v1/search status=200 duration_ms=15 user=han
+2026-11-25 09:12:43,361 INFO  [api] request_id=571220ddb5aa db=orders rows=10 duration_ms=9
+2026-11-25 09:12:45,218 INFO  [api] request_id=0c3769cf7ac3 method=GET path=/v1/orders/1042 status=200 duration_ms=36 user=jung
+2026-11-25 09:12:47,025 INFO  [api] request_id=7b970fa5ebcd method=GET path=/health status=200 duration_ms=83 user=yoon
+2026-11-25 09:12:48,010 INFO  [api] request_id=2ad6900ba605 method=GET path=/v1/orders/1042 status=200 duration_ms=20 user=choi
+2026-11-25 09:12:48,013 INFO  [api] request_id=95dc31e9655a db=orders rows=22 duration_ms=13
+2026-11-25 09:12:49,270 INFO  [api] request_id=23bc4b71f982 method=GET path=/health status=200 duration_ms=65 user=kim
+2026-11-25 09:12:50,711 INFO  [api] request_id=28db2096f1a5 method=GET path=/v1/search status=200 duration_ms=39 user=yoon
+2026-11-25 09:12:52,462 INFO  [api] request_id=644986f6e7db method=GET path=/v1/cart status=200 duration_ms=26 user=park
+2026-11-25 09:12:53,837 INFO  [api] request_id=5a0f33300df8 method=GET path=/v1/search status=200 duration_ms=37 user=kim
+2026-11-25 09:12:54,877 INFO  [api] request_id=e52661008630 method=GET path=/v1/orders/1042 status=200 duration_ms=16 user=jung
+2026-11-25 09:12:55,918 INFO  [api] request_id=5df88285f2ed method=GET path=/v1/cart status=200 duration_ms=15 user=yoon
+2026-11-25 09:12:57,282 INFO  [api] request_id=9f7b6ff9a122 method=GET path=/v1/orders/1042 status=200 duration_ms=40 user=han
+2026-11-25 09:12:57,287 INFO  [api] request_id=3562e07c42d2 db=orders rows=10 duration_ms=24
+2026-11-25 09:12:58,835 INFO  [api] request_id=3259fbeff0ec method=GET path=/health status=200 duration_ms=37 user=kim
+2026-11-25 09:13:00,504 INFO  [api] request_id=785868d146cc method=GET path=/v1/users/me status=200 duration_ms=67 user=seo
+2026-11-25 09:13:02,057 INFO  [api] request_id=417d57d1e26c method=GET path=/v1/users/me status=200 duration_ms=21 user=jung
+2026-11-25 09:13:03,432 INFO  [api] request_id=234659988d32 method=GET path=/v1/orders status=200 duration_ms=63 user=lee
+2026-11-25 09:13:05,358 INFO  [api] request_id=148ca4b40aab method=GET path=/v1/cart status=200 duration_ms=51 user=han
+2026-11-25 09:13:05,364 INFO  [api] request_id=48b129ff04c7 db=orders rows=30 duration_ms=8
+2026-11-25 09:13:07,232 INFO  [api] request_id=25e6b0613b56 method=GET path=/health status=200 duration_ms=38 user=kim
+2026-11-25 09:13:07,233 INFO  [api] request_id=db0ee2065d15 db=orders rows=29 duration_ms=10
+2026-11-25 09:13:09,153 INFO  [api] request_id=8789e7b10c25 method=GET path=/v1/orders/1042 status=200 duration_ms=68 user=seo
+2026-11-25 09:13:11,069 INFO  [api] request_id=91abf7ad7a6c method=GET path=/v1/users/me status=200 duration_ms=89 user=jung
+2026-11-25 09:13:12,581 INFO  [api] request_id=ebd443fc44c9 method=GET path=/v1/cart status=200 duration_ms=53 user=lee
+2026-11-25 09:13:14,312 INFO  [api] request_id=51732b8d7754 method=GET path=/v1/users/me status=200 duration_ms=47 user=choi
+2026-11-25 09:13:14,314 INFO  [api] request_id=debf574d8795 db=orders rows=13 duration_ms=7
+2026-11-25 09:13:15,332 INFO  [api] request_id=f7462c69df1f method=GET path=/health status=200 duration_ms=56 user=yoon
+2026-11-25 09:13:16,831 INFO  [api] request_id=bce4cf384962 method=GET path=/v1/orders/1042 status=200 duration_ms=72 user=park
+2026-11-25 09:13:18,225 INFO  [api] request_id=082449da3e55 method=GET path=/v1/orders/1042 status=200 duration_ms=36 user=seo
+2026-11-25 09:13:19,426 INFO  [api] request_id=57d164064341 method=GET path=/v1/orders/1042 status=200 duration_ms=28 user=park
+2026-11-25 09:13:20,582 INFO  [api] request_id=120348232ddd method=GET path=/v1/cart status=200 duration_ms=79 user=kim
+2026-11-25 09:13:22,381 INFO  [api] request_id=327a76993330 method=GET path=/v1/cart status=200 duration_ms=86 user=yoon
+2026-11-25 09:13:23,330 INFO  [api] request_id=b00f29049889 method=GET path=/v1/search status=200 duration_ms=51 user=kim
+2026-11-25 09:13:23,332 INFO  [api] request_id=596848332ecc db=orders rows=30 duration_ms=9
+2026-11-25 09:13:24,525 INFO  [api] request_id=46a5aed9c47b method=GET path=/v1/users/me status=200 duration_ms=69 user=park
+2026-11-25 09:13:26,535 INFO  [api] request_id=c0adb7396809 method=GET path=/v1/cart status=200 duration_ms=41 user=kim
+2026-11-25 09:13:27,631 INFO  [api] request_id=daa00648b664 method=GET path=/v1/orders/1042 status=200 duration_ms=20 user=jung
+2026-11-25 09:13:27,634 INFO  [api] request_id=c1417f1eb9df db=orders rows=14 duration_ms=2
+2026-11-25 09:13:28,898 INFO  [api] request_id=6d7ba7e81187 method=GET path=/v1/orders status=200 duration_ms=49 user=jung
+2026-11-25 09:13:30,371 INFO  [api] request_id=51118bacd7c6 method=GET path=/v1/cart status=200 duration_ms=42 user=lee
+2026-11-25 09:13:32,209 INFO  [api] request_id=ab69bef4275e method=GET path=/v1/orders status=200 duration_ms=40 user=seo
+2026-11-25 09:13:33,860 INFO  [api] request_id=83b102778ecf method=GET path=/v1/search status=200 duration_ms=56 user=lee
+2026-11-25 09:13:33,866 INFO  [api] request_id=52fc6d18be75 db=orders rows=28 duration_ms=23
+2026-11-25 09:13:35,051 INFO  [api] request_id=a75a02639f00 method=GET path=/health status=200 duration_ms=62 user=jung
+2026-11-25 09:13:36,154 INFO  [api] request_id=3df53e3fe775 method=GET path=/health status=200 duration_ms=49 user=jung
+2026-11-25 09:13:37,573 INFO  [api] request_id=568b1643a3bb method=GET path=/v1/orders/1042 status=200 duration_ms=72 user=lee
+2026-11-25 09:13:39,229 INFO  [api] request_id=4fc00a46c844 method=GET path=/v1/orders/1042 status=200 duration_ms=49 user=han
+2026-11-25 09:13:39,231 INFO  [api] request_id=7894c4363919 db=orders rows=13 duration_ms=10
+2026-11-25 09:13:40,584 INFO  [api] request_id=27c0b25cccd2 method=GET path=/v1/cart status=200 duration_ms=48 user=park
+2026-11-25 09:13:42,350 INFO  [api] request_id=c4ddce14074e method=GET path=/v1/orders/1042 status=200 duration_ms=45 user=kim
+2026-11-25 09:13:44,210 INFO  [api] request_id=b02044048027 method=GET path=/v1/search status=304 duration_ms=81 user=kim
+2026-11-25 09:13:45,862 INFO  [api] request_id=7efdbf9f0379 method=GET path=/v1/orders status=200 duration_ms=83 user=lee
+2026-11-25 09:13:47,810 INFO  [api] request_id=f30a8863570c method=GET path=/v1/users/me status=200 duration_ms=57 user=seo
+2026-11-25 09:13:49,680 INFO  [api] request_id=ac8ed476d43c method=GET path=/v1/users/me status=200 duration_ms=44 user=lee
+2026-11-25 09:13:51,124 INFO  [api] request_id=61e415acfc0f method=GET path=/v1/orders status=200 duration_ms=89 user=lee
+2026-11-25 09:13:51,127 INFO  [api] request_id=4d8cf385bef8 db=orders rows=14 duration_ms=3
+2026-11-25 09:13:52,186 INFO  [api] request_id=81df83de267e method=GET path=/v1/search status=200 duration_ms=50 user=park
+2026-11-25 09:13:53,726 INFO  [api] request_id=f88c3d6494a6 method=GET path=/v1/search status=200 duration_ms=65 user=jung
+2026-11-25 09:13:55,082 INFO  [api] request_id=0cfda1917bc5 method=GET path=/health status=200 duration_ms=65 user=jung
+2026-11-25 09:13:57,089 INFO  [api] request_id=47df64016d90 method=GET path=/health status=200 duration_ms=30 user=park
+2026-11-25 09:13:58,017 INFO  [api] request_id=e2de5321f575 method=GET path=/v1/users/me status=200 duration_ms=28 user=choi
+2026-11-25 09:13:59,548 INFO  [api] request_id=33e78b6e2c16 method=GET path=/v1/users/me status=200 duration_ms=20 user=park
+2026-11-25 09:14:00,722 INFO  [api] request_id=aa11277b490b method=GET path=/health status=200 duration_ms=38 user=seo
+2026-11-25 09:14:02,615 INFO  [api] request_id=6d1b618bf17a method=GET path=/v1/search status=200 duration_ms=41 user=park
+2026-11-25 09:14:02,619 INFO  [api] request_id=a5d4afa1db15 db=orders rows=38 duration_ms=3
+2026-11-25 09:14:03,675 INFO  [api] request_id=e3e6f0011a06 method=GET path=/health status=200 duration_ms=85 user=park
+2026-11-25 09:14:04,882 INFO  [api] request_id=53d356c5f831 method=GET path=/v1/users/me status=200 duration_ms=30 user=yoon
+2026-11-25 09:14:04,888 INFO  [api] request_id=65d5f994ba93 db=orders rows=22 duration_ms=2
+2026-11-25 09:14:06,770 INFO  [api] request_id=b7f977b555f1 method=GET path=/v1/orders/1042 status=200 duration_ms=34 user=choi
+2026-11-25 09:14:08,385 INFO  [api] request_id=b1741a2edda5 method=GET path=/v1/orders status=200 duration_ms=24 user=lee
+2026-11-25 09:14:09,407 INFO  [api] request_id=93bc9f00c03a method=GET path=/v1/orders status=200 duration_ms=83 user=han
+2026-11-25 09:14:11,329 INFO  [api] request_id=4b70a1c6f083 method=GET path=/v1/orders/1042 status=200 duration_ms=25 user=seo
+2026-11-25 09:14:12,554 INFO  [api] request_id=6270597e1452 method=GET path=/v1/search status=200 duration_ms=24 user=han
+2026-11-25 09:14:12,555 INFO  [api] request_id=0bbbe75750f9 db=orders rows=36 duration_ms=22
+2026-11-25 09:14:14,071 INFO  [api] request_id=842166df90f9 method=GET path=/v1/search status=200 duration_ms=57 user=seo
+2026-11-25 09:14:14,073 INFO  [api] request_id=6b56deb2d7a2 db=orders rows=8 duration_ms=18
+2026-11-25 09:14:15,664 INFO  [api] request_id=956ba01ddc56 method=GET path=/v1/orders status=200 duration_ms=68 user=jung
+2026-11-25 09:14:17,530 INFO  [api] request_id=5e40fc1d00bc method=GET path=/v1/orders status=200 duration_ms=44 user=park
+2026-11-25 09:14:18,451 INFO  [api] request_id=d05398c00333 method=GET path=/v1/users/me status=200 duration_ms=25 user=jung
+2026-11-25 09:14:19,547 INFO  [api] request_id=0c0e504d2911 method=GET path=/v1/users/me status=200 duration_ms=52 user=kim
+2026-11-25 09:14:21,354 INFO  [api] request_id=665baeebbbce method=GET path=/v1/users/me status=200 duration_ms=46 user=yoon
+2026-11-25 09:14:21,359 INFO  [api] request_id=6ea4389598f6 db=orders rows=37 duration_ms=6
+2026-11-25 09:14:23,044 INFO  [api] request_id=b2108f5f141c method=GET path=/v1/orders/1042 status=200 duration_ms=84 user=kim
+2026-11-25 09:14:23,049 INFO  [api] request_id=34aeb66607e1 db=orders rows=19 duration_ms=13
+2026-11-25 09:14:24,536 INFO  [api] request_id=613eae2224b5 method=GET path=/health status=200 duration_ms=48 user=lee
+2026-11-25 09:14:26,166 INFO  [api] request_id=d55a5ba849bd method=GET path=/v1/cart status=200 duration_ms=85 user=jung
+2026-11-25 09:14:27,517 INFO  [api] request_id=3591df62c006 method=GET path=/v1/orders/1042 status=200 duration_ms=74 user=park
+2026-11-25 09:14:28,829 INFO  [api] request_id=a3c597589dce method=GET path=/v1/search status=304 duration_ms=85 user=park
+2026-11-25 09:14:28,830 INFO  [api] request_id=6588f5a2767f db=orders rows=31 duration_ms=5
+2026-11-25 09:14:30,447 INFO  [api] request_id=28b038d65cfa method=GET path=/v1/orders/1042 status=200 duration_ms=31 user=kim
+2026-11-25 09:14:31,739 INFO  [api] request_id=cd952d7ec406 method=GET path=/v1/cart status=200 duration_ms=75 user=kim
+2026-11-25 09:14:33,446 INFO  [api] request_id=15d6582bf00b method=GET path=/v1/users/me status=200 duration_ms=82 user=han
+2026-11-25 09:14:34,927 INFO  [api] request_id=25822fe235f2 method=GET path=/v1/cart status=200 duration_ms=86 user=park
+2026-11-25 09:14:36,893 INFO  [api] request_id=4ddc5d903860 method=GET path=/health status=200 duration_ms=26 user=jung
+2026-11-25 09:14:36,899 INFO  [api] request_id=d9994949430a db=orders rows=13 duration_ms=14
+2026-11-25 09:14:38,625 INFO  [api] request_id=a764ff37f09d method=GET path=/v1/orders/1042 status=200 duration_ms=57 user=seo
+2026-11-25 09:14:39,845 INFO  [api] request_id=5cb9b3307b40 method=GET path=/health status=200 duration_ms=25 user=han
+2026-11-25 09:14:40,857 INFO  [api] request_id=fc9bca5ca98f method=GET path=/v1/orders/1042 status=200 duration_ms=88 user=lee
+2026-11-25 09:14:42,068 INFO  [api] request_id=62f5e2a97ec9 method=GET path=/v1/orders/1042 status=200 duration_ms=31 user=kim
+2026-11-25 09:14:43,032 INFO  [api] request_id=fcb2afed36c8 method=GET path=/v1/search status=200 duration_ms=36 user=park
+2026-11-25 09:14:43,964 INFO  [api] request_id=00372452bb7d method=GET path=/health status=200 duration_ms=87 user=choi
+2026-11-25 09:14:45,062 INFO  [api] request_id=65417ad1bedb method=GET path=/v1/search status=200 duration_ms=16 user=kim
+2026-11-25 09:14:46,443 INFO  [api] request_id=93bf3b95b4ab method=GET path=/v1/cart status=200 duration_ms=35 user=lee
+2026-11-25 09:14:48,136 INFO  [api] request_id=795bccce1716 method=GET path=/v1/orders/1042 status=200 duration_ms=50 user=yoon
+2026-11-25 09:14:49,770 INFO  [api] request_id=6e1f474b9d31 method=GET path=/v1/orders/1042 status=200 duration_ms=16 user=lee
+2026-11-25 09:14:51,221 INFO  [api] request_id=9b831762971b method=GET path=/v1/users/me status=200 duration_ms=40 user=seo
+2026-11-25 09:14:53,071 INFO  [api] request_id=e20eb835b3db method=GET path=/v1/search status=200 duration_ms=36 user=lee
+2026-11-25 09:14:54,732 INFO  [api] request_id=fc5864cdc9cd method=GET path=/v1/cart status=200 duration_ms=35 user=park
+2026-11-25 09:14:55,739 INFO  [api] request_id=34348daa9c60 method=GET path=/v1/orders/1042 status=200 duration_ms=88 user=jung
+2026-11-25 09:14:57,653 INFO  [api] request_id=5cd8d418d9a1 method=GET path=/v1/search status=200 duration_ms=67 user=yoon
+2026-11-25 09:14:57,658 INFO  [api] request_id=2adf55324ff9 db=orders rows=12 duration_ms=2
+2026-11-25 09:14:58,617 INFO  [api] request_id=9763331e41f8 method=GET path=/health status=200 duration_ms=55 user=kim
+2026-11-25 09:14:58,618 INFO  [api] request_id=a09e97938443 db=orders rows=30 duration_ms=9
+2026-11-25 09:15:00,526 INFO  [api] request_id=088f0c60ac43 method=GET path=/v1/users/me status=200 duration_ms=22 user=park
+2026-11-25 09:15:01,506 INFO  [api] request_id=4eb48d015626 method=GET path=/health status=200 duration_ms=59 user=park
+2026-11-25 09:15:02,869 INFO  [api] request_id=72759831eab0 method=GET path=/v1/search status=200 duration_ms=61 user=jung
+2026-11-25 09:15:03,977 INFO  [api] request_id=4cd1a45262ae method=GET path=/v1/users/me status=200 duration_ms=79 user=seo
+2026-11-25 09:15:05,032 INFO  [api] request_id=ad5b6ee53890 method=GET path=/health status=200 duration_ms=70 user=seo
+2026-11-25 09:15:06,828 INFO  [api] request_id=8b3b9e83fce3 method=GET path=/v1/orders/1042 status=200 duration_ms=38 user=yoon
+2026-11-25 09:15:08,310 INFO  [api] request_id=5e72c37b788e method=GET path=/v1/users/me status=200 duration_ms=49 user=han
+2026-11-25 09:15:09,437 INFO  [api] request_id=d39ae716141b method=GET path=/v1/orders status=200 duration_ms=81 user=seo
+2026-11-25 09:15:10,448 INFO  [api] request_id=2a8b458df1e2 method=GET path=/health status=200 duration_ms=24 user=kim
+2026-11-25 09:15:10,451 INFO  [api] request_id=99359977f8b7 db=orders rows=17 duration_ms=12
+2026-11-25 09:15:12,408 INFO  [api] request_id=cff5b77e6d83 method=GET path=/v1/search status=200 duration_ms=21 user=seo
+2026-11-25 09:15:13,802 INFO  [api] request_id=7ad8d9e815d6 method=GET path=/v1/cart status=200 duration_ms=41 user=choi
+2026-11-25 09:15:15,375 INFO  [api] request_id=a048f5506c63 method=GET path=/v1/cart status=200 duration_ms=58 user=lee
+2026-11-25 09:15:16,891 INFO  [api] request_id=6a2f6c96cfcc method=GET path=/health status=200 duration_ms=48 user=park
+2026-11-25 09:15:18,080 INFO  [api] request_id=5bde6f1c6ff6 method=GET path=/v1/search status=200 duration_ms=28 user=lee
+2026-11-25 09:15:19,675 INFO  [api] request_id=d54fad573c06 method=GET path=/health status=200 duration_ms=10 user=jung
+2026-11-25 09:15:21,766 INFO  [api] request_id=b6530ff2ba15 method=GET path=/v1/cart status=200 duration_ms=46 user=kim
+2026-11-25 09:15:22,804 INFO  [api] request_id=c2b909b6cdb5 method=GET path=/v1/cart status=200 duration_ms=90 user=lee
+2026-11-25 09:15:24,800 INFO  [api] request_id=b08ecd758b85 method=GET path=/v1/users/me status=200 duration_ms=50 user=lee
+2026-11-25 09:15:24,806 INFO  [api] request_id=b4902f0e6563 db=orders rows=23 duration_ms=21
+2026-11-25 09:15:25,749 INFO  [api] request_id=72ffd3047f80 method=GET path=/health status=200 duration_ms=85 user=lee
+2026-11-25 09:15:27,055 INFO  [api] request_id=0a2a9905bc87 method=GET path=/v1/users/me status=200 duration_ms=34 user=seo
+2026-11-25 09:15:29,115 INFO  [api] request_id=6a9cbc0e4e3a method=GET path=/v1/users/me status=200 duration_ms=82 user=kim
+2026-11-25 09:15:30,099 INFO  [api] request_id=225bb34b7433 method=GET path=/v1/cart status=200 duration_ms=34 user=lee
+2026-11-25 09:15:30,104 INFO  [api] request_id=bee01f5c2352 db=orders rows=25 duration_ms=9
+2026-11-25 09:15:31,285 INFO  [api] request_id=010e12822a50 method=GET path=/v1/orders status=200 duration_ms=86 user=yoon
+2026-11-25 09:15:32,509 INFO  [api] request_id=43a4d2fc936d method=GET path=/v1/orders status=200 duration_ms=42 user=yoon
+2026-11-25 09:15:34,472 INFO  [api] request_id=c97be6522146 method=GET path=/v1/cart status=200 duration_ms=66 user=han
+2026-11-25 09:15:35,558 INFO  [api] request_id=5a3d38714229 method=GET path=/v1/orders/1042 status=200 duration_ms=43 user=yoon
+2026-11-25 09:15:36,502 INFO  [api] request_id=acc39b218527 method=GET path=/v1/users/me status=200 duration_ms=87 user=choi
+2026-11-25 09:15:37,852 INFO  [api] request_id=4356534343d7 method=GET path=/v1/cart status=200 duration_ms=40 user=kim
+2026-11-25 09:15:39,679 INFO  [api] request_id=aa7e136964c5 method=GET path=/v1/orders status=200 duration_ms=45 user=kim
+2026-11-25 09:15:39,680 INFO  [api] request_id=af0579d8ebd1 db=orders rows=26 duration_ms=23
+2026-11-25 09:15:40,975 INFO  [api] request_id=ea668026d797 method=GET path=/v1/search status=200 duration_ms=27 user=yoon
+2026-11-25 09:15:42,964 INFO  [api] request_id=42934bfe04ae method=GET path=/v1/users/me status=200 duration_ms=37 user=yoon
+2026-11-25 09:15:44,932 INFO  [api] request_id=ec8b9c1d53bf method=GET path=/v1/search status=200 duration_ms=88 user=lee
+2026-11-25 09:15:46,554 INFO  [api] request_id=d62c9bade4a9 method=GET path=/health status=200 duration_ms=36 user=seo
+2026-11-25 09:15:48,161 INFO  [api] request_id=5c6b969bc65c method=GET path=/v1/users/me status=200 duration_ms=79 user=seo
+2026-11-25 09:15:50,036 INFO  [api] request_id=6c8c9ce3c8b6 method=GET path=/v1/users/me status=200 duration_ms=12 user=choi
+2026-11-25 09:15:50,037 INFO  [api] request_id=f43ffe91b5e5 db=orders rows=31 duration_ms=2
+2026-11-25 09:15:51,638 INFO  [api] request_id=b1032861bbaa method=GET path=/v1/users/me status=200 duration_ms=30 user=kim
+2026-11-25 09:15:52,608 INFO  [api] request_id=a976d9fd7540 method=GET path=/v1/cart status=200 duration_ms=25 user=seo
+2026-11-25 09:15:53,590 INFO  [api] request_id=d3b55b7bcf9b method=GET path=/v1/orders status=200 duration_ms=61 user=choi
+2026-11-25 09:15:55,415 INFO  [api] request_id=66a1b0e8dee4 method=GET path=/v1/orders/1042 status=200 duration_ms=89 user=choi
+2026-11-25 09:15:56,697 INFO  [api] request_id=091d5f70da35 method=GET path=/v1/cart status=200 duration_ms=62 user=park
+2026-11-25 09:15:58,280 INFO  [api] request_id=59fcd663211d method=GET path=/v1/users/me status=200 duration_ms=19 user=yoon
+2026-11-25 09:16:00,375 INFO  [api] request_id=e60967467d2e method=GET path=/v1/search status=200 duration_ms=50 user=jung
+2026-11-25 09:16:02,454 INFO  [api] request_id=a79eae3ca3bf method=GET path=/health status=200 duration_ms=29 user=park
+2026-11-25 09:16:03,521 INFO  [api] request_id=be43aeafd1e2 method=GET path=/v1/cart status=200 duration_ms=69 user=seo
+2026-11-25 09:16:05,267 INFO  [api] request_id=a9858d5fcaca method=GET path=/v1/cart status=200 duration_ms=86 user=seo
+2026-11-25 09:16:07,273 INFO  [api] request_id=680603fa8a70 method=GET path=/v1/users/me status=200 duration_ms=17 user=park
+2026-11-25 09:16:08,223 INFO  [api] request_id=da90bb90f03b method=GET path=/v1/orders/1042 status=200 duration_ms=81 user=kim
+2026-11-25 09:16:09,676 INFO  [api] request_id=b1cfed40be7d method=GET path=/v1/users/me status=200 duration_ms=9 user=lee
+2026-11-25 09:16:11,302 INFO  [api] request_id=3ec049de2bee method=GET path=/v1/orders status=200 duration_ms=74 user=park
+2026-11-25 09:16:12,629 INFO  [api] request_id=706641dce4de method=GET path=/v1/orders status=200 duration_ms=49 user=choi
+2026-11-25 09:16:14,050 INFO  [api] request_id=18ef0053aaf4 method=GET path=/v1/users/me status=200 duration_ms=10 user=kim
+2026-11-25 09:16:15,640 INFO  [api] request_id=706fa5fd3b94 method=GET path=/v1/search status=304 duration_ms=73 user=jung
+2026-11-25 09:16:17,471 INFO  [api] request_id=2574dddf421f method=GET path=/v1/cart status=200 duration_ms=21 user=yoon
+2026-11-25 09:16:17,475 INFO  [api] request_id=28efbfddbb97 db=orders rows=27 duration_ms=8
+2026-11-25 09:16:19,359 INFO  [api] request_id=2637cf442a44 method=GET path=/v1/search status=304 duration_ms=15 user=jung
+2026-11-25 09:16:20,400 INFO  [api] request_id=d8031c07461e method=GET path=/v1/orders/1042 status=200 duration_ms=13 user=han
+2026-11-25 09:16:22,188 INFO  [api] request_id=cf20ecb7d296 method=GET path=/v1/orders status=200 duration_ms=68 user=yoon
+2026-11-25 09:16:24,100 INFO  [api] request_id=671d29c4c634 method=GET path=/v1/users/me status=200 duration_ms=53 user=kim
+2026-11-25 09:16:24,106 INFO  [api] request_id=6d55f6de355c db=orders rows=17 duration_ms=2
+2026-11-25 09:16:25,563 INFO  [api] request_id=752c3af536e2 method=GET path=/health status=200 duration_ms=27 user=han
+2026-11-25 09:16:26,720 INFO  [api] request_id=b784ba21eb60 method=GET path=/v1/users/me status=200 duration_ms=79 user=han
+2026-11-25 09:16:28,323 INFO  [api] request_id=4f7a65c246b9 method=GET path=/v1/users/me status=200 duration_ms=57 user=park
+2026-11-25 09:16:29,893 INFO  [api] request_id=d9057947bfb4 method=GET path=/v1/users/me status=200 duration_ms=19 user=yoon
+2026-11-25 09:16:31,619 INFO  [api] request_id=bc846c94b73d method=GET path=/v1/search status=200 duration_ms=22 user=seo
+2026-11-25 09:16:31,622 INFO  [api] request_id=5a325b51700f db=orders rows=15 duration_ms=4
+2026-11-25 09:16:33,066 INFO  [api] request_id=718021f2b64a method=GET path=/v1/cart status=200 duration_ms=29 user=han
+2026-11-25 09:16:34,251 INFO  [api] request_id=4f122fd9136f method=GET path=/health status=200 duration_ms=38 user=jung
+2026-11-25 09:16:34,257 INFO  [api] request_id=02111857d64d db=orders rows=26 duration_ms=7
+2026-11-25 09:16:35,178 INFO  [api] request_id=9c73d24efa75 method=GET path=/v1/search status=200 duration_ms=43 user=seo
+2026-11-25 09:16:35,184 INFO  [api] request_id=1d00f5075f87 db=orders rows=25 duration_ms=4
+2026-11-25 09:16:36,237 INFO  [api] request_id=83d8bc650536 method=GET path=/v1/orders status=200 duration_ms=54 user=park
+2026-11-25 09:16:36,243 INFO  [api] request_id=bcc7e74752f2 db=orders rows=11 duration_ms=7
+2026-11-25 09:16:37,705 INFO  [api] request_id=55c4454e1459 method=GET path=/v1/search status=200 duration_ms=10 user=kim
+2026-11-25 09:16:37,710 INFO  [api] request_id=0658a076c770 db=orders rows=1 duration_ms=7
+2026-11-25 09:16:39,559 INFO  [api] request_id=93a112eda281 method=GET path=/health status=200 duration_ms=83 user=choi
+2026-11-25 09:16:41,227 INFO  [api] request_id=41381c8ec229 method=GET path=/v1/orders status=200 duration_ms=51 user=park
+2026-11-25 09:16:42,494 INFO  [api] request_id=24da9ae2467f method=GET path=/health status=200 duration_ms=40 user=choi
+2026-11-25 09:16:44,008 INFO  [api] request_id=bb1121d05b08 method=GET path=/v1/search status=200 duration_ms=78 user=park
+2026-11-25 09:16:44,014 INFO  [api] request_id=8699b71b9ad4 db=orders rows=25 duration_ms=7
+2026-11-25 09:16:45,494 INFO  [api] request_id=679a735d6f2a method=GET path=/v1/orders status=200 duration_ms=56 user=han
+2026-11-25 09:16:45,496 INFO  [api] request_id=fc30092145c9 db=orders rows=38 duration_ms=17
+2026-11-25 09:16:47,496 INFO  [api] request_id=92f45f5e4426 method=GET path=/v1/users/me status=200 duration_ms=20 user=choi
+2026-11-25 09:16:49,073 INFO  [api] request_id=f4188eb6f255 method=GET path=/v1/orders status=200 duration_ms=59 user=yoon
+2026-11-25 09:16:49,074 INFO  [api] request_id=510b00808baf db=orders rows=26 duration_ms=20
+2026-11-25 09:16:50,271 INFO  [api] request_id=32fe798b45b7 method=GET path=/v1/users/me status=200 duration_ms=16 user=kim
+2026-11-25 09:16:52,013 INFO  [api] request_id=37f510effe82 method=GET path=/v1/users/me status=200 duration_ms=51 user=park
+2026-11-25 09:16:53,036 INFO  [api] request_id=6ea5a59c4549 method=GET path=/v1/orders/1042 status=200 duration_ms=86 user=park
+2026-11-25 09:16:54,608 INFO  [api] request_id=130801c66287 method=GET path=/v1/search status=200 duration_ms=88 user=kim
+2026-11-25 09:16:56,338 INFO  [api] request_id=5166a6fa27fd method=GET path=/v1/cart status=200 duration_ms=59 user=han
+2026-11-25 09:16:57,561 INFO  [api] request_id=8ced1dc3610c method=GET path=/v1/users/me status=200 duration_ms=79 user=yoon
+2026-11-25 09:16:59,479 INFO  [api] request_id=89e2275b5a09 method=GET path=/health status=200 duration_ms=87 user=kim
+2026-11-25 09:16:59,479 ERROR [api] ConnectionResetError: connection reset by peer client=10.0.7.9 request_id=11ba1cebb6f5 path=/v1/orders
+Traceback (most recent call last):
+  File "/srv/app/handlers/orders.py", line 142, in create
+    return gateway.forward(request)
+  File "/srv/app/gateway.py", line 88, in forward
+    raise ConnectionResetError("connection reset by peer")
+ConnectionResetError: connection reset by peer
+2026-11-25 09:17:03,509 INFO  [api] request_id=9033a25f8d91 method=GET path=/v1/search status=200 duration_ms=12 user=seo
+2026-11-25 09:17:05,264 INFO  [api] request_id=f03a0895f0c9 method=GET path=/v1/search status=200 duration_ms=28 user=seo
+2026-11-25 09:17:06,966 INFO  [api] request_id=37ed2945f805 method=GET path=/health status=200 duration_ms=58 user=kim
+2026-11-25 09:17:08,971 INFO  [api] request_id=484899fa8179 method=GET path=/v1/users/me status=200 duration_ms=66 user=choi
+2026-11-25 09:17:10,723 INFO  [api] request_id=214b2d976a42 method=GET path=/v1/cart status=200 duration_ms=12 user=jung
+2026-11-25 09:17:12,496 INFO  [api] request_id=3c0dbd05b39c method=GET path=/v1/cart status=200 duration_ms=49 user=park
+2026-11-25 09:17:13,414 INFO  [api] request_id=131a08d736d0 method=GET path=/v1/orders status=200 duration_ms=35 user=choi
+2026-11-25 09:17:15,323 INFO  [api] request_id=a35f95eee8b5 method=GET path=/v1/search status=200 duration_ms=54 user=choi
+2026-11-25 09:17:15,327 INFO  [api] request_id=d022b606ea1e db=orders rows=25 duration_ms=22
+2026-11-25 09:17:16,350 INFO  [api] request_id=f0ee9ef4c64e method=GET path=/health status=200 duration_ms=17 user=yoon
+2026-11-25 09:17:16,356 INFO  [api] request_id=5c5ef5d87743 db=orders rows=24 duration_ms=16
+2026-11-25 09:17:18,277 INFO  [api] request_id=bf17f4b9a4cb method=GET path=/v1/cart status=200 duration_ms=63 user=kim
+2026-11-25 09:17:19,266 INFO  [api] request_id=d518d16278dc method=GET path=/v1/cart status=200 duration_ms=88 user=park
+2026-11-25 09:17:20,178 INFO  [api] request_id=061d3a9f4349 method=GET path=/v1/orders status=200 duration_ms=75 user=seo
+2026-11-25 09:17:21,428 INFO  [api] request_id=e533b0d9b769 method=GET path=/v1/cart status=200 duration_ms=46 user=lee
+2026-11-25 09:17:23,516 INFO  [api] request_id=1bf913f51f95 method=GET path=/v1/users/me status=200 duration_ms=62 user=seo
+2026-11-25 09:17:25,239 INFO  [api] request_id=db180d1462d9 method=GET path=/v1/users/me status=200 duration_ms=35 user=jung
+2026-11-25 09:17:26,215 INFO  [api] request_id=c361c794d9b9 method=GET path=/v1/orders status=200 duration_ms=21 user=kim
+2026-11-25 09:17:27,196 INFO  [api] request_id=46ed6f0da400 method=GET path=/v1/users/me status=200 duration_ms=68 user=han
+2026-11-25 09:17:27,200 INFO  [api] request_id=93f8bb2c6127 db=orders rows=6 duration_ms=10
+2026-11-25 09:17:28,877 INFO  [api] request_id=cc189216d299 method=GET path=/v1/cart status=200 duration_ms=52 user=kim
+2026-11-25 09:17:29,837 INFO  [api] request_id=277605741508 method=GET path=/health status=200 duration_ms=54 user=kim
+2026-11-25 09:17:31,088 INFO  [api] request_id=929f17207ba8 method=GET path=/health status=200 duration_ms=64 user=seo
+2026-11-25 09:17:32,062 INFO  [api] request_id=fc0de6a94d89 method=GET path=/v1/orders status=200 duration_ms=28 user=han
+2026-11-25 09:17:33,939 INFO  [api] request_id=eaacb58cc689 method=GET path=/v1/orders status=200 duration_ms=62 user=jung
+2026-11-25 09:17:35,374 INFO  [api] request_id=95bce2959cbb method=GET path=/v1/cart status=200 duration_ms=71 user=yoon
+2026-11-25 09:17:37,459 INFO  [api] request_id=a286685c55ea method=GET path=/v1/orders status=200 duration_ms=33 user=jung
+2026-11-25 09:17:39,178 INFO  [api] request_id=ee636b4bf338 method=GET path=/v1/orders status=200 duration_ms=73 user=seo
+2026-11-25 09:17:41,236 INFO  [api] request_id=e1a3f86f9500 method=GET path=/v1/search status=304 duration_ms=52 user=park
+2026-11-25 09:17:43,000 INFO  [api] request_id=2947613bb762 method=GET path=/v1/search status=200 duration_ms=87 user=jung
+2026-11-25 09:17:44,431 INFO  [api] request_id=cdd003308f6e method=GET path=/health status=200 duration_ms=74 user=yoon
+2026-11-25 09:17:45,440 INFO  [api] request_id=16001d45c79a method=GET path=/health status=200 duration_ms=45 user=yoon
+2026-11-25 09:17:47,218 INFO  [api] request_id=5aaa85e1fed9 method=GET path=/v1/search status=200 duration_ms=19 user=park
+2026-11-25 09:17:48,367 INFO  [api] request_id=1f6fc341d254 method=GET path=/v1/orders/1042 status=200 duration_ms=42 user=kim
+2026-11-25 09:17:49,339 INFO  [api] request_id=d8a06afb506f method=GET path=/v1/cart status=200 duration_ms=28 user=choi
+2026-11-25 09:17:50,252 INFO  [api] request_id=03298633525f method=GET path=/v1/orders status=200 duration_ms=87 user=han
+2026-11-25 09:17:51,754 INFO  [api] request_id=a39af4181eee method=GET path=/v1/cart status=200 duration_ms=78 user=lee
+2026-11-25 09:17:52,947 INFO  [api] request_id=67538318192d method=GET path=/v1/cart status=200 duration_ms=29 user=kim
+2026-11-25 09:17:54,836 INFO  [api] request_id=0df6c33f13d5 method=GET path=/v1/orders/1042 status=200 duration_ms=26 user=kim
+2026-11-25 09:17:56,630 INFO  [api] request_id=679945aa453d method=GET path=/v1/cart status=200 duration_ms=15 user=lee
+2026-11-25 09:17:57,914 INFO  [api] request_id=91807da436b8 method=GET path=/health status=200 duration_ms=81 user=han
+2026-11-25 09:17:59,207 INFO  [api] request_id=90ff9f63a7da method=GET path=/v1/search status=200 duration_ms=17 user=park
+2026-11-25 09:18:01,148 INFO  [api] request_id=95acfd105896 method=GET path=/v1/cart status=200 duration_ms=37 user=yoon
+2026-11-25 09:18:01,152 INFO  [api] request_id=90167e9ed0db db=orders rows=21 duration_ms=3
+2026-11-25 09:18:03,025 INFO  [api] request_id=55b452e62f86 method=GET path=/v1/users/me status=200 duration_ms=51 user=seo
+2026-11-25 09:18:03,026 INFO  [api] request_id=4169e5a68a80 db=orders rows=27 duration_ms=14
+2026-11-25 09:18:04,717 INFO  [api] request_id=c00da158efbd method=GET path=/v1/users/me status=200 duration_ms=19 user=park
+2026-11-25 09:18:04,721 INFO  [api] request_id=2702d12b438b db=orders rows=31 duration_ms=18
+2026-11-25 09:18:06,254 INFO  [api] request_id=6fbb0cca2b47 method=GET path=/health status=200 duration_ms=50 user=seo
+2026-11-25 09:18:07,784 INFO  [api] request_id=2e4452f85aaa method=GET path=/v1/orders/1042 status=200 duration_ms=89 user=park
+2026-11-25 09:18:09,445 INFO  [api] request_id=dd3165214f5c method=GET path=/v1/orders status=200 duration_ms=17 user=jung
+2026-11-25 09:18:11,316 INFO  [api] request_id=4abfa1e5dd35 method=GET path=/health status=200 duration_ms=61 user=jung
+2026-11-25 09:18:12,562 INFO  [api] request_id=e4dcc2d950ea method=GET path=/v1/cart status=200 duration_ms=76 user=park
+2026-11-25 09:18:14,330 INFO  [api] request_id=f312f37ac5ea method=GET path=/v1/orders/1042 status=200 duration_ms=80 user=kim
+2026-11-25 09:18:15,386 INFO  [api] request_id=3ae2d286b58c method=GET path=/health status=200 duration_ms=22 user=kim
+2026-11-25 09:18:16,789 INFO  [api] request_id=3d65ad505a6e method=GET path=/health status=200 duration_ms=60 user=lee
+2026-11-25 09:18:18,509 INFO  [api] request_id=991e6c307f91 method=GET path=/v1/search status=200 duration_ms=22 user=lee
+2026-11-25 09:18:20,261 INFO  [api] request_id=13d0878b4a4f method=GET path=/v1/orders/1042 status=200 duration_ms=18 user=park
+2026-11-25 09:18:21,390 INFO  [api] request_id=46691f3b3be9 method=GET path=/v1/users/me status=200 duration_ms=54 user=park
+2026-11-25 09:18:21,392 INFO  [api] request_id=86bb5fc10591 db=orders rows=30 duration_ms=8
+2026-11-25 09:18:23,384 INFO  [api] request_id=246bb1af2c4e method=GET path=/health status=200 duration_ms=81 user=han
+2026-11-25 09:18:25,146 INFO  [api] request_id=a949e7661b73 method=GET path=/v1/cart status=200 duration_ms=36 user=jung
+2026-11-25 09:18:25,149 INFO  [api] request_id=783b46305cfd db=orders rows=13 duration_ms=17
+2026-11-25 09:18:27,114 INFO  [api] request_id=c26711a9cb49 method=GET path=/v1/search status=200 duration_ms=26 user=seo
+2026-11-25 09:18:28,165 INFO  [api] request_id=e8c1276e5094 method=GET path=/v1/orders/1042 status=200 duration_ms=14 user=kim
+2026-11-25 09:18:30,086 INFO  [api] request_id=edb8fe88f57e method=GET path=/health status=200 duration_ms=82 user=han
+2026-11-25 09:18:31,359 INFO  [api] request_id=55edda07dc26 method=GET path=/health status=200 duration_ms=53 user=seo
+2026-11-25 09:18:32,320 INFO  [api] request_id=16aaa455158b method=GET path=/v1/cart status=200 duration_ms=16 user=jung
+2026-11-25 09:18:33,220 INFO  [api] request_id=9d008d4b331c method=GET path=/v1/orders/1042 status=200 duration_ms=62 user=lee
+2026-11-25 09:18:35,183 INFO  [api] request_id=5370d4197170 method=GET path=/v1/users/me status=200 duration_ms=58 user=park
+2026-11-25 09:18:36,795 INFO  [api] request_id=add58b645485 method=GET path=/v1/orders status=200 duration_ms=30 user=choi
+2026-11-25 09:18:38,484 INFO  [api] request_id=d9fe511c4714 method=GET path=/v1/search status=200 duration_ms=72 user=yoon
+2026-11-25 09:18:40,246 INFO  [api] request_id=f4b24c6f27ba method=GET path=/v1/cart status=200 duration_ms=20 user=park
+2026-11-25 09:18:42,322 INFO  [api] request_id=5af79a0efc32 method=GET path=/v1/search status=200 duration_ms=69 user=park
+2026-11-25 09:18:42,326 INFO  [api] request_id=19dd9b8a33c4 db=orders rows=2 duration_ms=8
+2026-11-25 09:18:44,054 INFO  [api] request_id=9cca62463ebe method=GET path=/health status=200 duration_ms=22 user=han
+2026-11-25 09:18:46,043 INFO  [api] request_id=62dd9ff08cb6 method=GET path=/v1/orders/1042 status=200 duration_ms=76 user=han
+2026-11-25 09:18:47,331 INFO  [api] request_id=bba7d74a668a method=GET path=/v1/orders status=200 duration_ms=82 user=lee
+2026-11-25 09:18:48,467 INFO  [api] request_id=3a128f965b56 method=GET path=/v1/orders status=200 duration_ms=46 user=lee
+2026-11-25 09:18:50,071 INFO  [api] request_id=052c3b6f325f method=GET path=/v1/search status=200 duration_ms=84 user=jung
+2026-11-25 09:18:51,144 INFO  [api] request_id=4a0657929081 method=GET path=/v1/orders/1042 status=200 duration_ms=60 user=jung
+2026-11-25 09:18:52,512 INFO  [api] request_id=c8690cc06be4 method=GET path=/v1/search status=304 duration_ms=34 user=yoon
+2026-11-25 09:18:52,514 INFO  [api] request_id=b126278a670c db=orders rows=37 duration_ms=14
+2026-11-25 09:18:54,012 INFO  [api] request_id=480fb2506de2 method=GET path=/v1/cart status=200 duration_ms=56 user=kim
+2026-11-25 09:18:55,904 INFO  [api] request_id=6079c7c8aeb5 method=GET path=/v1/cart status=200 duration_ms=52 user=jung
+2026-11-25 09:18:55,905 INFO  [api] request_id=06f5d4f40e26 db=orders rows=7 duration_ms=11
+2026-11-25 09:18:57,226 INFO  [api] request_id=3e8ce18c1b5a method=GET path=/v1/search status=200 duration_ms=24 user=yoon
+2026-11-25 09:18:58,576 INFO  [api] request_id=85f49632945b method=GET path=/health status=200 duration_ms=32 user=kim
+2026-11-25 09:18:59,757 INFO  [api] request_id=ad379f8207e5 method=GET path=/v1/cart status=200 duration_ms=34 user=park
+2026-11-25 09:19:01,778 INFO  [api] request_id=65e40ca9b765 method=GET path=/health status=200 duration_ms=17 user=han
+2026-11-25 09:19:02,764 INFO  [api] request_id=af8d70b36bf7 method=GET path=/health status=200 duration_ms=50 user=choi
+2026-11-25 09:19:04,743 INFO  [api] request_id=b11c0c98099b method=GET path=/v1/orders status=200 duration_ms=43 user=jung
+2026-11-25 09:19:06,216 INFO  [api] request_id=c898be02fa71 method=GET path=/v1/orders status=200 duration_ms=11 user=kim
+2026-11-25 09:19:08,228 INFO  [api] request_id=0ef07f1ff080 method=GET path=/health status=200 duration_ms=38 user=park
+2026-11-25 09:19:09,727 INFO  [api] request_id=81767b29cc16 method=GET path=/v1/orders status=200 duration_ms=81 user=kim
+2026-11-25 09:19:11,395 INFO  [api] request_id=8e6329c0b0ac method=GET path=/v1/search status=200 duration_ms=81 user=park
+2026-11-25 09:19:12,347 INFO  [api] request_id=5179069ad74d method=GET path=/v1/orders status=200 duration_ms=88 user=choi
+2026-11-25 09:19:13,853 INFO  [api] request_id=ecdb02ecb46f method=GET path=/v1/users/me status=200 duration_ms=32 user=kim
+2026-11-25 09:19:15,459 INFO  [api] request_id=e74cb897ffec method=GET path=/v1/search status=200 duration_ms=72 user=seo
+2026-11-25 09:19:15,464 INFO  [api] request_id=0739f57dfc15 db=orders rows=2 duration_ms=2
+2026-11-25 09:19:16,563 INFO  [api] request_id=17254990f2d8 method=GET path=/v1/cart status=200 duration_ms=16 user=seo
+2026-11-25 09:19:16,564 INFO  [api] request_id=af8065bd23b3 db=orders rows=7 duration_ms=12
+2026-11-25 09:19:17,932 INFO  [api] request_id=6200492aa89b method=GET path=/v1/search status=200 duration_ms=39 user=kim
+2026-11-25 09:19:19,337 INFO  [api] request_id=c74002d9bd9f method=GET path=/v1/users/me status=200 duration_ms=55 user=park
+2026-11-25 09:19:20,863 INFO  [api] request_id=2f651847261c method=GET path=/v1/users/me status=200 duration_ms=33 user=seo
+2026-11-25 09:19:22,723 INFO  [api] request_id=1dfdfb3857aa method=GET path=/v1/orders status=200 duration_ms=36 user=park
+2026-11-25 09:19:23,937 INFO  [api] request_id=ed366627442b method=GET path=/health status=200 duration_ms=61 user=seo
+2026-11-25 09:19:25,122 INFO  [api] request_id=753d4605e5dc method=GET path=/v1/orders status=200 duration_ms=63 user=kim
+2026-11-25 09:19:26,192 INFO  [api] request_id=f4ad6d36bf30 method=GET path=/v1/search status=200 duration_ms=68 user=jung
+2026-11-25 09:19:27,619 INFO  [api] request_id=ae53d67b6573 method=GET path=/v1/users/me status=200 duration_ms=74 user=lee
+2026-11-25 09:19:28,601 INFO  [api] request_id=1e380d2b87cc method=GET path=/v1/cart status=200 duration_ms=89 user=jung
+2026-11-25 09:19:29,860 INFO  [api] request_id=dbe66d955cd5 method=GET path=/health status=200 duration_ms=10 user=han
+2026-11-25 09:19:31,398 INFO  [api] request_id=3d297141b5a0 method=GET path=/v1/search status=200 duration_ms=37 user=lee
+2026-11-25 09:19:33,178 INFO  [api] request_id=aafd7dc4aefb method=GET path=/health status=200 duration_ms=57 user=seo
+2026-11-25 09:19:34,746 INFO  [api] request_id=863067e65a8a method=GET path=/v1/orders status=200 duration_ms=32 user=seo
+2026-11-25 09:19:36,311 INFO  [api] request_id=e8465d53bb1c method=GET path=/v1/orders/1042 status=200 duration_ms=20 user=park
+2026-11-25 09:19:37,669 INFO  [api] request_id=2eea0b98ff11 method=GET path=/v1/search status=200 duration_ms=37 user=han
+2026-11-25 09:19:39,603 INFO  [api] request_id=500e3b1b84ce method=GET path=/v1/search status=200 duration_ms=49 user=han
+2026-11-25 09:19:39,609 INFO  [api] request_id=ea0fd16ae370 db=orders rows=19 duration_ms=16
+2026-11-25 09:19:41,608 INFO  [api] request_id=834fba89f411 method=GET path=/v1/orders/1042 status=200 duration_ms=80 user=park
+2026-11-25 09:19:41,614 INFO  [api] request_id=6871c3bcccc5 db=orders rows=38 duration_ms=24
+2026-11-25 09:19:43,308 INFO  [api] request_id=fff749cd65f5 method=GET path=/v1/orders/1042 status=200 duration_ms=84 user=park
+2026-11-25 09:19:45,121 INFO  [api] request_id=402a37cacd29 method=GET path=/v1/orders status=200 duration_ms=53 user=kim
+2026-11-25 09:19:46,680 INFO  [api] request_id=fd2371138bd4 method=GET path=/v1/orders/1042 status=200 duration_ms=81 user=jung
+2026-11-25 09:19:46,682 INFO  [api] request_id=2c420269a8ff db=orders rows=30 duration_ms=21
+2026-11-25 09:19:48,494 INFO  [api] request_id=a8fee10823cd method=GET path=/v1/users/me status=200 duration_ms=83 user=park
+2026-11-25 09:19:48,496 INFO  [api] request_id=ef39580d7d3e db=orders rows=38 duration_ms=24
+2026-11-25 09:19:50,299 INFO  [api] request_id=f0ade6859def method=GET path=/v1/orders status=200 duration_ms=70 user=park
+2026-11-25 09:19:51,516 INFO  [api] request_id=7fdd0e68393f method=GET path=/v1/orders status=200 duration_ms=30 user=han
+2026-11-25 09:19:53,080 INFO  [api] request_id=74bea13e8001 method=GET path=/v1/orders status=200 duration_ms=33 user=choi
+2026-11-25 09:19:55,133 INFO  [api] request_id=60f5c8ad32ff method=GET path=/v1/cart status=200 duration_ms=23 user=choi
+2026-11-25 09:19:57,100 INFO  [api] request_id=32bcf40959c0 method=GET path=/health status=200 duration_ms=72 user=seo
+2026-11-25 09:19:58,081 INFO  [api] request_id=f06f59a7453b method=GET path=/v1/orders status=200 duration_ms=55 user=jung
+2026-11-25 09:19:59,477 INFO  [api] request_id=cbd3eb3feafc method=GET path=/v1/cart status=200 duration_ms=58 user=seo
+2026-11-25 09:20:00,473 INFO  [api] request_id=19184c57a3bb method=GET path=/health status=200 duration_ms=87 user=yoon
+2026-11-25 09:20:02,343 INFO  [api] request_id=a1dd704216ff method=GET path=/v1/search status=200 duration_ms=19 user=han
+2026-11-25 09:20:03,819 INFO  [api] request_id=cdee01dc541b method=GET path=/v1/orders/1042 status=200 duration_ms=23 user=lee
+2026-11-25 09:20:03,825 INFO  [api] request_id=3293550fdbcd db=orders rows=12 duration_ms=7
+2026-11-25 09:20:05,207 INFO  [api] request_id=3edf4d217375 method=GET path=/v1/users/me status=200 duration_ms=18 user=choi
+2026-11-25 09:20:06,808 INFO  [api] request_id=80f57f539764 method=GET path=/v1/orders/1042 status=200 duration_ms=40 user=park
+2026-11-25 09:20:08,754 INFO  [api] request_id=79f67d36149b method=GET path=/health status=200 duration_ms=17 user=choi
+2026-11-25 09:20:10,081 INFO  [api] request_id=2f7c769994ca method=GET path=/v1/orders/1042 status=200 duration_ms=28 user=seo
+2026-11-25 09:20:10,082 INFO  [api] request_id=e93d711ca526 db=orders rows=35 duration_ms=11
+2026-11-25 09:20:11,688 INFO  [api] request_id=cd5c4993cb24 method=GET path=/v1/search status=304 duration_ms=13 user=jung
+2026-11-25 09:20:13,720 INFO  [api] request_id=02d369b72f40 method=GET path=/v1/search status=200 duration_ms=31 user=choi
+2026-11-25 09:20:15,000 INFO  [api] request_id=49e5e6c4f961 method=GET path=/v1/orders status=200 duration_ms=62 user=jung
+2026-11-25 09:20:16,455 INFO  [api] request_id=c68826f1b5c2 method=GET path=/v1/cart status=200 duration_ms=88 user=lee
+2026-11-25 09:20:17,463 INFO  [api] request_id=065cfc2ef51c method=GET path=/v1/orders/1042 status=200 duration_ms=68 user=han
+2026-11-25 09:20:17,464 INFO  [api] request_id=3dd5d1e71f22 db=orders rows=37 duration_ms=8
+2026-11-25 09:20:18,771 INFO  [api] request_id=1e2174113708 method=GET path=/v1/orders status=200 duration_ms=78 user=park
+2026-11-25 09:20:20,183 INFO  [api] request_id=3270fef3c2f8 method=GET path=/v1/users/me status=200 duration_ms=55 user=seo
+2026-11-25 09:20:20,187 INFO  [api] request_id=d08db2326105 db=orders rows=6 duration_ms=2
+2026-11-25 09:20:22,076 INFO  [api] request_id=39dc40f6156c method=GET path=/v1/orders/1042 status=200 duration_ms=38 user=yoon
+2026-11-25 09:20:23,001 INFO  [api] request_id=9dc7c8eed159 method=GET path=/v1/orders status=200 duration_ms=71 user=lee
+2026-11-25 09:20:23,004 INFO  [api] request_id=e2419e08af85 db=orders rows=31 duration_ms=20
+2026-11-25 09:20:24,043 INFO  [api] request_id=ad69251b4d60 method=GET path=/v1/orders/1042 status=200 duration_ms=83 user=seo
+2026-11-25 09:20:25,576 INFO  [api] request_id=b59b86286235 method=GET path=/health status=200 duration_ms=65 user=park
+2026-11-25 09:20:26,655 INFO  [api] request_id=0187240862a3 method=GET path=/v1/orders status=200 duration_ms=74 user=kim
+2026-11-25 09:20:26,661 INFO  [api] request_id=f45e4a68d289 db=orders rows=36 duration_ms=17
+2026-11-25 09:20:28,095 INFO  [api] request_id=e8acfbfc1772 method=GET path=/health status=200 duration_ms=41 user=jung
+2026-11-25 09:20:30,015 INFO  [api] request_id=071e600b741e method=GET path=/v1/orders/1042 status=200 duration_ms=25 user=jung
+2026-11-25 09:20:32,094 INFO  [api] request_id=f1d9895af76b method=GET path=/v1/users/me status=200 duration_ms=79 user=seo
+2026-11-25 09:20:33,246 INFO  [api] request_id=a9d884c1f14c method=GET path=/health status=200 duration_ms=67 user=seo
+2026-11-25 09:20:34,371 INFO  [api] request_id=c7a834f4273c method=GET path=/v1/users/me status=200 duration_ms=83 user=seo
+2026-11-25 09:20:35,505 INFO  [api] request_id=769922963656 method=GET path=/v1/orders status=200 duration_ms=72 user=jung
+2026-11-25 09:20:37,589 INFO  [api] request_id=9ba89441cc83 method=GET path=/v1/users/me status=200 duration_ms=48 user=choi
+2026-11-25 09:20:37,591 INFO  [api] request_id=989b62d19a7c db=orders rows=37 duration_ms=17
+2026-11-25 09:20:38,636 INFO  [api] request_id=dbecb21fa123 method=GET path=/health status=200 duration_ms=68 user=park
+2026-11-25 09:20:39,837 INFO  [api] request_id=fcb4b14c4f1d method=GET path=/v1/orders status=200 duration_ms=66 user=choi
+2026-11-25 09:20:40,858 INFO  [api] request_id=63a1d5141d9d method=GET path=/v1/users/me status=200 duration_ms=80 user=lee
+2026-11-25 09:20:41,989 INFO  [api] request_id=dae815764c92 method=GET path=/v1/orders status=200 duration_ms=67 user=yoon
+2026-11-25 09:20:43,249 INFO  [api] request_id=c12b092e7752 method=GET path=/v1/orders status=200 duration_ms=49 user=seo
+2026-11-25 09:20:45,300 INFO  [api] request_id=ff3e903c4d52 method=GET path=/v1/search status=200 duration_ms=12 user=seo
+2026-11-25 09:20:46,523 INFO  [api] request_id=080de151089a method=GET path=/health status=200 duration_ms=69 user=choi
+2026-11-25 09:20:47,783 INFO  [api] request_id=e584b705ca3f method=GET path=/v1/cart status=200 duration_ms=46 user=kim
+2026-11-25 09:20:49,562 INFO  [api] request_id=d3bc09d7222a method=GET path=/v1/cart status=200 duration_ms=75 user=park
+2026-11-25 09:20:51,285 INFO  [api] request_id=32363aac5105 method=GET path=/health status=200 duration_ms=47 user=lee
+2026-11-25 09:20:52,783 INFO  [api] request_id=3831e646c009 method=GET path=/v1/search status=304 duration_ms=51 user=kim
+2026-11-25 09:20:53,734 INFO  [api] request_id=f4e0da9513fb method=GET path=/v1/search status=200 duration_ms=16 user=kim
+2026-11-25 09:20:53,739 INFO  [api] request_id=4e626767b8a0 db=orders rows=11 duration_ms=5
+2026-11-25 09:20:55,713 INFO  [api] request_id=e4183d833616 method=GET path=/v1/orders status=200 duration_ms=39 user=seo
+2026-11-25 09:20:57,274 INFO  [api] request_id=8fc4fe43cdbf method=GET path=/v1/orders status=200 duration_ms=13 user=jung
+2026-11-25 09:20:58,600 INFO  [api] request_id=f6bbe244fcfe method=GET path=/v1/cart status=200 duration_ms=36 user=kim
+2026-11-25 09:20:59,906 INFO  [api] request_id=cda621704970 method=GET path=/v1/orders status=200 duration_ms=53 user=park
+2026-11-25 09:21:01,960 INFO  [api] request_id=21aa296c4845 method=GET path=/v1/orders/1042 status=200 duration_ms=12 user=jung
+2026-11-25 09:21:02,951 INFO  [api] request_id=1121cb331e5d method=GET path=/v1/users/me status=200 duration_ms=47 user=yoon
+2026-11-25 09:21:04,203 INFO  [api] request_id=6af8f8f6c208 method=GET path=/v1/search status=304 duration_ms=51 user=lee
+2026-11-25 09:21:06,181 INFO  [api] request_id=5f1262c46747 method=GET path=/v1/users/me status=200 duration_ms=22 user=han
+2026-11-25 09:21:08,262 INFO  [api] request_id=8d19382c7765 method=GET path=/v1/orders status=200 duration_ms=41 user=han
+2026-11-25 09:21:09,496 INFO  [api] request_id=6bf56a1e9a08 method=GET path=/v1/orders status=200 duration_ms=44 user=jung
+2026-11-25 09:21:10,493 INFO  [api] request_id=0dc5ee72338a method=GET path=/v1/cart status=200 duration_ms=90 user=choi
+2026-11-25 09:21:11,939 INFO  [api] request_id=36778d90c24f method=GET path=/v1/users/me status=200 duration_ms=11 user=park
+2026-11-25 09:21:13,751 INFO  [api] request_id=5b4a5ef8756b method=GET path=/v1/cart status=200 duration_ms=14 user=jung
+2026-11-25 09:21:15,711 INFO  [api] request_id=be343dc31912 method=GET path=/health status=200 duration_ms=78 user=kim
+2026-11-25 09:21:15,714 INFO  [api] request_id=6e1cd557623d db=orders rows=29 duration_ms=12
+2026-11-25 09:21:17,181 INFO  [api] request_id=1d47c6842df7 method=GET path=/health status=200 duration_ms=36 user=han
+2026-11-25 09:21:18,111 INFO  [api] request_id=201dd08c137c method=GET path=/v1/users/me status=200 duration_ms=12 user=jung
+2026-11-25 09:21:19,653 INFO  [api] request_id=516167adbc75 method=GET path=/v1/search status=200 duration_ms=85 user=kim
+2026-11-25 09:21:20,627 INFO  [api] request_id=b8accf3b903e method=GET path=/v1/cart status=200 duration_ms=26 user=seo
+2026-11-25 09:21:21,942 INFO  [api] request_id=9e7b0aa315a7 method=GET path=/v1/search status=200 duration_ms=31 user=kim
+2026-11-25 09:21:23,283 INFO  [api] request_id=10791e9070e6 method=GET path=/health status=200 duration_ms=32 user=jung
+2026-11-25 09:21:24,701 INFO  [api] request_id=d72fbc766f8f method=GET path=/v1/cart status=200 duration_ms=36 user=han
+2026-11-25 09:21:26,622 INFO  [api] request_id=3442b3389423 method=GET path=/v1/cart status=200 duration_ms=46 user=park
+2026-11-25 09:21:26,628 INFO  [api] request_id=eaf891f1a69c db=orders rows=9 duration_ms=5
+2026-11-25 09:21:27,817 INFO  [api] request_id=883a9cc33252 method=GET path=/v1/cart status=200 duration_ms=54 user=jung
+2026-11-25 09:21:29,114 INFO  [api] request_id=26a65de182b3 method=GET path=/v1/orders/1042 status=200 duration_ms=63 user=park
+2026-11-25 09:21:29,118 INFO  [api] request_id=aa38aaa2af8d db=orders rows=14 duration_ms=11
+2026-11-25 09:21:30,587 INFO  [api] request_id=8585db8aad11 method=GET path=/v1/search status=200 duration_ms=55 user=park
+2026-11-25 09:21:31,829 INFO  [api] request_id=92d80e82cab4 method=GET path=/v1/cart status=200 duration_ms=73 user=seo
+2026-11-25 09:21:33,866 INFO  [api] request_id=ee8fc95e62fb method=GET path=/v1/users/me status=200 duration_ms=84 user=yoon
+2026-11-25 09:21:35,934 INFO  [api] request_id=28a873448f07 method=GET path=/v1/orders status=200 duration_ms=45 user=yoon
+2026-11-25 09:21:37,254 INFO  [api] request_id=b0646635916e method=GET path=/v1/users/me status=200 duration_ms=78 user=seo
+2026-11-25 09:21:39,226 INFO  [api] request_id=aa4daa332be2 method=GET path=/v1/users/me status=200 duration_ms=25 user=choi
+2026-11-25 09:21:40,746 INFO  [api] request_id=7a53189808b7 method=GET path=/v1/orders status=200 duration_ms=58 user=seo
+2026-11-25 09:21:42,700 INFO  [api] request_id=d990f7cc5aa0 method=GET path=/v1/users/me status=200 duration_ms=30 user=choi
+2026-11-25 09:21:44,691 INFO  [api] request_id=d4a8454a9378 method=GET path=/v1/orders/1042 status=200 duration_ms=17 user=park
+2026-11-25 09:21:46,428 INFO  [api] request_id=efe5ceceab36 method=GET path=/health status=200 duration_ms=53 user=seo
+2026-11-25 09:21:47,333 INFO  [api] request_id=29a78aafc694 method=GET path=/v1/cart status=200 duration_ms=27 user=park
+2026-11-25 09:21:47,335 INFO  [api] request_id=2dd3132fcc6e db=orders rows=29 duration_ms=22
+2026-11-25 09:21:49,263 INFO  [api] request_id=8e15e602d78a method=GET path=/v1/cart status=200 duration_ms=73 user=jung
+2026-11-25 09:21:51,013 INFO  [api] request_id=45f7698e6423 method=GET path=/v1/cart status=200 duration_ms=32 user=jung
+2026-11-25 09:21:51,014 INFO  [api] request_id=160f9095be2c db=orders rows=30 duration_ms=20
+2026-11-25 09:21:51,971 INFO  [api] request_id=8f774b5d7367 method=GET path=/v1/users/me status=200 duration_ms=33 user=lee
+2026-11-25 09:21:53,820 INFO  [api] request_id=1a6c4cd6492a method=GET path=/v1/users/me status=200 duration_ms=75 user=yoon
+2026-11-25 09:21:55,435 INFO  [api] request_id=c673303d2a6c method=GET path=/v1/search status=200 duration_ms=32 user=park
+2026-11-25 09:21:55,438 INFO  [api] request_id=14e84d592440 db=orders rows=13 duration_ms=12
+2026-11-25 09:21:56,533 INFO  [api] request_id=2e7771d3e427 method=GET path=/v1/search status=200 duration_ms=58 user=lee
+2026-11-25 09:21:58,427 INFO  [api] request_id=03f07bedcf19 method=GET path=/v1/orders status=200 duration_ms=53 user=park
+2026-11-25 09:22:00,416 INFO  [api] request_id=5c075e3b474c method=GET path=/v1/orders/1042 status=200 duration_ms=34 user=park
+2026-11-25 09:22:02,405 INFO  [api] request_id=c6022621a020 method=GET path=/v1/users/me status=200 duration_ms=66 user=park
+2026-11-25 09:22:03,989 INFO  [api] request_id=d225554166a3 method=GET path=/v1/cart status=200 duration_ms=30 user=kim
+2026-11-25 09:22:06,048 INFO  [api] request_id=408630ed15a6 method=GET path=/v1/users/me status=200 duration_ms=77 user=kim
+2026-11-25 09:22:07,422 INFO  [api] request_id=c699406bfa22 method=GET path=/v1/orders/1042 status=200 duration_ms=75 user=yoon
+2026-11-25 09:22:09,108 INFO  [api] request_id=b3c9ff80dd89 method=GET path=/v1/users/me status=200 duration_ms=42 user=jung
+2026-11-25 09:22:10,542 INFO  [api] request_id=561491cd5b22 method=GET path=/v1/cart status=200 duration_ms=40 user=park
+2026-11-25 09:22:12,360 INFO  [api] request_id=b194ee8af53e method=GET path=/v1/users/me status=200 duration_ms=90 user=park
+2026-11-25 09:22:14,094 INFO  [api] request_id=b7479bdeeb30 method=GET path=/v1/orders/1042 status=200 duration_ms=48 user=park
+2026-11-25 09:22:15,800 INFO  [api] request_id=0e62cee48d88 method=GET path=/v1/orders status=200 duration_ms=43 user=han
+2026-11-25 09:22:15,805 INFO  [api] request_id=5f8e25318844 db=orders rows=2 duration_ms=24
+2026-11-25 09:22:16,955 INFO  [api] request_id=77cea4ddea5f method=GET path=/v1/orders status=200 duration_ms=36 user=han
+2026-11-25 09:22:18,188 INFO  [api] request_id=8a69e9f63fef method=GET path=/v1/orders status=200 duration_ms=82 user=jung
+2026-11-25 09:22:19,683 INFO  [api] request_id=d671ca9d15b5 method=GET path=/health status=200 duration_ms=76 user=park
+2026-11-25 09:22:19,685 INFO  [api] request_id=b864a9219cb2 db=orders rows=39 duration_ms=13
+2026-11-25 09:22:21,101 INFO  [api] request_id=9cf0970afabf method=GET path=/v1/orders status=200 duration_ms=69 user=han
+2026-11-25 09:22:22,803 INFO  [api] request_id=4ad7c34c685e method=GET path=/v1/cart status=200 duration_ms=8 user=yoon
+2026-11-25 09:22:23,767 INFO  [api] request_id=591bcf8252b9 method=GET path=/v1/search status=200 duration_ms=27 user=yoon
+2026-11-25 09:22:23,773 INFO  [api] request_id=59c79f116cd2 db=orders rows=2 duration_ms=24
+2026-11-25 09:22:25,545 INFO  [api] request_id=ed09fbe5d6ac method=GET path=/v1/search status=200 duration_ms=76 user=yoon
+2026-11-25 09:22:27,012 INFO  [api] request_id=b4a9ec11102d method=GET path=/v1/search status=200 duration_ms=18 user=seo
+2026-11-25 09:22:27,994 INFO  [api] request_id=fe0f0a326e7e method=GET path=/v1/orders status=200 duration_ms=15 user=lee
+2026-11-25 09:22:29,439 INFO  [api] request_id=f271055f756a method=GET path=/v1/users/me status=200 duration_ms=32 user=kim
+2026-11-25 09:22:29,444 INFO  [api] request_id=833e37241959 db=orders rows=3 duration_ms=21
+2026-11-25 09:22:30,772 INFO  [api] request_id=18ceb140b1df method=GET path=/v1/search status=200 duration_ms=37 user=lee
+2026-11-25 09:22:30,774 INFO  [api] request_id=4182bf6af012 db=orders rows=24 duration_ms=21
+2026-11-25 09:22:31,777 INFO  [api] request_id=ecd53be3ef26 method=GET path=/v1/users/me status=200 duration_ms=47 user=seo
+2026-11-25 09:22:32,886 INFO  [api] request_id=e25bff89fb8f method=GET path=/v1/orders/1042 status=200 duration_ms=71 user=seo
+2026-11-25 09:22:33,982 INFO  [api] request_id=a8bcd5d971c6 method=GET path=/v1/cart status=200 duration_ms=35 user=jung
+2026-11-25 09:22:33,984 INFO  [api] request_id=834d1dd6c967 db=orders rows=29 duration_ms=23
+2026-11-25 09:22:36,064 INFO  [api] request_id=981fe2f0415d method=GET path=/v1/search status=200 duration_ms=65 user=lee
+2026-11-25 09:22:37,056 INFO  [api] request_id=b291b79e3b02 method=GET path=/v1/cart status=200 duration_ms=73 user=choi
+2026-11-25 09:22:39,111 INFO  [api] request_id=ac76dab81f22 method=GET path=/v1/orders/1042 status=200 duration_ms=17 user=seo
+2026-11-25 09:22:40,120 INFO  [api] request_id=b4eaee05fdad method=GET path=/v1/users/me status=200 duration_ms=25 user=lee
+2026-11-25 09:22:41,998 INFO  [api] request_id=26aa7f707147 method=GET path=/v1/orders status=200 duration_ms=88 user=han
+2026-11-25 09:22:43,236 INFO  [api] request_id=b005ec7932d1 method=GET path=/health status=200 duration_ms=35 user=choi
+2026-11-25 09:22:44,875 INFO  [api] request_id=87dd8df7bde7 method=GET path=/v1/cart status=200 duration_ms=53 user=seo
+2026-11-25 09:22:45,955 INFO  [api] request_id=e795fab8028e method=GET path=/v1/cart status=200 duration_ms=10 user=jung
+2026-11-25 09:22:47,534 INFO  [api] request_id=b6ab294c6a8b method=GET path=/v1/users/me status=200 duration_ms=10 user=yoon
+2026-11-25 09:22:49,428 INFO  [api] request_id=5d11348f4212 method=GET path=/v1/users/me status=200 duration_ms=12 user=han
+2026-11-25 09:22:50,630 INFO  [api] request_id=c47caf5f2178 method=GET path=/v1/orders/1042 status=200 duration_ms=84 user=lee
+2026-11-25 09:22:52,116 INFO  [api] request_id=c102201347fc method=GET path=/health status=200 duration_ms=32 user=choi
+2026-11-25 09:22:52,118 INFO  [api] request_id=0eae413aa305 db=orders rows=31 duration_ms=10
+2026-11-25 09:22:54,171 INFO  [api] request_id=c27ce3adff69 method=GET path=/v1/orders/1042 status=200 duration_ms=26 user=seo
+2026-11-25 09:22:55,521 INFO  [api] request_id=97f8ada9b3b5 method=GET path=/v1/orders status=200 duration_ms=74 user=park
+2026-11-25 09:22:55,527 INFO  [api] request_id=baf7cb8e8c0d db=orders rows=37 duration_ms=12
+2026-11-25 09:22:57,410 INFO  [api] request_id=05f91d6ed670 method=GET path=/v1/users/me status=200 duration_ms=38 user=yoon
+2026-11-25 09:22:58,383 INFO  [api] request_id=568a2ca3d9af method=GET path=/v1/orders status=200 duration_ms=66 user=han
+2026-11-25 09:22:59,750 INFO  [api] request_id=af5feca6b04a method=GET path=/v1/cart status=200 duration_ms=66 user=kim
+2026-11-25 09:23:01,287 INFO  [api] request_id=797fb23e8520 method=GET path=/health status=200 duration_ms=39 user=park
+2026-11-25 09:23:02,207 INFO  [api] request_id=108096ec8259 method=GET path=/v1/users/me status=200 duration_ms=39 user=kim
+2026-11-25 09:23:02,210 INFO  [api] request_id=8b5294ed59af db=orders rows=20 duration_ms=16
+2026-11-25 09:23:03,684 INFO  [api] request_id=19eb78fad7be method=GET path=/v1/orders/1042 status=200 duration_ms=76 user=lee
+2026-11-25 09:23:03,689 INFO  [api] request_id=491fa836a180 db=orders rows=39 duration_ms=21
+2026-11-25 09:23:04,974 INFO  [api] request_id=2e80003a50bb method=GET path=/v1/users/me status=200 duration_ms=26 user=lee
+2026-11-25 09:23:06,770 INFO  [api] request_id=df907314ecf9 method=GET path=/health status=200 duration_ms=49 user=lee
+2026-11-25 09:23:08,381 INFO  [api] request_id=c65cc83f9559 method=GET path=/v1/search status=200 duration_ms=41 user=kim
+2026-11-25 09:23:09,435 INFO  [api] request_id=6433016b7c43 method=GET path=/v1/orders status=200 duration_ms=86 user=han
+2026-11-25 09:23:10,790 INFO  [api] request_id=3c8621130ff8 method=GET path=/v1/orders status=200 duration_ms=33 user=kim
+2026-11-25 09:23:11,935 INFO  [api] request_id=ab6144b17374 method=GET path=/v1/orders status=200 duration_ms=87 user=kim
+2026-11-25 09:23:13,941 INFO  [api] request_id=bfc53730f565 method=GET path=/v1/cart status=200 duration_ms=33 user=yoon
+2026-11-25 09:23:15,667 INFO  [api] request_id=80f569bf61e7 method=GET path=/v1/search status=200 duration_ms=80 user=seo
+2026-11-25 09:23:17,017 INFO  [api] request_id=87d255532e74 method=GET path=/v1/search status=304 duration_ms=37 user=jung
+2026-11-25 09:23:18,185 INFO  [api] request_id=b192c271a359 method=GET path=/v1/orders status=200 duration_ms=73 user=han
+2026-11-25 09:23:19,156 INFO  [api] request_id=6a1cc4bc6c8d method=GET path=/v1/cart status=200 duration_ms=36 user=han
+2026-11-25 09:23:19,158 INFO  [api] request_id=028ec3bc1be8 db=orders rows=28 duration_ms=2
+2026-11-25 09:23:20,915 INFO  [api] request_id=ce1fe32d3942 method=GET path=/v1/cart status=200 duration_ms=59 user=yoon
+2026-11-25 09:23:22,016 INFO  [api] request_id=7c648581d622 method=GET path=/v1/orders status=200 duration_ms=46 user=jung
+2026-11-25 09:23:23,591 INFO  [api] request_id=3a75a44541e6 method=GET path=/v1/search status=200 duration_ms=78 user=park
+2026-11-25 09:23:24,563 INFO  [api] request_id=a4c0cdafefd3 method=GET path=/v1/orders status=200 duration_ms=13 user=jung
+2026-11-25 09:23:24,565 INFO  [api] request_id=482fa713d297 db=orders rows=30 duration_ms=15
+2026-11-25 09:23:25,467 INFO  [api] request_id=a91009c3bdf9 method=GET path=/health status=200 duration_ms=24 user=jung
+2026-11-25 09:23:27,011 INFO  [api] request_id=fb69b9864993 method=GET path=/v1/users/me status=200 duration_ms=55 user=jung
+2026-11-25 09:23:28,370 INFO  [api] request_id=fbe439d13ba4 method=GET path=/v1/orders/1042 status=200 duration_ms=30 user=seo
+2026-11-25 09:23:29,347 INFO  [api] request_id=45e616d0d54e method=GET path=/v1/users/me status=200 duration_ms=35 user=han
+2026-11-25 09:23:29,349 INFO  [api] request_id=3308f32d82e8 db=orders rows=16 duration_ms=6
+2026-11-25 09:23:30,927 INFO  [api] request_id=3439c3e989a7 method=GET path=/v1/search status=304 duration_ms=28 user=jung
+2026-11-25 09:23:32,336 INFO  [api] request_id=2d5652e35e6a method=GET path=/v1/orders/1042 status=200 duration_ms=59 user=park
+2026-11-25 09:23:33,550 INFO  [api] request_id=1462323eb233 method=GET path=/v1/search status=200 duration_ms=31 user=lee
+2026-11-25 09:23:35,286 INFO  [api] request_id=f1d7a0e6f662 method=GET path=/v1/orders/1042 status=200 duration_ms=71 user=park
+2026-11-25 09:23:36,345 INFO  [api] request_id=d28c97b161ca method=GET path=/health status=200 duration_ms=48 user=park
+2026-11-25 09:23:37,434 INFO  [api] request_id=4f520b3de841 method=GET path=/v1/users/me status=200 duration_ms=75 user=park
+2026-11-25 09:23:39,307 INFO  [api] request_id=7f6710b21d9e method=GET path=/v1/search status=200 duration_ms=42 user=choi
+2026-11-25 09:23:41,081 INFO  [api] request_id=e59b0f54f751 method=GET path=/health status=200 duration_ms=33 user=choi
+2026-11-25 09:23:42,853 INFO  [api] request_id=d97ac94665a3 method=GET path=/health status=200 duration_ms=39 user=seo
+2026-11-25 09:23:44,234 INFO  [api] request_id=ed2ea0214c20 method=GET path=/v1/users/me status=200 duration_ms=57 user=choi
+2026-11-25 09:23:45,997 INFO  [api] request_id=1b22a3870e86 method=GET path=/v1/search status=304 duration_ms=76 user=lee
+2026-11-25 09:23:47,199 INFO  [api] request_id=432865d9b8d1 method=GET path=/v1/orders status=200 duration_ms=86 user=yoon
+2026-11-25 09:23:48,379 INFO  [api] request_id=cd4704e9843d method=GET path=/health status=200 duration_ms=47 user=han
+2026-11-25 09:23:50,379 INFO  [api] request_id=c8805e580a57 method=GET path=/v1/search status=200 duration_ms=22 user=jung
+2026-11-25 09:23:51,642 INFO  [api] request_id=20e752103240 method=GET path=/v1/cart status=200 duration_ms=38 user=yoon
+2026-11-25 09:23:53,283 INFO  [api] request_id=3cd758f2161d method=GET path=/v1/cart status=200 duration_ms=30 user=park
+2026-11-25 09:23:53,286 INFO  [api] request_id=c6b4ff4d00ab db=orders rows=15 duration_ms=20
+2026-11-25 09:23:55,061 INFO  [api] request_id=7caad174359c method=GET path=/health status=200 duration_ms=21 user=yoon
+2026-11-25 09:23:56,767 INFO  [api] request_id=ce46287c2190 method=GET path=/health status=200 duration_ms=88 user=seo
+2026-11-25 09:23:57,705 INFO  [api] request_id=51c78c6197fa method=GET path=/health status=200 duration_ms=89 user=yoon
+2026-11-25 09:23:57,710 INFO  [api] request_id=aebc015a3c6d db=orders rows=34 duration_ms=2
+2026-11-25 09:23:59,785 INFO  [api] request_id=788d77cc0912 method=GET path=/v1/cart status=200 duration_ms=21 user=yoon
+2026-11-25 09:24:01,363 INFO  [api] request_id=5d1782d3ed6a method=GET path=/v1/users/me status=200 duration_ms=56 user=yoon
+2026-11-25 09:24:02,522 INFO  [api] request_id=ebdafb222cf4 method=GET path=/health status=200 duration_ms=21 user=park
+2026-11-25 09:24:03,868 INFO  [api] request_id=50b35801887d method=GET path=/v1/cart status=200 duration_ms=15 user=yoon
+2026-11-25 09:24:05,929 INFO  [api] request_id=62fb9ac6a315 method=GET path=/v1/cart status=200 duration_ms=36 user=choi
+2026-11-25 09:24:05,933 INFO  [api] request_id=5e67779cdfa0 db=orders rows=36 duration_ms=3
+2026-11-25 09:24:07,223 INFO  [api] request_id=f27ec2b81571 method=GET path=/v1/users/me status=200 duration_ms=86 user=han
+2026-11-25 09:24:08,823 INFO  [api] request_id=2741eb653b99 method=GET path=/v1/orders status=200 duration_ms=67 user=park
+2026-11-25 09:24:10,729 INFO  [api] request_id=765d086c267f method=GET path=/v1/orders/1042 status=200 duration_ms=55 user=han
+2026-11-25 09:24:11,758 INFO  [api] request_id=6d502dd4fb38 method=GET path=/v1/search status=304 duration_ms=45 user=kim
+2026-11-25 09:24:11,763 INFO  [api] request_id=2b16fa03e923 db=orders rows=34 duration_ms=12
+2026-11-25 09:24:13,599 INFO  [api] request_id=3fd458901c79 method=GET path=/v1/orders/1042 status=200 duration_ms=43 user=choi
+2026-11-25 09:24:15,333 INFO  [api] request_id=b467c9f5b2e7 method=GET path=/v1/orders status=200 duration_ms=66 user=park
+2026-11-25 09:24:15,338 INFO  [api] request_id=d2338d34b653 db=orders rows=35 duration_ms=4
+2026-11-25 09:24:16,672 INFO  [api] request_id=7f55eaef0e2e method=GET path=/v1/cart status=200 duration_ms=54 user=jung
+2026-11-25 09:24:17,704 INFO  [api] request_id=294b483f4347 method=GET path=/v1/cart status=200 duration_ms=66 user=choi
+2026-11-25 09:24:19,276 INFO  [api] request_id=1085be3ee47d method=GET path=/v1/search status=304 duration_ms=80 user=jung
+2026-11-25 09:24:21,119 INFO  [api] request_id=c687151f353a method=GET path=/v1/orders/1042 status=200 duration_ms=77 user=yoon
+2026-11-25 09:24:22,029 INFO  [api] request_id=c78099ae8682 method=GET path=/v1/cart status=200 duration_ms=21 user=yoon
+2026-11-25 09:24:23,385 INFO  [api] request_id=0eaa41494a9e method=GET path=/v1/orders/1042 status=200 duration_ms=44 user=kim
+2026-11-25 09:24:23,391 INFO  [api] request_id=fdd11d91e361 db=orders rows=10 duration_ms=14
+2026-11-25 09:24:24,348 INFO  [api] request_id=d467a90973f5 method=GET path=/v1/users/me status=200 duration_ms=90 user=kim
+2026-11-25 09:24:25,457 INFO  [api] request_id=15fd9cf4b79d method=GET path=/v1/search status=200 duration_ms=61 user=kim
+2026-11-25 09:24:26,880 INFO  [api] request_id=e3657f076be3 method=GET path=/v1/users/me status=200 duration_ms=49 user=han
+2026-11-25 09:24:28,030 INFO  [api] request_id=6765a7039a05 method=GET path=/v1/search status=304 duration_ms=20 user=choi
+2026-11-25 09:24:28,984 INFO  [api] request_id=27e3c13a98d2 method=GET path=/v1/orders/1042 status=200 duration_ms=8 user=yoon
+2026-11-25 09:24:30,596 INFO  [api] request_id=830e50ca58e3 method=GET path=/v1/orders/1042 status=200 duration_ms=36 user=seo
+2026-11-25 09:24:32,535 INFO  [api] request_id=1a72ebb93ba2 method=GET path=/v1/cart status=200 duration_ms=33 user=han
+2026-11-25 09:24:34,439 INFO  [api] request_id=5c17434f44e1 method=GET path=/health status=200 duration_ms=24 user=choi
+2026-11-25 09:24:34,440 INFO  [api] request_id=337f35f9befe db=orders rows=3 duration_ms=7
+2026-11-25 09:24:35,863 INFO  [api] request_id=646dfa2f9d27 method=GET path=/health status=200 duration_ms=32 user=han
+2026-11-25 09:24:35,863 ERROR [api] ConnectionResetError: connection reset by peer client=10.0.7.9 request_id=3177adabd1e9 path=/v1/orders
+Traceback (most recent call last):
+  File "/srv/app/handlers/orders.py", line 142, in create
+    return gateway.forward(request)
+  File "/srv/app/gateway.py", line 88, in forward
+    raise ConnectionResetError("connection reset by peer")
+ConnectionResetError: connection reset by peer
+2026-11-25 09:24:40,064 INFO  [api] request_id=e27d48cc68fd method=GET path=/v1/cart status=200 duration_ms=78 user=kim
+2026-11-25 09:24:40,067 INFO  [api] request_id=989685d4966f db=orders rows=10 duration_ms=7
+2026-11-25 09:24:41,862 INFO  [api] request_id=90249b1a3a3b method=GET path=/v1/cart status=200 duration_ms=73 user=seo
+2026-11-25 09:24:43,881 INFO  [api] request_id=aea1a062bc86 method=GET path=/v1/cart status=200 duration_ms=11 user=seo
+2026-11-25 09:24:43,883 INFO  [api] request_id=f13c6f6b960c db=orders rows=20 duration_ms=19
+2026-11-25 09:24:44,969 INFO  [api] request_id=81e4937e10d8 method=GET path=/v1/cart status=200 duration_ms=84 user=lee
+2026-11-25 09:24:44,972 INFO  [api] request_id=d60379e12632 db=orders rows=25 duration_ms=5
+2026-11-25 09:24:46,173 INFO  [api] request_id=800011cbc4e8 method=GET path=/v1/search status=200 duration_ms=86 user=lee
+2026-11-25 09:24:47,099 INFO  [api] request_id=74906d8bd335 method=GET path=/v1/orders/1042 status=200 duration_ms=43 user=jung
+2026-11-25 09:24:49,195 INFO  [api] request_id=23a4bf022a0d method=GET path=/health status=200 duration_ms=57 user=kim
+2026-11-25 09:24:50,600 INFO  [api] request_id=72c66f5f43de method=GET path=/health status=200 duration_ms=76 user=lee
+2026-11-25 09:24:50,606 INFO  [api] request_id=7ec7acd3e504 db=orders rows=39 duration_ms=20
+2026-11-25 09:24:52,015 INFO  [api] request_id=78c2d5706d9c method=GET path=/v1/orders status=200 duration_ms=54 user=jung
+2026-11-25 09:24:53,130 INFO  [api] request_id=23cf40e21ad1 method=GET path=/v1/users/me status=200 duration_ms=76 user=choi
+2026-11-25 09:24:54,712 INFO  [api] request_id=596b9b6f9607 method=GET path=/health status=200 duration_ms=33 user=lee
+2026-11-25 09:24:55,707 INFO  [api] request_id=f18782a7c054 method=GET path=/v1/search status=200 duration_ms=68 user=jung
+2026-11-25 09:24:56,800 INFO  [api] request_id=1b712f901b30 method=GET path=/v1/search status=304 duration_ms=27 user=jung
+2026-11-25 09:24:58,015 INFO  [api] request_id=2ce8b85e1a77 method=GET path=/v1/cart status=200 duration_ms=88 user=kim
+2026-11-25 09:24:59,274 INFO  [api] request_id=b3c5786e0f82 method=GET path=/v1/users/me status=200 duration_ms=76 user=jung
+2026-11-25 09:25:00,731 INFO  [api] request_id=d07461c1e689 method=GET path=/v1/cart status=200 duration_ms=86 user=han
+2026-11-25 09:25:01,716 INFO  [api] request_id=40e6bc8b8c7b method=GET path=/v1/search status=200 duration_ms=84 user=park
+2026-11-25 09:25:03,387 INFO  [api] request_id=abb91dc8c95a method=GET path=/v1/search status=304 duration_ms=24 user=yoon
+2026-11-25 09:25:04,289 INFO  [api] request_id=ebfae7eef997 method=GET path=/v1/orders status=200 duration_ms=32 user=kim
+2026-11-25 09:25:05,610 INFO  [api] request_id=3ab84a3c084a method=GET path=/v1/cart status=200 duration_ms=67 user=seo
+2026-11-25 09:25:06,868 INFO  [api] request_id=d5869986ceb9 method=GET path=/v1/orders/1042 status=200 duration_ms=44 user=lee
+2026-11-25 09:25:06,871 INFO  [api] request_id=54d35c180b0e db=orders rows=19 duration_ms=13
+2026-11-25 09:25:08,875 INFO  [api] request_id=2ff8d266fd7b method=GET path=/v1/orders status=200 duration_ms=24 user=kim
+2026-11-25 09:25:10,134 INFO  [api] request_id=e3c80a371fb0 method=GET path=/v1/orders/1042 status=200 duration_ms=35 user=park
+2026-11-25 09:25:10,135 INFO  [api] request_id=aa9106eea3e6 db=orders rows=1 duration_ms=3
+2026-11-25 09:25:11,762 INFO  [api] request_id=538d999b2cd1 method=GET path=/v1/search status=200 duration_ms=39 user=kim
+2026-11-25 09:25:12,861 INFO  [api] request_id=01560cf50237 method=GET path=/health status=200 duration_ms=38 user=kim
+2026-11-25 09:25:14,672 INFO  [api] request_id=81198d0cc50e method=GET path=/v1/orders status=200 duration_ms=13 user=han
+2026-11-25 09:25:16,181 INFO  [api] request_id=95bd57659021 method=GET path=/health status=200 duration_ms=33 user=kim
+2026-11-25 09:25:17,348 INFO  [api] request_id=e14ed4c11adb method=GET path=/v1/orders status=200 duration_ms=32 user=park
+2026-11-25 09:25:18,490 INFO  [api] request_id=9439cb5c5add method=GET path=/v1/cart status=200 duration_ms=12 user=seo
+2026-11-25 09:25:20,399 INFO  [api] request_id=b4b515773352 method=GET path=/health status=200 duration_ms=15 user=han
+2026-11-25 09:25:21,555 INFO  [api] request_id=2f03cbe40f73 method=GET path=/v1/orders/1042 status=200 duration_ms=82 user=han
+2026-11-25 09:25:21,561 INFO  [api] request_id=2d81dc89bb9f db=orders rows=25 duration_ms=15
+2026-11-25 09:25:22,716 INFO  [api] request_id=40925607d089 method=GET path=/v1/search status=200 duration_ms=14 user=choi
+2026-11-25 09:25:24,580 INFO  [api] request_id=2c8c558fa78c method=GET path=/health status=200 duration_ms=85 user=kim
+2026-11-25 09:25:25,696 INFO  [api] request_id=c126caac7403 method=GET path=/v1/orders status=200 duration_ms=23 user=choi
+2026-11-25 09:25:27,211 INFO  [api] request_id=1bbda6a4bc9c method=GET path=/v1/orders status=200 duration_ms=15 user=park
+2026-11-25 09:25:29,111 INFO  [api] request_id=4d734fe7cdee method=GET path=/v1/orders/1042 status=200 duration_ms=13 user=yoon
+2026-11-25 09:25:29,112 INFO  [api] request_id=ce53dfb968d4 db=orders rows=31 duration_ms=20
+2026-11-25 09:25:30,342 INFO  [api] request_id=951de956accf method=GET path=/health status=200 duration_ms=28 user=park
+2026-11-25 09:25:32,241 INFO  [api] request_id=509ef578c700 method=GET path=/v1/users/me status=200 duration_ms=44 user=seo
+2026-11-25 09:25:33,520 INFO  [api] request_id=356b9510c1f8 method=GET path=/v1/orders/1042 status=200 duration_ms=76 user=lee
+2026-11-25 09:25:34,543 INFO  [api] request_id=c112246b4b44 method=GET path=/health status=200 duration_ms=24 user=seo
+2026-11-25 09:25:34,548 INFO  [api] request_id=25ad59671484 db=orders rows=34 duration_ms=9
+2026-11-25 09:25:36,068 INFO  [api] request_id=b80aba0198df method=GET path=/v1/orders/1042 status=200 duration_ms=39 user=lee
+2026-11-25 09:25:37,898 INFO  [api] request_id=afd462d7b12b method=GET path=/v1/search status=200 duration_ms=37 user=jung
+2026-11-25 09:25:39,691 INFO  [api] request_id=d6a7e8b218d8 method=GET path=/v1/search status=200 duration_ms=43 user=park
+2026-11-25 09:25:40,641 INFO  [api] request_id=dfa88fbcb37c method=GET path=/v1/search status=200 duration_ms=84 user=lee
+2026-11-25 09:25:41,800 INFO  [api] request_id=9e90d7bce8ec method=GET path=/v1/cart status=200 duration_ms=83 user=kim
+2026-11-25 09:25:41,805 INFO  [api] request_id=aaa69693cf6b db=orders rows=17 duration_ms=5
+2026-11-25 09:25:43,599 INFO  [api] request_id=03fd7b2bf09b method=GET path=/v1/search status=304 duration_ms=21 user=choi
+2026-11-25 09:25:45,253 INFO  [api] request_id=8662cc5f1134 method=GET path=/v1/cart status=200 duration_ms=68 user=choi
+2026-11-25 09:25:46,271 INFO  [api] request_id=91dc3a22b86c method=GET path=/v1/orders/1042 status=200 duration_ms=60 user=lee
+2026-11-25 09:25:47,900 INFO  [api] request_id=e06befb6900e method=GET path=/v1/users/me status=200 duration_ms=88 user=park
+2026-11-25 09:25:47,902 INFO  [api] request_id=ab3fbeaf8081 db=orders rows=13 duration_ms=3
+2026-11-25 09:25:49,867 INFO  [api] request_id=7112e5a323f1 method=GET path=/health status=200 duration_ms=24 user=park
+2026-11-25 09:25:50,793 INFO  [api] request_id=93c45a0bee00 method=GET path=/v1/orders/1042 status=200 duration_ms=52 user=park
+2026-11-25 09:25:50,795 INFO  [api] request_id=b153bf74fedd db=orders rows=29 duration_ms=3
+2026-11-25 09:25:51,880 INFO  [api] request_id=e63144d0ad19 method=GET path=/v1/orders/1042 status=200 duration_ms=54 user=seo
+2026-11-25 09:25:52,990 INFO  [api] request_id=02dfb1583dd3 method=GET path=/v1/cart status=200 duration_ms=51 user=yoon
+2026-11-25 09:25:54,706 INFO  [api] request_id=1d5d3007e7b2 method=GET path=/v1/orders/1042 status=200 duration_ms=53 user=jung
+2026-11-25 09:25:56,725 INFO  [api] request_id=baa972b926a9 method=GET path=/v1/users/me status=200 duration_ms=29 user=kim
+2026-11-25 09:25:56,727 INFO  [api] request_id=53f54b57b9a2 db=orders rows=14 duration_ms=4
+2026-11-25 09:25:58,811 INFO  [api] request_id=e04812698e9e method=GET path=/v1/cart status=200 duration_ms=74 user=park
+2026-11-25 09:25:58,817 INFO  [api] request_id=04f1445537f2 db=orders rows=19 duration_ms=24
+2026-11-25 09:26:00,388 INFO  [api] request_id=301d259837d2 method=GET path=/health status=200 duration_ms=22 user=choi
+2026-11-25 09:26:01,950 INFO  [api] request_id=36a4ad9bf6af method=GET path=/v1/orders/1042 status=200 duration_ms=89 user=choi
+2026-11-25 09:26:03,661 INFO  [api] request_id=4433be569f74 method=GET path=/v1/users/me status=200 duration_ms=37 user=park
+2026-11-25 09:26:04,914 INFO  [api] request_id=dcadcc657064 method=GET path=/health status=200 duration_ms=53 user=park
+2026-11-25 09:26:06,150 INFO  [api] request_id=74e1c9517404 method=GET path=/v1/search status=200 duration_ms=64 user=choi
+2026-11-25 09:26:07,180 INFO  [api] request_id=7e5f6c6d2cbe method=GET path=/v1/search status=200 duration_ms=32 user=lee
+2026-11-25 09:26:08,318 INFO  [api] request_id=0ed0f2be5d4c method=GET path=/v1/cart status=200 duration_ms=24 user=seo
+2026-11-25 09:26:10,229 INFO  [api] request_id=34b7fe1cd996 method=GET path=/v1/users/me status=200 duration_ms=59 user=kim
+2026-11-25 09:26:12,235 INFO  [api] request_id=f7318e349154 method=GET path=/v1/orders/1042 status=200 duration_ms=12 user=yoon
+2026-11-25 09:26:14,326 INFO  [api] request_id=bd61d1bfb7d5 method=GET path=/health status=200 duration_ms=16 user=jung
+2026-11-25 09:26:15,997 INFO  [api] request_id=d8c9a4f46380 method=GET path=/v1/users/me status=200 duration_ms=45 user=kim
+2026-11-25 09:26:17,739 INFO  [api] request_id=c363c677e569 method=GET path=/v1/users/me status=200 duration_ms=42 user=choi
+2026-11-25 09:26:18,744 INFO  [api] request_id=ac3f2eb42d38 method=GET path=/health status=200 duration_ms=17 user=park
+2026-11-25 09:26:20,442 INFO  [api] request_id=52f0be443359 method=GET path=/v1/users/me status=200 duration_ms=69 user=choi
+2026-11-25 09:26:22,428 INFO  [api] request_id=917aa34cb6e2 method=GET path=/v1/orders/1042 status=200 duration_ms=29 user=kim
+2026-11-25 09:26:23,999 INFO  [api] request_id=58ca5738916d method=GET path=/v1/orders/1042 status=200 duration_ms=80 user=choi
+2026-11-25 09:26:25,247 INFO  [api] request_id=a7dc69666826 method=GET path=/v1/users/me status=200 duration_ms=11 user=seo
+2026-11-25 09:26:26,634 INFO  [api] request_id=08801fae2c7d method=GET path=/v1/orders/1042 status=200 duration_ms=17 user=han
+2026-11-25 09:26:26,639 INFO  [api] request_id=b7fd4a476739 db=orders rows=39 duration_ms=3
+2026-11-25 09:26:27,559 INFO  [api] request_id=7277d45fea64 method=GET path=/v1/orders/1042 status=200 duration_ms=55 user=park
+2026-11-25 09:26:29,010 INFO  [api] request_id=de30a1feb0c5 method=GET path=/v1/orders status=200 duration_ms=75 user=kim
+2026-11-25 09:26:29,960 INFO  [api] request_id=cc6d031b4b94 method=GET path=/v1/cart status=200 duration_ms=70 user=seo
+2026-11-25 09:26:31,275 INFO  [api] request_id=9f1f6a42aed3 method=GET path=/v1/orders status=200 duration_ms=66 user=lee
+2026-11-25 09:26:32,678 INFO  [api] request_id=35fb9adcade5 method=GET path=/v1/orders/1042 status=200 duration_ms=79 user=kim
+2026-11-25 09:26:32,679 INFO  [api] request_id=ea1829f747fe db=orders rows=22 duration_ms=3
+2026-11-25 09:26:33,832 INFO  [api] request_id=b2e85c1b54aa method=GET path=/health status=200 duration_ms=79 user=lee
+2026-11-25 09:26:35,499 INFO  [api] request_id=2297931c311c method=GET path=/v1/search status=200 duration_ms=19 user=kim
+2026-11-25 09:26:36,532 INFO  [api] request_id=94deb2e3f272 method=GET path=/v1/orders status=200 duration_ms=25 user=han
+2026-11-25 09:26:36,534 INFO  [api] request_id=c38a7b33970a db=orders rows=4 duration_ms=16
+2026-11-25 09:26:38,092 INFO  [api] request_id=1509b58e9885 method=GET path=/v1/users/me status=200 duration_ms=34 user=yoon
+2026-11-25 09:26:39,412 INFO  [api] request_id=ec3f05231d15 method=GET path=/health status=200 duration_ms=80 user=choi
+2026-11-25 09:26:41,439 INFO  [api] request_id=f7e86b821d1a method=GET path=/v1/search status=304 duration_ms=41 user=jung
+2026-11-25 09:26:41,444 INFO  [api] request_id=e642e2893a61 db=orders rows=32 duration_ms=4
+2026-11-25 09:26:43,378 INFO  [api] request_id=cdce0cdddf06 method=GET path=/v1/users/me status=200 duration_ms=82 user=jung
+2026-11-25 09:26:45,359 INFO  [api] request_id=11d28a7396c8 method=GET path=/v1/search status=200 duration_ms=86 user=choi
+2026-11-25 09:26:46,964 INFO  [api] request_id=cfd9c1e86fe0 method=GET path=/v1/orders/1042 status=200 duration_ms=41 user=kim
+2026-11-25 09:26:48,068 INFO  [api] request_id=aaaf939cadd5 method=GET path=/v1/orders status=200 duration_ms=39 user=seo
+2026-11-25 09:26:50,100 INFO  [api] request_id=e4a204ee3973 method=GET path=/health status=200 duration_ms=41 user=han
+2026-11-25 09:26:52,074 INFO  [api] request_id=1cad869cf008 method=GET path=/v1/cart status=200 duration_ms=83 user=seo
+2026-11-25 09:26:53,794 INFO  [api] request_id=1291e2c205e8 method=GET path=/v1/cart status=200 duration_ms=48 user=yoon
+2026-11-25 09:26:54,886 INFO  [api] request_id=3de210f7e1c5 method=GET path=/v1/cart status=200 duration_ms=83 user=jung
+2026-11-25 09:26:56,226 INFO  [api] request_id=aa5217385808 method=GET path=/v1/search status=200 duration_ms=73 user=jung
+2026-11-25 09:26:57,425 INFO  [api] request_id=b7dfe4af9dc6 method=GET path=/v1/search status=200 duration_ms=18 user=han
+2026-11-25 09:26:58,685 INFO  [api] request_id=10fdfda186c0 method=GET path=/health status=200 duration_ms=21 user=lee
+2026-11-25 09:26:58,687 INFO  [api] request_id=59aa9012300f db=orders rows=19 duration_ms=19
+2026-11-25 09:27:00,153 INFO  [api] request_id=7b575963589f method=GET path=/v1/cart status=200 duration_ms=44 user=yoon
+2026-11-25 09:27:02,212 INFO  [api] request_id=606c7545c53a method=GET path=/v1/search status=200 duration_ms=19 user=seo
+2026-11-25 09:27:03,489 INFO  [api] request_id=55334b3d7193 method=GET path=/v1/cart status=200 duration_ms=18 user=han
+2026-11-25 09:27:04,673 INFO  [api] request_id=b4cd90f2e8b5 method=GET path=/health status=200 duration_ms=63 user=jung
+2026-11-25 09:27:06,423 INFO  [api] request_id=d452a010f65a method=GET path=/v1/orders status=200 duration_ms=72 user=seo
+2026-11-25 09:27:08,320 INFO  [api] request_id=fc2ced2f3623 method=GET path=/health status=200 duration_ms=17 user=jung
+2026-11-25 09:27:09,470 INFO  [api] request_id=c88387eaf352 method=GET path=/v1/users/me status=200 duration_ms=37 user=kim
+2026-11-25 09:27:10,986 INFO  [api] request_id=5d148915ff26 method=GET path=/v1/orders/1042 status=200 duration_ms=79 user=choi
+2026-11-25 09:27:12,870 INFO  [api] request_id=6d604ca1914c method=GET path=/v1/cart status=200 duration_ms=17 user=jung
+2026-11-25 09:27:14,646 INFO  [api] request_id=1cbf2809ee73 method=GET path=/v1/orders/1042 status=200 duration_ms=26 user=seo
+2026-11-25 09:27:14,647 INFO  [api] request_id=2f805c871b3b db=orders rows=17 duration_ms=6
+2026-11-25 09:27:15,861 INFO  [api] request_id=75d26ccfdef3 method=GET path=/v1/cart status=200 duration_ms=45 user=park
+2026-11-25 09:27:17,117 INFO  [api] request_id=b503c283b71f method=GET path=/v1/search status=200 duration_ms=85 user=lee
+2026-11-25 09:27:18,332 INFO  [api] request_id=b9f52f5c2270 method=GET path=/v1/orders/1042 status=200 duration_ms=82 user=lee
+2026-11-25 09:27:20,055 INFO  [api] request_id=3185a37b8042 method=GET path=/v1/cart status=200 duration_ms=57 user=kim
+2026-11-25 09:27:21,849 INFO  [api] request_id=993f4aba9329 method=GET path=/health status=200 duration_ms=49 user=kim
+2026-11-25 09:27:21,852 INFO  [api] request_id=be5296585a50 db=orders rows=38 duration_ms=7
+2026-11-25 09:27:23,401 INFO  [api] request_id=15427f738ab1 method=GET path=/v1/search status=200 duration_ms=22 user=park
+2026-11-25 09:27:24,345 INFO  [api] request_id=eeee607b7649 method=GET path=/v1/orders/1042 status=200 duration_ms=69 user=seo
+2026-11-25 09:27:24,345 WARN  [api] slow query: 1600ms table=orders request_id=20c6f48956e2
+2026-11-25 09:27:27,792 INFO  [api] request_id=cda964e0bde6 method=GET path=/health status=200 duration_ms=34 user=seo
+2026-11-25 09:27:29,073 INFO  [api] request_id=7e3cfa6324d5 method=GET path=/v1/users/me status=200 duration_ms=27 user=han
+2026-11-25 09:27:30,449 INFO  [api] request_id=4be35f6e136e method=GET path=/v1/users/me status=200 duration_ms=46 user=jung
+2026-11-25 09:27:31,937 INFO  [api] request_id=06a4d70addc0 method=GET path=/v1/orders status=200 duration_ms=23 user=han
+2026-11-25 09:27:31,939 INFO  [api] request_id=0d62487479bc db=orders rows=20 duration_ms=8
+2026-11-25 09:27:33,036 INFO  [api] request_id=981b5caaf97b method=GET path=/v1/orders status=200 duration_ms=54 user=seo
+2026-11-25 09:27:34,184 INFO  [api] request_id=817182e8b5a8 method=GET path=/v1/search status=200 duration_ms=25 user=jung
+2026-11-25 09:27:35,700 INFO  [api] request_id=ec6711565b83 method=GET path=/v1/search status=200 duration_ms=56 user=jung
+2026-11-25 09:27:35,705 INFO  [api] request_id=94c000048ba5 db=orders rows=33 duration_ms=16
+2026-11-25 09:27:37,431 INFO  [api] request_id=af8d801f413b method=GET path=/health status=200 duration_ms=74 user=park
+2026-11-25 09:27:37,437 INFO  [api] request_id=74b3ea335afa db=orders rows=38 duration_ms=9
+2026-11-25 09:27:38,562 INFO  [api] request_id=032cf69b9c4c method=GET path=/health status=200 duration_ms=88 user=choi
+2026-11-25 09:27:39,917 INFO  [api] request_id=9c450763f0da method=GET path=/v1/users/me status=200 duration_ms=79 user=yoon
+2026-11-25 09:27:39,922 INFO  [api] request_id=669ceefc9076 db=orders rows=35 duration_ms=12
+2026-11-25 09:27:41,653 INFO  [api] request_id=46ac6ec54f74 method=GET path=/v1/orders status=200 duration_ms=68 user=jung
+2026-11-25 09:27:43,705 INFO  [api] request_id=87707605d577 method=GET path=/v1/users/me status=200 duration_ms=29 user=lee
+2026-11-25 09:27:43,710 INFO  [api] request_id=21b346ec1c33 db=orders rows=9 duration_ms=11
+2026-11-25 09:27:44,897 INFO  [api] request_id=fd9887835237 method=GET path=/v1/search status=304 duration_ms=45 user=seo
+2026-11-25 09:27:46,484 INFO  [api] request_id=b04facc168ec method=GET path=/v1/search status=200 duration_ms=52 user=han
+2026-11-25 09:27:48,478 INFO  [api] request_id=b0e3a6a64e86 method=GET path=/v1/orders status=200 duration_ms=37 user=seo
+2026-11-25 09:27:49,425 INFO  [api] request_id=06789a46d9c6 method=GET path=/v1/orders status=200 duration_ms=21 user=choi
+2026-11-25 09:27:50,347 INFO  [api] request_id=68605227ca4c method=GET path=/v1/search status=200 duration_ms=61 user=lee
+2026-11-25 09:27:52,169 INFO  [api] request_id=c70d0c6dac38 method=GET path=/v1/search status=200 duration_ms=46 user=choi
+2026-11-25 09:27:52,172 INFO  [api] request_id=bbda83c70082 db=orders rows=13 duration_ms=21
+2026-11-25 09:27:53,922 INFO  [api] request_id=2410bf1c5a42 method=GET path=/health status=200 duration_ms=74 user=seo
+2026-11-25 09:27:55,322 INFO  [api] request_id=8bbaf1401a78 method=GET path=/v1/orders status=200 duration_ms=16 user=choi
+2026-11-25 09:27:55,324 INFO  [api] request_id=26e873c5b46e db=orders rows=34 duration_ms=17
+2026-11-25 09:27:57,294 INFO  [api] request_id=15567098c10c method=GET path=/v1/users/me status=200 duration_ms=73 user=han
+2026-11-25 09:27:58,232 INFO  [api] request_id=b09d89c77a5a method=GET path=/v1/users/me status=200 duration_ms=69 user=yoon
+2026-11-25 09:27:59,491 INFO  [api] request_id=b60759bb19d5 method=GET path=/health status=200 duration_ms=11 user=yoon
+2026-11-25 09:28:01,279 INFO  [api] request_id=88977100600b method=GET path=/v1/orders/1042 status=200 duration_ms=42 user=yoon
+2026-11-25 09:28:02,890 INFO  [api] request_id=a6c4f85f8d1b method=GET path=/v1/cart status=200 duration_ms=13 user=lee
+2026-11-25 09:28:02,896 INFO  [api] request_id=6ef6a59e5e9f db=orders rows=36 duration_ms=9
+2026-11-25 09:28:03,919 INFO  [api] request_id=b74fe6ea052e method=GET path=/v1/cart status=200 duration_ms=31 user=lee
+2026-11-25 09:28:06,008 INFO  [api] request_id=4a23402f7b7e method=GET path=/health status=200 duration_ms=38 user=choi
+2026-11-25 09:28:07,823 INFO  [api] request_id=566e8724070c method=GET path=/v1/cart status=200 duration_ms=37 user=yoon
+2026-11-25 09:28:08,737 INFO  [api] request_id=81ad6b761866 method=GET path=/v1/orders status=200 duration_ms=83 user=han
+2026-11-25 09:28:09,704 INFO  [api] request_id=753f49e38f75 method=GET path=/v1/search status=200 duration_ms=27 user=han
+2026-11-25 09:28:10,685 INFO  [api] request_id=0c4f9df14309 method=GET path=/v1/search status=200 duration_ms=46 user=jung
+2026-11-25 09:28:12,045 INFO  [api] request_id=4e0a75c5f08a method=GET path=/v1/orders/1042 status=200 duration_ms=25 user=yoon
+2026-11-25 09:28:13,892 INFO  [api] request_id=1696a8cc62e3 method=GET path=/v1/orders/1042 status=200 duration_ms=53 user=kim
+2026-11-25 09:28:15,644 INFO  [api] request_id=f444abb38805 method=GET path=/v1/users/me status=200 duration_ms=64 user=lee
+2026-11-25 09:28:16,625 INFO  [api] request_id=19c126cf5d96 method=GET path=/v1/search status=200 duration_ms=35 user=kim
+2026-11-25 09:28:18,465 INFO  [api] request_id=ffb77b004110 method=GET path=/v1/orders/1042 status=200 duration_ms=73 user=seo
+2026-11-25 09:28:19,642 INFO  [api] request_id=95a049ae6186 method=GET path=/v1/orders status=200 duration_ms=11 user=lee
+2026-11-25 09:28:21,080 INFO  [api] request_id=d38649b39c6d method=GET path=/v1/orders status=200 duration_ms=46 user=choi
+2026-11-25 09:28:22,208 INFO  [api] request_id=d9cad472545f method=GET path=/health status=200 duration_ms=12 user=yoon
+2026-11-25 09:28:23,732 INFO  [api] request_id=46ff2ab5cb40 method=GET path=/v1/cart status=200 duration_ms=23 user=han
+2026-11-25 09:28:24,911 INFO  [api] request_id=811593a0eb21 method=GET path=/v1/search status=200 duration_ms=15 user=kim
+2026-11-25 09:28:26,815 INFO  [api] request_id=be07ec3e98d1 method=GET path=/v1/orders/1042 status=200 duration_ms=20 user=park
+2026-11-25 09:28:27,778 INFO  [api] request_id=808eccb780df method=GET path=/health status=200 duration_ms=20 user=yoon
+2026-11-25 09:28:28,767 INFO  [api] request_id=b668a39c2564 method=GET path=/v1/cart status=200 duration_ms=41 user=yoon
+2026-11-25 09:28:30,354 INFO  [api] request_id=f2db0515048a method=GET path=/v1/search status=200 duration_ms=25 user=han
+2026-11-25 09:28:32,086 INFO  [api] request_id=4baad0da6e4e method=GET path=/v1/users/me status=200 duration_ms=52 user=kim
+2026-11-25 09:28:34,171 INFO  [api] request_id=4029c2476a90 method=GET path=/v1/cart status=200 duration_ms=29 user=kim
+2026-11-25 09:28:35,151 INFO  [api] request_id=db3f2489b3aa method=GET path=/v1/search status=200 duration_ms=53 user=choi
+2026-11-25 09:28:36,072 INFO  [api] request_id=643802c001ee method=GET path=/v1/cart status=200 duration_ms=34 user=lee
+2026-11-25 09:28:37,255 INFO  [api] request_id=491f03110b4d method=GET path=/v1/orders status=200 duration_ms=86 user=jung
+2026-11-25 09:28:38,271 INFO  [api] request_id=d75efca3e3e1 method=GET path=/v1/users/me status=200 duration_ms=84 user=kim
+2026-11-25 09:28:39,627 INFO  [api] request_id=700cc29df0d4 method=GET path=/v1/cart status=200 duration_ms=13 user=kim
+2026-11-25 09:28:40,962 INFO  [api] request_id=96c667c633c7 method=GET path=/v1/users/me status=200 duration_ms=69 user=lee
+2026-11-25 09:28:41,967 INFO  [api] request_id=c53c39839573 method=GET path=/v1/users/me status=200 duration_ms=54 user=park
+2026-11-25 09:28:43,727 INFO  [api] request_id=4271bcda10e5 method=GET path=/health status=200 duration_ms=28 user=seo
+2026-11-25 09:28:45,606 INFO  [api] request_id=145ff67c2670 method=GET path=/v1/cart status=200 duration_ms=63 user=jung
+2026-11-25 09:28:46,624 INFO  [api] request_id=e29ac95b29c3 method=GET path=/v1/search status=304 duration_ms=64 user=seo
+2026-11-25 09:28:48,086 INFO  [api] request_id=3c4d2d96bdf1 method=GET path=/v1/cart status=200 duration_ms=52 user=choi
+2026-11-25 09:28:49,812 INFO  [api] request_id=9ac7fbdcd1cd method=GET path=/v1/cart status=200 duration_ms=65 user=lee
+2026-11-25 09:28:51,876 INFO  [api] request_id=e73836d84b52 method=GET path=/health status=200 duration_ms=46 user=kim
+2026-11-25 09:28:53,506 INFO  [api] request_id=d4b39e7316d0 method=GET path=/v1/users/me status=200 duration_ms=68 user=lee
+2026-11-25 09:28:54,859 INFO  [api] request_id=567d387ab1c8 method=GET path=/v1/users/me status=200 duration_ms=21 user=yoon
+2026-11-25 09:28:54,863 INFO  [api] request_id=0b9529c9c670 db=orders rows=27 duration_ms=23
+2026-11-25 09:28:56,287 INFO  [api] request_id=3d42a3b7ccbc method=GET path=/v1/orders/1042 status=200 duration_ms=11 user=jung
+2026-11-25 09:28:56,291 INFO  [api] request_id=233c8d1c6ac7 db=orders rows=16 duration_ms=20
+2026-11-25 09:28:57,316 INFO  [api] request_id=480141f256d2 method=GET path=/v1/orders status=200 duration_ms=34 user=seo
+2026-11-25 09:28:57,319 INFO  [api] request_id=ff9916abd4b2 db=orders rows=27 duration_ms=7
+2026-11-25 09:28:58,551 INFO  [api] request_id=61999a43647b method=GET path=/v1/orders/1042 status=200 duration_ms=75 user=jung
+2026-11-25 09:28:58,552 INFO  [api] request_id=3ca6e1b0330d db=orders rows=18 duration_ms=21
+2026-11-25 09:29:00,138 INFO  [api] request_id=c3858ffd25f0 method=GET path=/v1/search status=200 duration_ms=13 user=kim
+2026-11-25 09:29:01,836 INFO  [api] request_id=0c180249959e method=GET path=/v1/search status=200 duration_ms=88 user=jung
+2026-11-25 09:29:01,838 INFO  [api] request_id=4e95795c48ad db=orders rows=36 duration_ms=7
+2026-11-25 09:29:03,884 INFO  [api] request_id=823fdd4a333e method=GET path=/v1/orders status=200 duration_ms=64 user=kim
+2026-11-25 09:29:04,920 INFO  [api] request_id=38c6a135d593 method=GET path=/v1/orders/1042 status=200 duration_ms=59 user=seo
+2026-11-25 09:29:06,476 INFO  [api] request_id=1578213476c6 method=GET path=/health status=200 duration_ms=18 user=seo
+2026-11-25 09:29:06,481 INFO  [api] request_id=4fc6c395fec1 db=orders rows=9 duration_ms=24
+2026-11-25 09:29:08,504 INFO  [api] request_id=8c0180fea177 method=GET path=/v1/orders/1042 status=200 duration_ms=60 user=jung
+2026-11-25 09:29:08,505 INFO  [api] request_id=95f738707c8c db=orders rows=9 duration_ms=24
+2026-11-25 09:29:10,049 INFO  [api] request_id=7a5a4960eee4 method=GET path=/v1/search status=200 duration_ms=58 user=park
+2026-11-25 09:29:10,050 INFO  [api] request_id=51024e5971b6 db=orders rows=13 duration_ms=23
+2026-11-25 09:29:11,862 INFO  [api] request_id=a0151b561de4 method=GET path=/v1/search status=200 duration_ms=23 user=yoon
+2026-11-25 09:29:13,717 INFO  [api] request_id=5da541247cd6 method=GET path=/v1/orders/1042 status=200 duration_ms=13 user=seo
+2026-11-25 09:29:13,722 INFO  [api] request_id=4135093a8553 db=orders rows=2 duration_ms=6
+2026-11-25 09:29:14,630 INFO  [api] request_id=ed2dd8bdb097 method=GET path=/v1/search status=200 duration_ms=33 user=han
+2026-11-25 09:29:14,636 INFO  [api] request_id=ac5c5f2c2850 db=orders rows=21 duration_ms=6
+2026-11-25 09:29:16,202 INFO  [api] request_id=6bf01b0ad52f method=GET path=/v1/cart status=200 duration_ms=52 user=lee
+2026-11-25 09:29:17,297 INFO  [api] request_id=756a5a8f3801 method=GET path=/v1/orders/1042 status=200 duration_ms=66 user=park
+2026-11-25 09:29:18,830 INFO  [api] request_id=16dd335c75a1 method=GET path=/v1/orders/1042 status=200 duration_ms=32 user=seo
+2026-11-25 09:29:19,972 INFO  [api] request_id=cec97f38b477 method=GET path=/health status=200 duration_ms=16 user=kim
+2026-11-25 09:29:20,913 INFO  [api] request_id=d84f92eb6f27 method=GET path=/v1/orders status=200 duration_ms=75 user=kim
+2026-11-25 09:29:22,320 INFO  [api] request_id=7960b7dd99d1 method=GET path=/v1/orders status=200 duration_ms=64 user=seo
+2026-11-25 09:29:23,919 INFO  [api] request_id=5de5b3dd894d method=GET path=/v1/orders/1042 status=200 duration_ms=70 user=yoon
+2026-11-25 09:29:25,406 INFO  [api] request_id=fe6e1bba5c9d method=GET path=/v1/orders status=200 duration_ms=90 user=lee
+2026-11-25 09:29:25,412 INFO  [api] request_id=5c29679ad3b7 db=orders rows=15 duration_ms=8
+2026-11-25 09:29:26,793 INFO  [api] request_id=ef3f43d0bf5f method=GET path=/v1/orders status=200 duration_ms=65 user=choi
+2026-11-25 09:29:27,748 INFO  [api] request_id=1f451cdace7a method=GET path=/v1/orders status=200 duration_ms=71 user=yoon
+2026-11-25 09:29:27,752 INFO  [api] request_id=6c2ac9d0f47e db=orders rows=26 duration_ms=22
+2026-11-25 09:29:29,559 INFO  [api] request_id=da9d3239aef4 method=GET path=/health status=200 duration_ms=24 user=han
+2026-11-25 09:29:30,484 INFO  [api] request_id=6bd2817ab149 method=GET path=/v1/users/me status=200 duration_ms=16 user=han
+2026-11-25 09:29:31,901 INFO  [api] request_id=68d2d4501acd method=GET path=/v1/cart status=200 duration_ms=22 user=yoon
+2026-11-25 09:29:31,904 INFO  [api] request_id=19ad31d0b1af db=orders rows=19 duration_ms=19
+2026-11-25 09:29:33,465 INFO  [api] request_id=fcb273d2fecb method=GET path=/v1/users/me status=200 duration_ms=83 user=park
+2026-11-25 09:29:35,372 INFO  [api] request_id=2d2ca6ee36ea method=GET path=/v1/cart status=200 duration_ms=77 user=han
+2026-11-25 09:29:36,551 INFO  [api] request_id=6aa0b948801f method=GET path=/v1/orders/1042 status=200 duration_ms=39 user=yoon
+2026-11-25 09:29:37,985 INFO  [api] request_id=407063fa9d48 method=GET path=/health status=200 duration_ms=8 user=han
+2026-11-25 09:29:38,901 INFO  [api] request_id=ce9796000a40 method=GET path=/v1/orders/1042 status=200 duration_ms=58 user=han
+2026-11-25 09:29:40,694 INFO  [api] request_id=ff61ed38b5c8 method=GET path=/health status=200 duration_ms=82 user=choi
+2026-11-25 09:29:42,619 INFO  [api] request_id=709d1ab88798 method=GET path=/v1/users/me status=200 duration_ms=32 user=yoon
+2026-11-25 09:29:44,544 INFO  [api] request_id=89ef299297b7 method=GET path=/v1/users/me status=200 duration_ms=18 user=yoon
+2026-11-25 09:29:46,051 INFO  [api] request_id=bb62e7c09db6 method=GET path=/v1/users/me status=200 duration_ms=41 user=lee
+2026-11-25 09:29:47,550 INFO  [api] request_id=d711d00ce0c1 method=GET path=/v1/cart status=200 duration_ms=75 user=han
+2026-11-25 09:29:49,119 INFO  [api] request_id=93d52f0047b0 method=GET path=/v1/cart status=200 duration_ms=30 user=kim
+2026-11-25 09:29:51,159 INFO  [api] request_id=914f17287db5 method=GET path=/v1/cart status=200 duration_ms=34 user=jung
+2026-11-25 09:29:52,201 INFO  [api] request_id=1a24148db5eb method=GET path=/v1/orders status=200 duration_ms=56 user=jung
+2026-11-25 09:29:53,871 INFO  [api] request_id=f38596fdee4b method=GET path=/v1/orders/1042 status=200 duration_ms=66 user=seo
+2026-11-25 09:29:55,298 INFO  [api] request_id=a062e1da284b method=GET path=/v1/orders/1042 status=200 duration_ms=39 user=park
+2026-11-25 09:29:56,995 INFO  [api] request_id=ab0f5ffd30b9 method=GET path=/v1/search status=304 duration_ms=28 user=yoon
+2026-11-25 09:29:58,178 INFO  [api] request_id=25bdd43e48d9 method=GET path=/v1/orders status=200 duration_ms=40 user=choi
+2026-11-25 09:29:59,923 INFO  [api] request_id=4ee2c15f1e57 method=GET path=/v1/cart status=200 duration_ms=14 user=park

@@ -1,0 +1,19 @@
+2026-11-25 09:00:01,123 INFO  [boot] iso with comma — service starting
+2026-11-25T09:00:02.456+09:00 INFO  [boot] iso with offset — config loaded in 12ms
+{"@timestamp":"2026-11-25T09:00:03.100Z","level":"info","message":"json line: worker 3 ready","service":"api"}
+{"@timestamp":"2026-11-25T09:00:04.250Z","level":"error","message":"json line: cache miss storm","service":"api","error":{"stack":"CacheMissError: 41 misses in 1s\n    at cache.get (/srv/app/cache.js:22:9)"}}
+Nov 25 09:00:05 combo sshd(pam_unix)[19939]: session opened for user deploy
+10.0.4.18 - - [25/Nov/2026:09:00:06 +0900] "GET /v1/orders HTTP/1.1" 200 512
+10.0.4.18 - - [25/Nov/2026:09:00:07 +0900] "POST /v1/orders HTTP/1.1" 502 128
+261125 090008 148 INFO dfs.DataNode$PacketResponder: PacketResponder 1 for block blk_38865049064139660 terminating
+26/11/25 09:00:09 INFO SparkContext: Running Spark version 3.5.1
+11-25 09:00:10.445  1842  1842 I ActivityManager: Start proc com.example.app
+09:00:11 INFO  [boot] time only — date comes from the previous line
+2026-11-25 09:00:12.900 ERROR [worker] unhandled exception in job 8842
+Traceback (most recent call last):
+  File "/srv/app/jobs/export.py", line 88, in run
+    rows = fetch(job.range)
+  File "/srv/app/jobs/export.py", line 61, in fetch
+    raise ExportRangeError(f"range too large: {size}")
+app.jobs.export.ExportRangeError: range too large: 4200000
+2026-11-25 09:00:14,001 INFO  [boot] ready
