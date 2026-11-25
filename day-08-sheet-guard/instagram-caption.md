@@ -54,7 +54,7 @@ sheet-guard 가 지키는 것
 코드·README·릴스 전부 매일 올라갑니다.
 github.com/where-is-the-error/daily-mcp-skills
 
-#CSV #엑셀 #공공데이터 #데이터정리 #파이썬 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #CP949 #데이터품질 #코딩공부 #동양미래대학교 #삐에로개발자
+#CSV #엑셀 #공공데이터 #데이터정리 #파이썬 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #CP949 #데이터품질 #코딩공부 #삐에로개발자
 
 ---
 
@@ -67,7 +67,7 @@ github.com/where-is-the-error/daily-mcp-skills
 
 ## 해시태그만
 
-#CSV #엑셀 #공공데이터 #데이터정리 #파이썬 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #CP949 #데이터품질 #코딩공부 #동양미래대학교 #삐에로개발자
+#CSV #엑셀 #공공데이터 #데이터정리 #파이썬 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #CP949 #데이터품질 #코딩공부 #삐에로개발자
 
 ## 업로드 체크리스트
 

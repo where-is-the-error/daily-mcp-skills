@@ -50,7 +50,7 @@ migrate-guard 가 하는 일
 코드·README·릴스 전부 매일 올라갑니다.
 github.com/where-is-the-error/daily-mcp-skills
 
-#PostgreSQL #DB #마이그레이션 #DevOps #백엔드 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #SQL #성능 #무중단배포 #코딩공부 #동양미래대학교 #삐에로개발자
+#PostgreSQL #DB #마이그레이션 #DevOps #백엔드 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #SQL #성능 #무중단배포 #코딩공부 #삐에로개발자
 
 ---
 
@@ -64,7 +64,7 @@ github.com/where-is-the-error/daily-mcp-skills
 
 ## 해시태그만
 
-#PostgreSQL #DB #마이그레이션 #DevOps #백엔드 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #SQL #성능 #무중단배포 #코딩공부 #동양미래대학교 #삐에로개발자
+#PostgreSQL #DB #마이그레이션 #DevOps #백엔드 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #SQL #성능 #무중단배포 #코딩공부 #삐에로개발자
 
 ## 업로드 체크리스트
 

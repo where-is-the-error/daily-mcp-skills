@@ -28,7 +28,7 @@ design-spec 이 잡아낸 것
 테스트 321개. 코드·README·릴스 전부 매일 올라갑니다.
 github.com/where-is-the-error/daily-mcp-skills
 
-#디자인시스템 #디자인토큰 #Figma #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #UI디자인 #프론트엔드 #코딩공부 #동양미래대학교 #삐에로개발자
+#디자인시스템 #디자인토큰 #Figma #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #UI디자인 #프론트엔드 #코딩공부 #삐에로개발자
 
 ---
 
@@ -40,7 +40,7 @@ JSON 하나로 색·간격·글자를 세고 점수까지 — 오늘의 조합�
 
 ## 해시태그만
 
-#디자인시스템 #디자인토큰 #Figma #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #UI디자인 #프론트엔드 #코딩공부 #동양미래대학교 #삐에로개발자
+#디자인시스템 #디자인토큰 #Figma #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #UI디자인 #프론트엔드 #코딩공부 #삐에로개발자
 
 ## 업로드 체크리스트
 

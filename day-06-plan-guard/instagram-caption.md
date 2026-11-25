@@ -36,7 +36,7 @@ terraform 은 원본 도구의 몫으로 두고, **만들어진 plan 을 사람�
 테스트 242개. 코드·README·릴스 전부 매일 올라갑니다.
 github.com/where-is-the-error/daily-mcp-skills
 
-#Terraform #IaC #DevOps #인프라 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #AWS #보안 #클라우드 #코딩공부 #동양미래대학교 #삐에로개발자
+#Terraform #IaC #DevOps #인프라 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #AWS #보안 #클라우드 #코딩공부 #삐에로개발자
 
 ---
 
@@ -48,7 +48,7 @@ plan.json 하나로 — 사라지는 리소스 · 열린 포트 · 되돌리기�
 
 ## 해시태그만
 
-#Terraform #IaC #DevOps #인프라 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #AWS #보안 #클라우드 #코딩공부 #동양미래대학교 #삐에로개발자
+#Terraform #IaC #DevOps #인프라 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #AWS #보안 #클라우드 #코딩공부 #삐에로개발자
 
 ## 업로드 체크리스트
 

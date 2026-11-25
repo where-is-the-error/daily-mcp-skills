@@ -24,7 +24,7 @@ a11y-lens 가 하는 일
 테스트 308개. 코드·README·릴스 전부 매일 올라갑니다.
 github.com/where-is-the-error/daily-mcp-skills
 
-#접근성 #a11y #웹접근성 #WCAG #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #HTML #프론트엔드 #코딩공부 #동양미래대학교 #삐에로개발자
+#접근성 #a11y #웹접근성 #WCAG #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #HTML #프론트엔드 #코딩공부 #삐에로개발자
 
 ---
 
@@ -35,7 +35,7 @@ alt 하나 빼먹었더니 화면 낭독기에서는 51건이 사라졌습니다
 
 ## 해시태그만
 
-#접근성 #a11y #웹접근성 #WCAG #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #HTML #프론트엔드 #코딩공부 #동양미래대학교 #삐에로개발자
+#접근성 #a11y #웹접근성 #WCAG #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #HTML #프론트엔드 #코딩공부 #삐에로개발자
 
 ## 업로드 체크리스트
 
