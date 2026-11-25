@@ -69,7 +69,7 @@ log-triage 가 지키는 것
 코드·README·릴스 전부 매일 올라갑니다.
 github.com/where-is-the-error/daily-mcp-skills
 
-#로그분석 #장애대응 #Observability #SRE #파이썬 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #로그 #디버깅 #코딩공부 #동양미래대학교 #삐에로개발자
+#로그분석 #장애대응 #Observability #SRE #파이썬 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #로그 #디버깅 #코딩공부 #삐에로개발자
 
 ---
 
@@ -82,7 +82,7 @@ github.com/where-is-the-error/daily-mcp-skills
 
 ## 해시태그만
 
-#로그분석 #장애대응 #Observability #SRE #파이썬 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #로그 #디버깅 #코딩공부 #동양미래대학교 #삐에로개발자
+#로그분석 #장애대응 #Observability #SRE #파이썬 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #로그 #디버깅 #코딩공부 #삐에로개발자
 
 ## 업로드 체크리스트
 
