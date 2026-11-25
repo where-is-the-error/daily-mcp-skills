@@ -25,7 +25,7 @@
 | 06 | [Terraform MCP](https://github.com/hashicorp/terraform-mcp-server) + [AWS IaC MCP](https://github.com/awslabs/mcp/tree/main/src/aws-iac-mcp-server) | [`plan-guard`](day-06-plan-guard/) — apply 전에 plan: **사라지는 것·열린 포트·되돌리기** | 2 → 9 | 242 passed | 21.5s |
 | 07 | [DBHub](https://github.com/bytebase/dbhub) + [Postgres MCP Pro](https://github.com/crystaldba/postgres-mcp) | [`migrate-guard`](day-07-migrate-guard/) — 마이그레이션 실행 전: **락·재작성·되돌리기** | 5+9 → 9 | 322 passed | 21.5s |
 | 08 | [Excel MCP Server](https://github.com/haris-musa/excel-mcp-server) + [MarkItDown](https://github.com/microsoft/markitdown) | [`sheet-guard`](day-08-sheet-guard/) — 표를 쓰기 전에: **인코딩·소계 행·앞자리 0·칸 밀림** | 9 | 324 passed | 21.5s |
-| 09 | [Grafana MCP](https://github.com/grafana/mcp-grafana) + [ClickHouse MCP](https://github.com/ClickHouse/mcp-clickhouse) | [`log-triage`](day-09-log-triage/) — 로그를 넘기기 전에: **서명·폭주·첫 오류·스택·마스킹** | 109+4 → 11 | 304 passed | 21.5s |
+| 09 | [Grafana MCP](https://github.com/grafana/mcp-grafana) + [ClickHouse MCP](https://github.com/ClickHouse/mcp-clickhouse) | [`log-triage`](day-09-log-triage/) — 로그를 넘기기 전에: **서명·폭주·첫 오류·스택·마스킹** | 134+4 → 11 | 304 passed | 21.5s |
 
 ## 다음 화 만드는 법 (Day 02~)
 

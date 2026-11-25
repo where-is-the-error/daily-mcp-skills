@@ -15,7 +15,7 @@
 
 | 원본 | 라이선스 | 규모 | 가져온 것 | 가져오지 않은 것 |
 |---|---|---|---|---|
-| [grafana/mcp-grafana](https://github.com/grafana/mcp-grafana) (Grafana MCP) | **Apache-2.0** | ★3,699 · 마지막 푸시 2026-11-24 · README 목록 기준 툴 109개 | **좁혀서 묻는 순서** — 라벨/시간 범위를 먼저 정하고 그 안에서만 질의하며, 원본 대신 **요약**(dashboard summary·property)을 돌려줘 컨텍스트를 아끼고, 쓰기 툴은 기본으로 꺼 둔다는 태도 | Go 코드, Grafana API 클라이언트, Prometheus·Loki·CloudWatch 질의, 대시보드 편집 |
+| [grafana/mcp-grafana](https://github.com/grafana/mcp-grafana) (Grafana MCP) | **Apache-2.0** | ★3,699 · 마지막 푸시 2026-11-24 · 소스의 툴 등록 142건 · 이름 134개 | **좁혀서 묻는 순서** — 라벨/시간 범위를 먼저 정하고 그 안에서만 질의하며, 원본 대신 **요약**(dashboard summary·property)을 돌려줘 컨텍스트를 아끼고, 쓰기 툴은 기본으로 꺼 둔다는 태도 | Go 코드, Grafana API 클라이언트, Prometheus·Loki·CloudWatch 질의, 대시보드 편집 |
 | [ClickHouse/mcp-clickhouse](https://github.com/ClickHouse/mcp-clickhouse) (ClickHouse MCP) | **Apache-2.0** | ★918 · 마지막 푸시 2026-11-16 · 툴 4개 | **읽기 전용이 기본**(`CLICKHOUSE_ALLOW_WRITE_ACCESS=false`), 스키마를 먼저 확인하고, 결과에 **상한과 페이지**를 두고, 질의를 실행하기 전에 `DESCRIBE`/`EXPLAIN ESTIMATE`로 먼저 본다는 습관 | Rust 코드, ClickHouse 연결·인증(OAuth/OIDC), chDB, SQL 실행 엔진 |
 
 두 원본의 코드를 복사하지 않았다. **설계와 태도만** 가져와 새로 썼다.
