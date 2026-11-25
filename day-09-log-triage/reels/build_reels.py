@@ -546,7 +546,7 @@ def scene_sources(u: float) -> Image.Image:
     if e > 0.01:
         card(img, (60, 1010, 852, 1084), fill=(12, 32, 28), edge=(40, 110, 92), radius=18, width=2,
              alpha=int(255 * e))
-        paste_text(img, "툴 109 + 4 → 11 · 규칙 25종 · 테스트 304", 86, 1034, 25, "black",
+        paste_text(img, "툴 134 + 4 → 11 · 규칙 25종 · 테스트 304", 86, 1034, 25, "black",
                    (150, 226, 202), alpha=e)
     return img
 
