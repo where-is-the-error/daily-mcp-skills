@@ -1,0 +1,24 @@
+🎯 test-radar · 변경 2개 파일 +15/-1
+   저장소 모듈 50 · 테스트 27파일/391항목 · 해석 못 한 import 82
+
+선택: 6파일 · 159/391항목 (41%)
+   ◆ tests/test_testing.py  L0 테스트 자체  테스트 파일 자체가 바뀜  (26항목)
+   ● tests/test_appctx.py  L1 직접  바뀐 심볼 `FlaskClient` 를 직접 import  (15항목)
+   ● tests/test_basic.py  L1 직접  바뀐 심볼 `FlaskClient` 를 직접 import  (90항목)
+   ● tests/test_reqctx.py  L1 직접  바뀐 심볼 `FlaskClient` 를 직접 import  (10항목)
+   ● tests/test_request.py  L1 직접  바뀐 심볼 `FlaskClient` 를 직접 import  (3항목)
+   ● tests/test_views.py  L1 직접  바뀐 심볼 `FlaskClient` 를 직접 import  (15항목)
+
+테스트 근거 없는 변경: 없음
+
+위험 규칙: 해당 없음
+
+계획: 선택 실행 · 예상 9.45초(모델)
+   python -m pytest tests/test_testing.py tests/test_reqctx.py tests/test_request.py tests/test_views.py
+      └ 54항목 · 예상 3.70초 · 조각 1/2
+   python -m pytest tests/test_appctx.py tests/test_basic.py
+      └ 105항목 · 예상 5.75초 · 조각 2/2
+   전체 실행: python -m pytest · 391항목 · 예상 27.05초(모델)
+
+판정: 선택 실행
+판정하지 않음: 테스트가 실제로 통과하는지 · 실행 시간(모델임) · 커버리지 % · 동적 import 뒤의 간선 · 네이티브 확장/설정 파일의 의미 · 같은 이름의 다른 심볼

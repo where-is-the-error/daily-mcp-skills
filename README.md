@@ -26,6 +26,7 @@
 | 07 | [DBHub](https://github.com/bytebase/dbhub) + [Postgres MCP Pro](https://github.com/crystaldba/postgres-mcp) | [`migrate-guard`](day-07-migrate-guard/) — 마이그레이션 실행 전: **락·재작성·되돌리기** | 5+9 → 9 | 322 passed | 21.5s |
 | 08 | [Excel MCP Server](https://github.com/haris-musa/excel-mcp-server) + [MarkItDown](https://github.com/microsoft/markitdown) | [`sheet-guard`](day-08-sheet-guard/) — 표를 쓰기 전에: **인코딩·소계 행·앞자리 0·칸 밀림** | 9 | 324 passed | 21.5s |
 | 09 | [Grafana MCP](https://github.com/grafana/mcp-grafana) + [ClickHouse MCP](https://github.com/ClickHouse/mcp-clickhouse) | [`log-triage`](day-09-log-triage/) — 로그를 넘기기 전에: **서명·폭주·첫 오류·스택·마스킹** | 134+4 → 11 | 304 passed | 21.5s |
+| 10 | [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) + [GitHub MCP Server](https://github.com/github/github-mcp-server) | [`test-radar`](day-10-test-radar/) — 바뀐 코드에 **닿는 테스트만**, 확신 없으면 전체 실행 | 17+96 → 10 | 308 passed | 21.5s |
 
 ## 다음 화 만드는 법 (Day 02~)
 
@@ -37,6 +38,38 @@
 6. **목록 표에 한 줄 추가**하고 커밋. 커밋은 `feat(day-NN)` / `test(day-NN)` / `docs(day-NN)` / `content(day-NN)`으로 나눈다.
 
 > 릴스 제작에는 `ffmpeg`가 필요하다. 없으면 `pip install imageio-ffmpeg`로 받은 바이너리 경로를 `ffmpeg`로 심볼릭 링크해 쓴다.
+
+## Day 10 미리보기
+
+```bash
+cd day-10-test-radar
+pip install -e ".[dev]"
+test-radar scan examples/shop --diff examples/shop.patch     # 예제 13파일
+test-radar scan . --base origin/main --changes               # 지금 브랜치
+test-radar rules                                             # 규칙 23종
+```
+
+```text
+🎯 test-radar · 변경 1개 파일 +1/-1
+   저장소 모듈 7 · 테스트 5파일/9항목 · 해석 못 한 import 1
+
+선택: 2파일 · 5/9항목 (56%)
+   ● tests/test_pricing.py  L1 직접  바뀐 모듈을 직접 import  (2항목)
+   ◐ tests/test_cart.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (3항목)
+
+테스트 근거 없는 변경: 없음
+위험 규칙: 참고 1
+   [참고] 모듈 최상위 실행 코드 (shop/pricing.py) — import 하는 순간 실행되는 줄 1개 변경 (예: 3행)
+계획: 선택 실행 · 예상 0.75초(모델)
+판정: 선택 실행
+```
+
+- 10개 툴: `open_repo` · `read_diff` · `list_changes` · `map_tests` · `impact_report` · `untested_surface` · `ci_plan` · `compare_selections` · `rule_catalog` · `overview`
+- 규칙 23종 · 근거 4단계(L0 테스트 자체 / L1 직접 import·심볼 참조 / L2 전이 / L3 참고)
+- 폴백 6조건: 테스트 설정 변경 · 파싱 실패 · 동적 import · 테스트 없음 · 선택 60% 초과 · (depth 확장 시) 3단계
+- 실측: flask `de8429ff` **391항목 → 159항목(41%)**, 수정을 되돌리니 **1.14초에 회귀 테스트가 실패** (전체 3.38초)
+- 실측: day-09 변이 5개 중 **4개를 선택이 잡음**, 선택은 놓치고 전체가 잡은 것 **0개**, 전체도 못 잡은 것 1개(`tools/probe.py`)
+- 읽기 전용 · 저장소 불변 · 명령 실행 안 함 · 시간은 모델이라고 표기
 
 ## Day 09 미리보기
 

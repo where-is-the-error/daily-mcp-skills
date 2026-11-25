@@ -1,0 +1,11 @@
+📦 day-09-log-triage · 모듈 21 · 테스트 13파일/283항목
+   전체 실행 기준: exit 0 · 9.92s · 304 passed in 8.84s
+   · levels: SEVERE → WARN: 3파일/80항목 · 선택 2.65s(exit 1) · 전체 9.42s(exit 1) → 선택이 잡음
+   · signature: 공백 접기 제거: 8파일/181항목 · 선택 9.41s(exit 0) · 전체 8.96s(exit 0) → 전체도 못 잡음(테스트 구멍)
+   · rates: 오류를 CRITICAL 만 셈: 4파일/113항목 · 선택 8.83s(exit 1) · 전체 9.38s(exit 1) → 선택이 잡음
+   · redact: Luhn 검사 무력화: 4파일/116항목 · 선택 8.8s(exit 1) · 전체 9.89s(exit 1) → 선택이 잡음
+   · stack: Python 안쪽 프레임 반대: 4파일/117항목 · 선택 8.8s(exit 1) · 전체 9.67s(exit 1) → 선택이 잡음
+
+변이 5개 · 선택이 잡음 4 · 선택은 놓치고 전체가 잡음 0 · 전체도 못 잡음 1
+선택 실행 합계 38.49s vs 전체 실행 합계 47.32s
+저장: tools/probe-result.json

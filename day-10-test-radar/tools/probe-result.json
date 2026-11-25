@@ -1,0 +1,152 @@
+{
+  "subject": "/workspace/daily-mcp-skills/day-09-log-triage",
+  "tests": 283,
+  "test_files": 13,
+  "baseline": {
+    "exit": 0,
+    "seconds": 9.92
+  },
+  "mutants": [
+    {
+      "mutant": "levels: SEVERE → WARN",
+      "note": "공용 모듈 — 여러 테스트가 함께 본다",
+      "file": "log_triage/levels.py",
+      "selected_files": 3,
+      "selected_items": 80,
+      "total_items": 283,
+      "selected": [
+        "tests/test_levels.py",
+        "tests/test_parse.py",
+        "tests/test_report_cli.py"
+      ],
+      "fallback": [],
+      "risks": {
+        "치명": 0,
+        "심각": 0,
+        "주의": 0,
+        "참고": 2
+      },
+      "selected_exit": 1,
+      "full_exit": 1,
+      "selected_seconds": 2.65,
+      "full_seconds": 9.42,
+      "selected_tail": "1 failed, 95 passed in 1.77s"
+    },
+    {
+      "mutant": "signature: 공백 접기 제거",
+      "note": "전체 실행으로도 안 잡히면 선택 실패가 아니라 테스트 구멍",
+      "file": "log_triage/signature.py",
+      "selected_files": 8,
+      "selected_items": 181,
+      "total_items": 283,
+      "selected": [
+        "tests/test_report_cli.py",
+        "tests/test_signature.py",
+        "tests/test_compare.py",
+        "tests/test_rates.py",
+        "tests/test_rules.py",
+        "tests/test_server.py",
+        "tests/test_stack.py",
+        "tests/test_timeline.py"
+      ],
+      "fallback": [
+        "선택이 전체의 64% — 줄이는 의미가 없습니다"
+      ],
+      "risks": {
+        "치명": 0,
+        "심각": 0,
+        "주의": 1,
+        "참고": 2
+      },
+      "selected_exit": 0,
+      "full_exit": 0,
+      "selected_seconds": 9.41,
+      "full_seconds": 8.96,
+      "selected_tail": "181 passed in 7.97s"
+    },
+    {
+      "mutant": "rates: 오류를 CRITICAL 만 셈",
+      "note": "",
+      "file": "log_triage/rates.py",
+      "selected_files": 4,
+      "selected_items": 113,
+      "total_items": 283,
+      "selected": [
+        "tests/test_rates.py",
+        "tests/test_report_cli.py",
+        "tests/test_rules.py",
+        "tests/test_server.py"
+      ],
+      "fallback": [],
+      "risks": {
+        "치명": 0,
+        "심각": 0,
+        "주의": 1,
+        "참고": 1
+      },
+      "selected_exit": 1,
+      "full_exit": 1,
+      "selected_seconds": 8.83,
+      "full_seconds": 9.38,
+      "selected_tail": "5 failed, 108 passed in 7.70s"
+    },
+    {
+      "mutant": "redact: Luhn 검사 무력화",
+      "note": "",
+      "file": "log_triage/redact.py",
+      "selected_files": 4,
+      "selected_items": 116,
+      "total_items": 283,
+      "selected": [
+        "tests/test_redact.py",
+        "tests/test_report_cli.py",
+        "tests/test_rules.py",
+        "tests/test_server.py"
+      ],
+      "fallback": [],
+      "risks": {
+        "치명": 0,
+        "심각": 0,
+        "주의": 0,
+        "참고": 1
+      },
+      "selected_exit": 1,
+      "full_exit": 1,
+      "selected_seconds": 8.8,
+      "full_seconds": 9.89,
+      "selected_tail": "1 failed, 115 passed in 7.72s"
+    },
+    {
+      "mutant": "stack: Python 안쪽 프레임 반대",
+      "note": "",
+      "file": "log_triage/stack.py",
+      "selected_files": 4,
+      "selected_items": 117,
+      "total_items": 283,
+      "selected": [
+        "tests/test_report_cli.py",
+        "tests/test_stack.py",
+        "tests/test_rules.py",
+        "tests/test_server.py"
+      ],
+      "fallback": [],
+      "risks": {
+        "치명": 0,
+        "심각": 0,
+        "주의": 0,
+        "참고": 1
+      },
+      "selected_exit": 1,
+      "full_exit": 1,
+      "selected_seconds": 8.8,
+      "full_seconds": 9.67,
+      "selected_tail": "6 failed, 111 passed in 7.63s"
+    }
+  ],
+  "caught_by_selection": 4,
+  "missed_by_selection_but_caught_by_full": 0,
+  "survived_all": 1,
+  "total_mutants": 5,
+  "selection_seconds": 38.49,
+  "full_seconds": 47.32
+}

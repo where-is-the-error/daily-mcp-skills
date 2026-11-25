@@ -1,0 +1,68 @@
+🎯 test-radar · 변경 44개 파일 +754/-634
+   저장소 모듈 50 · 테스트 26파일/383항목 · 해석 못 한 import 86
+
+선택: 22파일 · 358/383항목 (93%)
+   ◆ tests/test_json.py  L0 테스트 자체  테스트 파일 자체가 바뀜  (17항목)
+   ● tests/test_cli.py  L1 직접  바뀐 심볼 `locate_app` 를 직접 import  (34항목)
+   ● tests/test_json_tag.py  L1 직접  바뀐 모듈을 직접 import  (5항목)
+   ● tests/test_reqctx.py  L1 직접  바뀐 심볼 `SecureCookieSessionInterface` 를 직접 import  (14항목)
+   ● tests/test_session_interface.py  L1 직접  바뀐 모듈을 직접 import  (1항목)
+   ● tests/test_testing.py  L1 직접  바뀐 모듈을 직접 import  (25항목)
+   ◐ examples/javascript/tests/test_js_example.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (2항목)
+   ◐ examples/tutorial/tests/test_auth.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (5항목)
+   ◐ tests/test_appctx.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (14항목)
+   ◐ tests/test_async.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (3항목)
+   ◐ tests/test_basic.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (87항목)
+   ◐ tests/test_blueprints.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (47항목)
+   ◐ tests/test_config.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (17항목)
+   ◐ tests/test_converters.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (2항목)
+   ◐ tests/test_helpers.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (23항목)
+   ◐ tests/test_instance_config.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (7항목)
+   ◐ tests/test_logging.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (6항목)
+   ◐ tests/test_regression.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (1항목)
+   ◐ tests/test_signals.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (7항목)
+   ◐ tests/test_subclassing.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (1항목)
+   ◐ tests/test_templating.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (32항목)
+   ◐ tests/test_user_error_handler.py  L2 전이  2단계 전이 import (중간 모듈이 바뀐 모듈을 import)  (8항목)
+
+테스트 근거 없는 변경: 8건
+   · docs/conf.py — 이 파일을 import 하는 테스트가 없습니다
+   · tests/typing/typing_app_decorators.py — 이 파일을 import 하는 테스트가 없습니다
+   · src/flask/config.py:20 — 공개 class `ConfigAttribute` 를 이름으로 참조하는 테스트가 없습니다
+   · src/flask/sansio/scaffold.py:52 — 공개 class `Scaffold` 를 이름으로 참조하는 테스트가 없습니다
+   · tests/typing/typing_app_decorators.py:20 — 공개 function `before_sync` 를 이름으로 참조하는 테스트가 없습니다
+   · tests/typing/typing_app_decorators.py:24 — 공개 function `before_async` 를 이름으로 참조하는 테스트가 없습니다
+   · tests/typing/typing_app_decorators.py:28 — 공개 function `teardown_sync` 를 이름으로 참조하는 테스트가 없습니다
+   · tests/typing/typing_app_decorators.py:32 — 공개 function `teardown_async` 를 이름으로 참조하는 테스트가 없습니다
+
+위험 규칙: 치명 2 · 심각 3 · 주의 14 · 참고 3
+   [치명] 테스트 설정 변경 (pyproject.toml) — pytest 설정(경로·옵션·플러그인)이 바뀌었습니다 → 이번에는 전체 실행이 맞습니다
+   [치명] 테스트 설정 변경 (tox.ini) — 테스트 실행 방식이 바뀌었습니다 → 이번에는 전체 실행이 맞습니다
+   [심각] 동적 import (src/flask/cli.py) — importlib/__import__/변수 require — 정적 그래프가 이 간선을 못 봅니다
+   [심각] 도달하는 테스트 없음 (docs/conf.py) — 이 파일에 도달하는 테스트 0 · 이 파일을 import 하는 프로덕션 모듈 0개
+   [심각] 도달하는 테스트 없음 (tests/typing/typing_app_decorators.py) — 이 파일에 도달하는 테스트 0 · 이 파일을 import 하는 프로덕션 모듈 0개
+   [주의] 진입점 변경 (src/flask/app.py) — 진입점 변경 — 단위 테스트 말고 스모크 실행이 필요
+   [주의] 진입점 변경 (src/flask/cli.py) — 진입점 변경 — 단위 테스트 말고 스모크 실행이 필요
+   [주의] 진입점 변경 (src/flask/sansio/app.py) — 진입점 변경 — 단위 테스트 말고 스모크 실행이 필요
+   [주의] 넓은 파급 (src/flask/app.py) — 프로덕션 모듈 7개가 이 파일을 import — 변경 파급이 넓습니다
+   [주의] 넓은 파급 (src/flask/sansio/app.py) — 프로덕션 모듈 7개가 이 파일을 import — 변경 파급이 넓습니다
+   [주의] 넓은 파급 (src/flask/sansio/scaffold.py) — 프로덕션 모듈 6개가 이 파일을 import — 변경 파급이 넓습니다
+   [주의] 테스트 없는 새 모듈 (docs/conf.py) — 이 파일을 import 하는 테스트가 없습니다
+   [주의] 테스트 없는 새 모듈 (tests/typing/typing_app_decorators.py) — 이 파일을 import 하는 테스트가 없습니다
+   [주의] 테스트가 이름을 대지 않는 공개 심볼 (src/flask/config.py:20) — 공개 class `ConfigAttribute` 를 이름으로 참조하는 테스트가 없습니다
+   … 8건 더 (rule_catalog 로 규칙 설명)
+
+계획: 전체 실행
+   ! src/flask/cli.py 에 동적 import 가 있어 정적 그래프로는 다 못 따라갑니다
+   ! pyproject.toml 는 테스트 실행 방식 자체를 바꿉니다
+   ! tox.ini 는 테스트 실행 방식 자체를 바꿉니다
+   ! 선택이 전체의 93% — 줄이는 의미가 없습니다
+   python -m pytest tests/test_json.py tests/test_json_tag.py tests/test_reqctx.py examples/javascript/tests/test_js_example.py examples/tutorial/tests/test_auth.py tests/test_appctx.py tests/test_async.py tests/test_basic.py tests/test_instance_config.py tests/test_regression.py tests/test_signals.py tests/test_user_error_handler.py
+      └ 170항목 · 예상 11.50초 · 조각 1/2
+   python -m pytest tests/test_cli.py tests/test_session_interface.py tests/test_testing.py tests/test_blueprints.py tests/test_config.py tests/test_converters.py tests/test_helpers.py tests/test_logging.py tests/test_subclassing.py tests/test_templating.py
+      └ 188항목 · 예상 11.90초 · 조각 2/2
+   전체 실행: python -m pytest · 383항목 · 예상 26.40초(모델)
+
+판정: 전체 실행
+메모: pyproject.toml 는 테스트 실행 설정 — 전체 실행 판단은 규칙이 한다 / tox.ini 는 테스트 실행 설정 — 전체 실행 판단은 규칙이 한다
+판정하지 않음: 테스트가 실제로 통과하는지 · 실행 시간(모델임) · 커버리지 % · 동적 import 뒤의 간선 · 네이티브 확장/설정 파일의 의미 · 같은 이름의 다른 심볼
