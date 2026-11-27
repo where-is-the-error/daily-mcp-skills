@@ -9,7 +9,7 @@ Day 10 에서 걸린 것
   ✕ caption-too-long — 2500자 > TikTok 상한 2200자
 
 Day 11 파일·화면
-  21.50초 · 1080×1920 · 30fps · h264 High · aac 48000Hz 2ch · 2.28MB
+  21.50초 · 1080×1920 · 30fps · h264 High · aac 48000Hz 2ch · 2.27MB
   -15.1 LUFS · -2.0 dBTP · 앞뒤 무음 0.00/0.00초 · 상자 10개
 
 캡션 고치기 — examples/caption-before.txt → caption-after.txt

@@ -9,7 +9,7 @@
 1.5 ~ 4.5   실측   어제 릴스 10편: -11.8 LUFS · +2.8 dBTP · 7편 초과
 4.5 ~ 8.0   캡션   2,500자 vs IG 2,200자 · 첫 줄 34자
 8.0 ~ 11.5  도구   파일은 ffprobe, 글은 26개 신호
-11.5 ~ 15.5 고치기 loudnorm 한 줄 · 2,500 → 2,100자 · 30 → 100
+11.5 ~ 15.5 고치기 loudnorm 한 줄 · 오늘 캡션 1,334자 · 30 → 100
 15.5 ~ 19.0 한계   영상은 안 고침 · 선언된 상자만 · 모르면 모른다
 19.0 ~ 21.5 루프   같은 문장, 같은 막대(3) → 첫 화면으로
 
@@ -380,7 +380,7 @@ def scene_fix(u: float) -> Image.Image:
     a = fade(u, 0.02, 0.24)
     b = fade(u, 0.34, 0.26)
     c = fade(u, 0.80, 0.26)
-    d = fade(u, 1.30, 0.30)
+    d = fade(u, 1.42, 0.26)
 
     paste_text(img, "고치는 것도 한 줄", 70, 452, 30, "semibold", GREEN, alpha=a)
     if a > 0.01:
@@ -388,11 +388,11 @@ def scene_fix(u: float) -> Image.Image:
              alpha=int(255 * a))
         paste_text(img, "$ ffmpeg -af loudnorm=I=-14:TP=-2", 84, 520, 21, "medium", (180, 224, 206), alpha=a)
         paste_text(img, "-14.8 LUFS · -1.7 dBTP", 84, 558, 34, "black", GREEN, alpha=a)
-        paste_text(img, "캡션 2,500 → 2,100자", 84, 604, 22, "semibold", MUTED, alpha=a)
+        paste_text(img, "오늘 캡션 1,334자 (상한 2,200)", 84, 604, 22, "semibold", MUTED, alpha=a)
 
     paste_text(img, "숫자는 그대로, 문장만 사람으로", 74, 676, 28, "semibold", FG, alpha=b)
 
-    score = 30 + (100 - 30) * ease_out((u - 0.9) / 1.4)
+    score = 30 + (100 - 30) * ease_out((u - 0.55) / 0.95)
     score_block(img, 760, score, "같은 편, 같은 사실 — 점수만 바뀐다", alpha=c)
 
     if d > 0.01:
