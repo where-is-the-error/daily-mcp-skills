@@ -1,0 +1,516 @@
+{
+  "yesterday": {
+    "ref": "",
+    "created_at": "2026-11-27T00:13:39+00:00",
+    "media": {
+      "path": "/workspace/daily-mcp-skills/day-10-test-radar/reels-day10.mp4",
+      "container": "mov,mp4,m4a,3gp,3g2,mj2",
+      "duration_s": 21.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "video_codec": "h264",
+      "video_profile": "High",
+      "pix_fmt": "yuv420p",
+      "video_bitrate_kbps": 364,
+      "audio_codec": "aac",
+      "audio_channels": 2,
+      "audio_sample_rate": 48000,
+      "size_bytes": 1556523,
+      "loudness_lufs": -11.7,
+      "true_peak_dbtp": -0.2,
+      "loudness_range_lu": 0.0,
+      "head_silence_s": 0.0,
+      "tail_silence_s": 0.0,
+      "rotation": 0,
+      "probed_with": "ffprobe version 7.0.2-static https://johnvansickle.com/ffmpeg/ · ffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/",
+      "measured_at": "2026-11-27T00:13:38+00:00",
+      "orientation": "vertical",
+      "aspect": 0.5625,
+      "size_mb": 1.48
+    },
+    "caption": {
+      "text": "커밋 하나 바꿨는데 **테스트 300개**를 다 돌렸습니다. **8초.**\n\n바꾼 건 두 파일, **+15줄 / -1줄**. 그 8초를 매번 버리고 있었습니다.\n\n테스트를 골라 돌리는 건 원래 어렵습니다\n· **어디까지가 영향인지** — import 를 따라가야 압니다. 손으로 하면 빠뜨립니다\n· **빠뜨리면 더 비쌈** — 시간 아끼려다 회귀를 놓치면 그게 제일 큰 손해입니다\n· **\"같은 폴더니까\"** — 이건 근거가 아니라 추측입니다\n· **동적 import** — `importlib.import_module`, 변수 `require` 는 그래프에 선이 안 그려집니다\n· **conftest 하나** — fixture 를 건드리면 어느 테스트가 영향받는지 정적으로 알 수 없습니다\n\n그래서 이렇게 고릅니다\n**근거 4단계** — ①테스트 자신 ②바뀐 심볼을 직접 import/문자열 참조 ③2단계 안의 전이 import\n④같은 디렉터리(참고용, 필수 아님). **같은 폴더라는 이유만으로는 안 고릅니다.**\n**확신 없으면 전체** — 설정 변경 · 파싱 실패 · 동적 import · 선택 60% 초과면 `판정: 전체 실행`.\n**실행은 안 함** — 읽기 전용입니다. pytest 명령은 문자열로만 만듭니다.\n\n실제로 돌려 봤습니다.\n\n**flask 실제 커밋 (`de8429ff`, IPv6 세션 수정, 2파일 +15/-1)**\n· 테스트 27파일 중 **6파일 · 391항목 → 159항목 (41%)** · 위험 규칙 0 · `판정: 선택 실행`\n· 수정을 되돌린 사본에서: **선택한 6파일 → 회귀 테스트 실패 (1.14초)**,\n  전체 485개 → 같은 테스트가 실패 (**3.38초**)\n· 빠뜨리지 않았고, 1/3 시간에 같은 결론\n\n**flask 릴리스 diff (`3.0.2 → 3.0.3`, 44파일 +754/-634)**\n· 선택 22파일 / 358항목 (93%) → **`판정: 전체 실행`**\n· `pyproject.toml`·`tox.ini` 가 바뀌었으니 이건 줄이는 게 아니라 전체를 돌려야 합니다. 도구가 그렇게 말합니다\n\n**변이 시험 (day-09 `log-triage`, 테스트 304개)**\n· 소스에 변이 5개 → **선택한 테스트가 4개를 잡음**\n· 선택은 놓치고 전체가 잡은 것: **0개**\n· 전체도 못 잡은 것: **1개** (서명 공백 처리 — 테스트가 그 동작을 안 봅니다. 선택 실패가 아닙니다)\n· 공용 모듈 변이는 **3파일/80항목(2.65초)** 만으로 잡혔습니다 (전체 9.42초)\n\n오늘의 조합\n· **codebase-memory-mcp** (MIT · ★49,168) — diff 를 심볼에 매핑해 **테스트 영향**을 내고,\n  증거가 부족하면 **넓게 돌리는** Smart CI 태도\n· **github-mcp-server** (MIT · ★34,757 · 툴 96개/툴셋 23개) — **범위를 좁혀 읽기**,\n  `--read-only` 기본, 결과는 작은 DTO 로\n둘 다 원본 코드는 한 줄도 복사하지 않았습니다. 설계와 태도만 가져와 **툴 10개 · 규칙 23종**으로 다시 썼습니다.\n\ntest-radar 가 지키는 것\n· **근거 없는 선택 없음** — 같은 디렉터리·비슷한 이름은 '참고'에만\n· **확신 없으면 전체** — 6가지 폴백 조건을 통과해야 선택 실행이 됩니다\n· **읽기 전용** — 저장소를 고치지 않고, 명령을 실행하지 않습니다\n· **모르는 건 모른다고** — 커버리지·실행 시간·테스트 통과 여부는 판정하지 않는다고 결과에 씁니다\n\n검증한 것\n· 테스트 **308개** (diff 39 · Python 43 · JS 28 · 그래프 42 · 선택 37 · 규칙 38 · 계획·보고 28 ·\n  CLI 16 · 저장소 8 · MCP 29 — in-memory + stdio 서브프로세스)\n· 예제 저장소(13파일)는 실제 pytest 로 `7 passed, 1 skipped`\n· 변이 5개 실측은 `tools/probe.py` 로 다시 돌릴 수 있습니다\n\n정직하게: **테스트가 통과하는지**는 판정하지 않습니다. 실행 시간은 항목 수 × 가정값 **모델**입니다.\n커버리지 %, 동적 import 뒤의 간선, 같은 이름의 다른 심볼, JS 재export 체인은 못 봅니다.\n그리고 선택이 항목을 1/3로 줄여도 **무거운 통합 테스트 하나**가 들어오면 시간은 안 줄어듭니다 —\n그래서 그런 파일을 `broad-test` 로 표시합니다.\n\n코드·README·릴스 전부 매일 올라갑니다.\ngithub.com/where-is-the-error/daily-mcp-skills\n\n#테스트 #TDD #CI #pytest #파이썬 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #코딩공부 #리팩터링 #생산성 #삐에로개발자\n\n---\n\n#테스트 #TDD #CI #pytest #파이썬 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #코딩공부 #리팩터링 #생산성 #삐에로개발자",
+      "first_line": "커밋 하나 바꿨는데 **테스트 300개**를 다 돌렸습니다. **8초.**",
+      "hook": "커밋 하나 바꿨는데 **테스트 300개**를 다 돌렸습니다. **8초.**",
+      "hashtags": [
+        "테스트",
+        "TDD",
+        "CI",
+        "pytest",
+        "파이썬",
+        "MCP",
+        "ModelContextProtocol",
+        "개발자",
+        "사이드프로젝트",
+        "1일1스킬",
+        "코딩공부",
+        "리팩터링",
+        "생산성",
+        "삐에로개발자"
+      ],
+      "mentions": [],
+      "links": [],
+      "lines": [
+        "커밋 하나 바꿨는데 **테스트 300개**를 다 돌렸습니다. **8초.**",
+        "",
+        "바꾼 건 두 파일, **+15줄 / -1줄**. 그 8초를 매번 버리고 있었습니다.",
+        "",
+        "테스트를 골라 돌리는 건 원래 어렵습니다",
+        "· **어디까지가 영향인지** — import 를 따라가야 압니다. 손으로 하면 빠뜨립니다",
+        "· **빠뜨리면 더 비쌈** — 시간 아끼려다 회귀를 놓치면 그게 제일 큰 손해입니다",
+        "· **\"같은 폴더니까\"** — 이건 근거가 아니라 추측입니다",
+        "· **동적 import** — `importlib.import_module`, 변수 `require` 는 그래프에 선이 안 그려집니다",
+        "· **conftest 하나** — fixture 를 건드리면 어느 테스트가 영향받는지 정적으로 알 수 없습니다",
+        "",
+        "그래서 이렇게 고릅니다",
+        "**근거 4단계** — ①테스트 자신 ②바뀐 심볼을 직접 import/문자열 참조 ③2단계 안의 전이 import",
+        "④같은 디렉터리(참고용, 필수 아님). **같은 폴더라는 이유만으로는 안 고릅니다.**",
+        "**확신 없으면 전체** — 설정 변경 · 파싱 실패 · 동적 import · 선택 60% 초과면 `판정: 전체 실행`.",
+        "**실행은 안 함** — 읽기 전용입니다. pytest 명령은 문자열로만 만듭니다.",
+        "",
+        "실제로 돌려 봤습니다.",
+        "",
+        "**flask 실제 커밋 (`de8429ff`, IPv6 세션 수정, 2파일 +15/-1)**",
+        "· 테스트 27파일 중 **6파일 · 391항목 → 159항목 (41%)** · 위험 규칙 0 · `판정: 선택 실행`",
+        "· 수정을 되돌린 사본에서: **선택한 6파일 → 회귀 테스트 실패 (1.14초)**,",
+        "  전체 485개 → 같은 테스트가 실패 (**3.38초**)",
+        "· 빠뜨리지 않았고, 1/3 시간에 같은 결론",
+        "",
+        "**flask 릴리스 diff (`3.0.2 → 3.0.3`, 44파일 +754/-634)**",
+        "· 선택 22파일 / 358항목 (93%) → **`판정: 전체 실행`**",
+        "· `pyproject.toml`·`tox.ini` 가 바뀌었으니 이건 줄이는 게 아니라 전체를 돌려야 합니다. 도구가 그렇게 말합니다",
+        "",
+        "**변이 시험 (day-09 `log-triage`, 테스트 304개)**",
+        "· 소스에 변이 5개 → **선택한 테스트가 4개를 잡음**",
+        "· 선택은 놓치고 전체가 잡은 것: **0개**",
+        "· 전체도 못 잡은 것: **1개** (서명 공백 처리 — 테스트가 그 동작을 안 봅니다. 선택 실패가 아닙니다)",
+        "· 공용 모듈 변이는 **3파일/80항목(2.65초)** 만으로 잡혔습니다 (전체 9.42초)",
+        "",
+        "오늘의 조합",
+        "· **codebase-memory-mcp** (MIT · ★49,168) — diff 를 심볼에 매핑해 **테스트 영향**을 내고,",
+        "  증거가 부족하면 **넓게 돌리는** Smart CI 태도",
+        "· **github-mcp-server** (MIT · ★34,757 · 툴 96개/툴셋 23개) — **범위를 좁혀 읽기**,",
+        "  `--read-only` 기본, 결과는 작은 DTO 로",
+        "둘 다 원본 코드는 한 줄도 복사하지 않았습니다. 설계와 태도만 가져와 **툴 10개 · 규칙 23종**으로 다시 썼습니다.",
+        "",
+        "test-radar 가 지키는 것",
+        "· **근거 없는 선택 없음** — 같은 디렉터리·비슷한 이름은 '참고'에만",
+        "· **확신 없으면 전체** — 6가지 폴백 조건을 통과해야 선택 실행이 됩니다",
+        "· **읽기 전용** — 저장소를 고치지 않고, 명령을 실행하지 않습니다",
+        "· **모르는 건 모른다고** — 커버리지·실행 시간·테스트 통과 여부는 판정하지 않는다고 결과에 씁니다",
+        "",
+        "검증한 것",
+        "· 테스트 **308개** (diff 39 · Python 43 · JS 28 · 그래프 42 · 선택 37 · 규칙 38 · 계획·보고 28 ·",
+        "  CLI 16 · 저장소 8 · MCP 29 — in-memory + stdio 서브프로세스)",
+        "· 예제 저장소(13파일)는 실제 pytest 로 `7 passed, 1 skipped`",
+        "· 변이 5개 실측은 `tools/probe.py` 로 다시 돌릴 수 있습니다",
+        "",
+        "정직하게: **테스트가 통과하는지**는 판정하지 않습니다. 실행 시간은 항목 수 × 가정값 **모델**입니다.",
+        "커버리지 %, 동적 import 뒤의 간선, 같은 이름의 다른 심볼, JS 재export 체인은 못 봅니다.",
+        "그리고 선택이 항목을 1/3로 줄여도 **무거운 통합 테스트 하나**가 들어오면 시간은 안 줄어듭니다 —",
+        "그래서 그런 파일을 `broad-test` 로 표시합니다.",
+        "",
+        "코드·README·릴스 전부 매일 올라갑니다.",
+        "github.com/where-is-the-error/daily-mcp-skills",
+        "",
+        "#테스트 #TDD #CI #pytest #파이썬 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #코딩공부 #리팩터링 #생산성 #삐에로개발자",
+        "",
+        "---",
+        "",
+        "#테스트 #TDD #CI #pytest #파이썬 #MCP #ModelContextProtocol #개발자 #사이드프로젝트 #1일1스킬 #코딩공부 #리팩터링 #생산성 #삐에로개발자"
+      ],
+      "chars": 2500,
+      "chars_nospace": 1955,
+      "hook_chars": 41,
+      "hook_chars_nospace": 34,
+      "emoji_count": 2,
+      "language": "ko"
+    },
+    "platforms": [
+      "youtube_shorts",
+      "instagram_reels",
+      "tiktok"
+    ],
+    "boxes_checked": 0,
+    "keyword": "",
+    "score": 30,
+    "verdict": "hold",
+    "counts": {
+      "block": 3,
+      "warn": 7,
+      "note": 2
+    },
+    "per_platform": [
+      {
+        "key": "youtube_shorts",
+        "label": "YouTube Shorts",
+        "score": 45,
+        "verdict": "hold",
+        "blocking": [
+          "true-peak-over"
+        ],
+        "warnings": [
+          "loudness-hot",
+          "hashtag-spam",
+          "tell-not-x-but-y",
+          "tell-bold-label",
+          "hook-too-long"
+        ]
+      },
+      {
+        "key": "instagram_reels",
+        "label": "Instagram Reels",
+        "score": 33,
+        "verdict": "hold",
+        "blocking": [
+          "true-peak-over",
+          "caption-too-long"
+        ],
+        "warnings": [
+          "loudness-hot",
+          "hashtag-spam",
+          "tell-not-x-but-y",
+          "tell-bold-label",
+          "hook-too-long"
+        ]
+      },
+      {
+        "key": "tiktok",
+        "label": "TikTok",
+        "score": 33,
+        "verdict": "hold",
+        "blocking": [
+          "true-peak-over",
+          "caption-too-long"
+        ],
+        "warnings": [
+          "loudness-hot",
+          "hashtag-spam",
+          "tell-not-x-but-y",
+          "tell-bold-label",
+          "hook-too-long"
+        ]
+      }
+    ],
+    "findings": [
+      {
+        "rule": "true-peak-over",
+        "category": "file",
+        "severity": "block",
+        "weight": 20,
+        "title": "트루피크 초과",
+        "message": "-0.2 dBTP > 한계 -1.0 dBTP — 인코딩·재생에서 찌그러질 수 있다",
+        "fix": "loudnorm 의 TP=-1.5 로 피크를 낮춘다.",
+        "command": "ffmpeg -i /workspace/daily-mcp-skills/day-10-test-radar/reels-day10.mp4 -af loudnorm=I=-14:TP=-1.5:LRA=11 -c:v copy -c:a aac -b:a 192k /workspace/daily-mcp-skills/day-10-test-radar/reels-day10-fixed.mp4",
+        "platforms": []
+      },
+      {
+        "rule": "caption-too-long",
+        "category": "copy",
+        "severity": "block",
+        "weight": 12,
+        "title": "캡션 길이 초과",
+        "message": "2500자 > Instagram Reels 상한 2200자",
+        "fix": "뒤쪽 설명을 덜어낸다.",
+        "command": "",
+        "platforms": [
+          "instagram_reels"
+        ]
+      },
+      {
+        "rule": "caption-too-long",
+        "category": "copy",
+        "severity": "block",
+        "weight": 12,
+        "title": "캡션 길이 초과",
+        "message": "2500자 > TikTok 상한 2200자",
+        "fix": "뒤쪽 설명을 덜어낸다.",
+        "command": "",
+        "platforms": [
+          "tiktok"
+        ]
+      },
+      {
+        "rule": "loudness-hot",
+        "category": "file",
+        "severity": "warn",
+        "weight": 12,
+        "title": "소리가 크다",
+        "message": "-11.7 LUFS — 목표 -14 ±1.5 보다 2.3 LU 크다",
+        "fix": "loudnorm 한 번으로 -14 LUFS·-1.5 dBTP에 맞춘다.",
+        "command": "ffmpeg -i /workspace/daily-mcp-skills/day-10-test-radar/reels-day10.mp4 -af loudnorm=I=-14:TP=-1.5:LRA=11 -c:v copy -c:a aac -b:a 192k /workspace/daily-mcp-skills/day-10-test-radar/reels-day10-fixed.mp4",
+        "platforms": []
+      },
+      {
+        "rule": "hook-too-long",
+        "category": "hook",
+        "severity": "warn",
+        "weight": 8,
+        "title": "훅이 길다",
+        "message": "공백 제외 34자 (권고 18자 이하). 1.5초 안에 다 읽히지 않는다.",
+        "fix": "결론만 남기고 수식·인사·배경을 걷어낸다.",
+        "command": "",
+        "platforms": []
+      },
+      {
+        "rule": "hashtag-spam",
+        "category": "copy",
+        "severity": "warn",
+        "weight": 6,
+        "title": "해시태그가 많다",
+        "message": "14개 > YouTube Shorts 권고 10개",
+        "fix": "검색에 쓰일 3~5개만 남긴다.",
+        "command": "",
+        "platforms": [
+          "youtube_shorts"
+        ]
+      },
+      {
+        "rule": "hashtag-spam",
+        "category": "copy",
+        "severity": "warn",
+        "weight": 6,
+        "title": "해시태그가 많다",
+        "message": "14개 > Instagram Reels 권고 12개",
+        "fix": "검색에 쓰일 3~5개만 남긴다.",
+        "command": "",
+        "platforms": [
+          "instagram_reels"
+        ]
+      },
+      {
+        "rule": "hashtag-spam",
+        "category": "copy",
+        "severity": "warn",
+        "weight": 6,
+        "title": "해시태그가 많다",
+        "message": "14개 > TikTok 권고 5개",
+        "fix": "검색에 쓰일 3~5개만 남긴다.",
+        "command": "",
+        "platforms": [
+          "tiktok"
+        ]
+      },
+      {
+        "rule": "tell-not-x-but-y",
+        "category": "copy",
+        "severity": "warn",
+        "weight": 6,
+        "title": "'X가 아니라 Y' 대구",
+        "message": "'가 아니라 추측입니다' — 부정한 쪽은 아무도 주장하지 않은 것이라, 앞뒤를 붙여 강조만 키운다.",
+        "fix": "부정을 걷어내고 Y만 말한다. 독자가 실제로 믿는 것을 바로잡을 때만 대구를 남긴다.",
+        "command": "",
+        "platforms": []
+      },
+      {
+        "rule": "tell-bold-label",
+        "category": "copy",
+        "severity": "warn",
+        "weight": 3,
+        "title": "장식용 굵은 글씨·라벨",
+        "message": "'**테스트 300개**', '**8초.**', '**+15줄 / -1줄**' — 모든 항목에 굵게를 붙이면 아무것도 강조되지 않는다.",
+        "fix": "정말 중요한 한 곳만 남기거나 굵게를 모두 뺀다.",
+        "command": "",
+        "platforms": []
+      },
+      {
+        "rule": "tell-dash-overuse",
+        "category": "copy",
+        "severity": "note",
+        "weight": 0,
+        "title": "약한 신호 하나: 쉼표 대신 쓰는 대시",
+        "message": "'—' — 약한 신호는 둘 이상 겹칠 때만 고친다.",
+        "fix": "다른 신호와 겹치지 않으면 그대로 둔다.",
+        "command": "",
+        "platforms": []
+      },
+      {
+        "rule": "low-bitrate",
+        "category": "file",
+        "severity": "note",
+        "weight": 0,
+        "title": "낮은 비트레이트",
+        "message": "비디오 364kbps — 정지 화면 위주면 정상일 수 있다",
+        "fix": "움직임이 많은 편이면 CRF 18로 다시 내보낸다.",
+        "command": "",
+        "platforms": []
+      }
+    ]
+  },
+  "today": {
+    "ref": "",
+    "created_at": "2026-11-27T00:13:41+00:00",
+    "media": {
+      "path": "/workspace/daily-mcp-skills/day-11-publish-guard/reels-day11.mp4",
+      "container": "mov,mp4,m4a,3gp,3g2,mj2",
+      "duration_s": 21.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "video_codec": "h264",
+      "video_profile": "High",
+      "pix_fmt": "yuv420p",
+      "video_bitrate_kbps": 674,
+      "audio_codec": "aac",
+      "audio_channels": 2,
+      "audio_sample_rate": 48000,
+      "size_bytes": 2391463,
+      "loudness_lufs": -15.1,
+      "true_peak_dbtp": -2.0,
+      "loudness_range_lu": 0.0,
+      "head_silence_s": 0.0,
+      "tail_silence_s": 0.0,
+      "rotation": 0,
+      "probed_with": "ffprobe version 7.0.2-static https://johnvansickle.com/ffmpeg/ · ffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/",
+      "measured_at": "2026-11-27T00:13:39+00:00",
+      "orientation": "vertical",
+      "aspect": 0.5625,
+      "size_mb": 2.28
+    },
+    "caption": {
+      "text": "10편 중 7편이 피크 초과\n\n어제까지 올린 릴스 10편을 다시 쟀습니다. 평균 -11.8 LUFS, 가장 큰 피크 +2.8 dBTP.\n플랫폼 목표는 -14 LUFS, -1.0 dBTP입니다. 소리가 크면 플랫폼이 줄이고, 넘은 피크는 이미 찌그러진 채로 올라갑니다.\n\n캡션은 더 나빴습니다. 2,500자. Instagram 상한이 2,200자입니다.\n첫 줄은 34자, 1.5초에 다 읽히지 않습니다. 그대로 붙여넣으면 잘립니다.\n\n그래서 올리기 전에 두 가지를 한 자리에서 봅니다.\n· 파일: ffprobe 로 길이·해상도·fps, ebur128 로 음량·트루피크, silencedetect 로 앞뒤 무음\n· 글: 첫 줄, 해시태그, AI 글투 21종. 강한 신호는 한 번만 봐도 고치고, 약한 신호는 둘 이상 겹칠 때만 고칩니다\n· 사실: 숫자·링크·해시태그가 사라지면 고치기 전에 먼저 알립니다\n\n고치는 것도 한 줄입니다.\n`ffmpeg -af loudnorm=I=-14:TP=-2` → -14.8 LUFS · -1.7 dBTP. 캡션은 2,500자에서 2,100자로.\n숫자는 하나도 지우지 않았습니다. 같은 편, 같은 사실, 점수만 30에서 100으로.\n\n도구는 열 개입니다. read_media, read_caption, publish_check, compare_reports …\n영상은 고치지 않습니다. ffmpeg 명령은 문자열로만 만들고 실행하지 않습니다.\n화면에 그려진 글자는 읽지 못합니다. 편집본이 선언한 문구 상자만 봅니다.\n규격은 2026-11-27 에 확인한 공개 문서 기준입니다. 재미·편집 품질·조회수는 판정하지 않습니다.\n\n오늘의 조합\n· ffmpeg-skill (MIT · ★11,505): probe → edit → verify, 플랫폼 safe area, 결과를 다시 재는 태도\n· humanizer (MIT · ★73,982): 26가지 AI 글투, 강한 신호와 약한 신호를 나눠 고치는 규칙\n둘 다 코드는 한 줄도 복사하지 않았습니다. 설계와 태도만 가져와 툴 10개 · 규칙 64종(AI 글투 21종 포함)으로 다시 썼습니다.\n\n검증\n· pytest 388 passed (1 skipped)\n· 릴스 10편 + 공개 표본 3편 실측: 피크 초과 8/13 · 가로 영상은 Shorts 로 분류되지 않음\n· 캡션 10편: 2,200자 초과 4편 · 첫 줄 18자 초과 10편\n\n코드·README·릴스 전부 매일 올라갑니다.\ngithub.com/where-is-the-error/daily-mcp-skills\n\n#ffmpeg #릴스 #영상편집 #MCP #1일1스킬\n\n---\n\n#ffmpeg #릴스 #영상편집 #MCP #1일1스킬",
+      "first_line": "10편 중 7편이 피크 초과",
+      "hook": "10편 중 7편이 피크 초과",
+      "hashtags": [
+        "ffmpeg",
+        "릴스",
+        "영상편집",
+        "MCP",
+        "1일1스킬"
+      ],
+      "mentions": [],
+      "links": [],
+      "lines": [
+        "10편 중 7편이 피크 초과",
+        "",
+        "어제까지 올린 릴스 10편을 다시 쟀습니다. 평균 -11.8 LUFS, 가장 큰 피크 +2.8 dBTP.",
+        "플랫폼 목표는 -14 LUFS, -1.0 dBTP입니다. 소리가 크면 플랫폼이 줄이고, 넘은 피크는 이미 찌그러진 채로 올라갑니다.",
+        "",
+        "캡션은 더 나빴습니다. 2,500자. Instagram 상한이 2,200자입니다.",
+        "첫 줄은 34자, 1.5초에 다 읽히지 않습니다. 그대로 붙여넣으면 잘립니다.",
+        "",
+        "그래서 올리기 전에 두 가지를 한 자리에서 봅니다.",
+        "· 파일: ffprobe 로 길이·해상도·fps, ebur128 로 음량·트루피크, silencedetect 로 앞뒤 무음",
+        "· 글: 첫 줄, 해시태그, AI 글투 21종. 강한 신호는 한 번만 봐도 고치고, 약한 신호는 둘 이상 겹칠 때만 고칩니다",
+        "· 사실: 숫자·링크·해시태그가 사라지면 고치기 전에 먼저 알립니다",
+        "",
+        "고치는 것도 한 줄입니다.",
+        "`ffmpeg -af loudnorm=I=-14:TP=-2` → -14.8 LUFS · -1.7 dBTP. 캡션은 2,500자에서 2,100자로.",
+        "숫자는 하나도 지우지 않았습니다. 같은 편, 같은 사실, 점수만 30에서 100으로.",
+        "",
+        "도구는 열 개입니다. read_media, read_caption, publish_check, compare_reports …",
+        "영상은 고치지 않습니다. ffmpeg 명령은 문자열로만 만들고 실행하지 않습니다.",
+        "화면에 그려진 글자는 읽지 못합니다. 편집본이 선언한 문구 상자만 봅니다.",
+        "규격은 2026-11-27 에 확인한 공개 문서 기준입니다. 재미·편집 품질·조회수는 판정하지 않습니다.",
+        "",
+        "오늘의 조합",
+        "· ffmpeg-skill (MIT · ★11,505): probe → edit → verify, 플랫폼 safe area, 결과를 다시 재는 태도",
+        "· humanizer (MIT · ★73,982): 26가지 AI 글투, 강한 신호와 약한 신호를 나눠 고치는 규칙",
+        "둘 다 코드는 한 줄도 복사하지 않았습니다. 설계와 태도만 가져와 툴 10개 · 규칙 64종(AI 글투 21종 포함)으로 다시 썼습니다.",
+        "",
+        "검증",
+        "· pytest 388 passed (1 skipped)",
+        "· 릴스 10편 + 공개 표본 3편 실측: 피크 초과 8/13 · 가로 영상은 Shorts 로 분류되지 않음",
+        "· 캡션 10편: 2,200자 초과 4편 · 첫 줄 18자 초과 10편",
+        "",
+        "코드·README·릴스 전부 매일 올라갑니다.",
+        "github.com/where-is-the-error/daily-mcp-skills",
+        "",
+        "#ffmpeg #릴스 #영상편집 #MCP #1일1스킬",
+        "",
+        "---",
+        "",
+        "#ffmpeg #릴스 #영상편집 #MCP #1일1스킬"
+      ],
+      "chars": 1323,
+      "chars_nospace": 1040,
+      "hook_chars": 15,
+      "hook_chars_nospace": 11,
+      "emoji_count": 2,
+      "language": "ko"
+    },
+    "platforms": [
+      "youtube_shorts",
+      "instagram_reels",
+      "tiktok"
+    ],
+    "boxes_checked": 10,
+    "keyword": "",
+    "score": 100,
+    "verdict": "pass",
+    "counts": {
+      "block": 0,
+      "warn": 0,
+      "note": 1
+    },
+    "per_platform": [
+      {
+        "key": "youtube_shorts",
+        "label": "YouTube Shorts",
+        "score": 100,
+        "verdict": "pass",
+        "blocking": [],
+        "warnings": []
+      },
+      {
+        "key": "instagram_reels",
+        "label": "Instagram Reels",
+        "score": 100,
+        "verdict": "pass",
+        "blocking": [],
+        "warnings": []
+      },
+      {
+        "key": "tiktok",
+        "label": "TikTok",
+        "score": 100,
+        "verdict": "pass",
+        "blocking": [],
+        "warnings": []
+      }
+    ],
+    "findings": [
+      {
+        "rule": "low-bitrate",
+        "category": "file",
+        "severity": "note",
+        "weight": 0,
+        "title": "낮은 비트레이트",
+        "message": "비디오 674kbps — 정지 화면 위주면 정상일 수 있다",
+        "fix": "움직임이 많은 편이면 CRF 18로 다시 내보낸다.",
+        "command": "",
+        "platforms": []
+      }
+    ]
+  },
+  "caption_compare": {
+    "score_before": 46,
+    "score_after": 100,
+    "caption": {
+      "chars_before": 178,
+      "chars_after": 102,
+      "tells_before": 5,
+      "tells_after": 0,
+      "numbers_lost": [],
+      "numbers_added": [
+        "2"
+      ],
+      "hashtags_lost": [
+        "fyp",
+        "instagood",
+        "love",
+        "reels",
+        "shorts",
+        "viral"
+      ],
+      "hashtags_added": [
+        "ffmpeg",
+        "릴스",
+        "영상편집"
+      ],
+      "links_lost": [],
+      "mentions_lost": []
+    }
+  }
+}

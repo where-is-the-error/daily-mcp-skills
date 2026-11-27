@@ -1,0 +1,21 @@
+발행 전 검사 — 어제 편 vs 오늘 편
+
+Day 10 (test-radar):  30/100 · 보류      막음 3 · 주의 7 · 참고 2 true-peak-over, caption-too-long, caption-too-long
+Day 11 (publish-guard): 100/100 · 통과      막음 0 · 주의 0 · 참고 1 
+
+Day 10 에서 걸린 것
+  ✕ true-peak-over — -0.2 dBTP > 한계 -1.0 dBTP — 인코딩·재생에서 찌그러질 수 있다
+  ✕ caption-too-long — 2500자 > Instagram Reels 상한 2200자
+  ✕ caption-too-long — 2500자 > TikTok 상한 2200자
+
+Day 11 파일·화면
+  21.50초 · 1080×1920 · 30fps · h264 High · aac 48000Hz 2ch · 2.28MB
+  -15.1 LUFS · -2.0 dBTP · 앞뒤 무음 0.00/0.00초 · 상자 10개
+
+캡션 고치기 — examples/caption-before.txt → caption-after.txt
+  전:  46/100 · 보류      막음 2 · 주의 6 · 참고 2 hook-vague-opener, hook-passive-promise
+  후: 100/100 · 통과      막음 0 · 주의 0 · 참고 0 
+  숫자 잃음: 없음 · 해시태그 잃음: ['fyp', 'instagood', 'love', 'reels', 'shorts', 'viral']
+  AI 신호 5 → 0
+
+판정하지 않음: 영상 안에 실제로 그려진 글자·로고의 위치(선언된 상자만 봄) · 사람이 느끼는 재미·편집 품질 · 소리의 내용(음성 인식 없음) · 플랫폼 심사·저작권 · 조회수. 규격은 2026-11-27 에 확인한 공개 문서 기준이고 바뀔 수 있다.

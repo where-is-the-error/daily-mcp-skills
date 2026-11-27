@@ -1,0 +1,484 @@
+{
+  "media": [
+    {
+      "file": "/workspace/daily-mcp-skills/day-01-repo-context/reels-day01.mp4",
+      "duration_s": 21.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "lufs": -11.8,
+      "peak": 0.5,
+      "size_mb": 2.47,
+      "score": 68,
+      "verdict": "hold",
+      "rules": [
+        "true-peak-over",
+        "loudness-hot"
+      ],
+      "blocking": [
+        "true-peak-over"
+      ]
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-02-web-memo/reels-day02.mp4",
+      "duration_s": 21.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "lufs": -11.7,
+      "peak": -0.9,
+      "size_mb": 2.41,
+      "score": 68,
+      "verdict": "hold",
+      "rules": [
+        "true-peak-over",
+        "loudness-hot"
+      ],
+      "blocking": [
+        "true-peak-over"
+      ]
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-03-deadline-clock/reels-day03.mp4",
+      "duration_s": 21.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "lufs": -11.8,
+      "peak": -1.3,
+      "size_mb": 1.94,
+      "score": 80,
+      "verdict": "revise",
+      "rules": [
+        "loudness-hot",
+        "true-peak-near"
+      ],
+      "blocking": []
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-04-a11y-lens/reels-day04.mp4",
+      "duration_s": 21.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "lufs": -11.8,
+      "peak": -1.3,
+      "size_mb": 1.91,
+      "score": 80,
+      "verdict": "revise",
+      "rules": [
+        "loudness-hot",
+        "true-peak-near"
+      ],
+      "blocking": []
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-05-design-spec/reels-day05.mp4",
+      "duration_s": 21.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "lufs": -11.7,
+      "peak": 0.1,
+      "size_mb": 1.89,
+      "score": 68,
+      "verdict": "hold",
+      "rules": [
+        "true-peak-over",
+        "loudness-hot"
+      ],
+      "blocking": [
+        "true-peak-over"
+      ]
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-06-plan-guard/reels-day06.mp4",
+      "duration_s": 21.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "lufs": -11.9,
+      "peak": -1.1,
+      "size_mb": 1.93,
+      "score": 80,
+      "verdict": "revise",
+      "rules": [
+        "loudness-hot",
+        "true-peak-near"
+      ],
+      "blocking": []
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-07-migrate-guard/reels-day07.mp4",
+      "duration_s": 21.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "lufs": -11.5,
+      "peak": -0.5,
+      "size_mb": 1.77,
+      "score": 68,
+      "verdict": "hold",
+      "rules": [
+        "true-peak-over",
+        "loudness-hot"
+      ],
+      "blocking": [
+        "true-peak-over"
+      ]
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-08-sheet-guard/reels-day08.mp4",
+      "duration_s": 21.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "lufs": -11.8,
+      "peak": 2.8,
+      "size_mb": 1.48,
+      "score": 68,
+      "verdict": "hold",
+      "rules": [
+        "true-peak-over",
+        "loudness-hot"
+      ],
+      "blocking": [
+        "true-peak-over"
+      ]
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-09-log-triage/reels-day09.mp4",
+      "duration_s": 21.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "lufs": -11.7,
+      "peak": -0.2,
+      "size_mb": 1.6,
+      "score": 68,
+      "verdict": "hold",
+      "rules": [
+        "true-peak-over",
+        "loudness-hot"
+      ],
+      "blocking": [
+        "true-peak-over"
+      ]
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-10-test-radar/reels-day10.mp4",
+      "duration_s": 21.5,
+      "width": 1080,
+      "height": 1920,
+      "fps": 30.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "lufs": -11.7,
+      "peak": -0.2,
+      "size_mb": 1.48,
+      "score": 68,
+      "verdict": "hold",
+      "rules": [
+        "true-peak-over",
+        "loudness-hot"
+      ],
+      "blocking": [
+        "true-peak-over"
+      ]
+    },
+    {
+      "file": "/workspace/.work/day11-probe/roman.webm",
+      "duration_s": 18.098,
+      "width": 1080,
+      "height": 1920,
+      "fps": 24.0,
+      "video_codec": "vp8",
+      "audio_codec": "opus",
+      "lufs": -12.7,
+      "peak": 0.5,
+      "size_mb": 2.18,
+      "score": 77,
+      "verdict": "hold",
+      "rules": [
+        "true-peak-over",
+        "codec-uncommon",
+        "audio-codec"
+      ],
+      "blocking": [
+        "true-peak-over"
+      ]
+    },
+    {
+      "file": "/workspace/.work/day11-probe/flagpole.webm",
+      "duration_s": 16.115,
+      "width": 1080,
+      "height": 1920,
+      "fps": 28.731,
+      "video_codec": "vp8",
+      "audio_codec": null,
+      "lufs": null,
+      "peak": null,
+      "size_mb": 5.28,
+      "score": 90,
+      "verdict": "revise",
+      "rules": [
+        "no-audio",
+        "codec-uncommon"
+      ],
+      "blocking": []
+    },
+    {
+      "file": "/workspace/.work/day11-probe/bbb.mp4",
+      "duration_s": 10.0,
+      "width": 1920,
+      "height": 1080,
+      "fps": 60.0,
+      "video_codec": "h264",
+      "audio_codec": null,
+      "lufs": null,
+      "peak": null,
+      "size_mb": 1.0,
+      "score": 41,
+      "verdict": "hold",
+      "rules": [
+        "not-vertical",
+        "not-vertical",
+        "not-vertical",
+        "no-audio",
+        "resolution-above-max",
+        "resolution-above-max"
+      ],
+      "blocking": [
+        "not-vertical"
+      ]
+    }
+  ],
+  "captions": [
+    {
+      "file": "/workspace/daily-mcp-skills/day-01-repo-context/instagram-caption.md",
+      "chars": 957,
+      "hashtags": 15,
+      "hook_chars": 26,
+      "language": "mixed",
+      "score": 73,
+      "verdict": "revise",
+      "rules": [
+        "hashtag-spam",
+        "hashtag-spam",
+        "hashtag-spam",
+        "tell-bold-label",
+        "tell-dash-overuse",
+        "tell-stock-words"
+      ],
+      "tells": [
+        "tell-bold-label",
+        "tell-dash-overuse",
+        "tell-stock-words"
+      ]
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-02-web-memo/instagram-caption.md",
+      "chars": 1290,
+      "hashtags": 17,
+      "hook_chars": 21,
+      "language": "ko",
+      "score": 79,
+      "verdict": "revise",
+      "rules": [
+        "hashtag-spam",
+        "hashtag-spam",
+        "hashtag-spam",
+        "tell-bold-label"
+      ],
+      "tells": [
+        "tell-bold-label"
+      ]
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-03-deadline-clock/instagram-caption.md",
+      "chars": 1310,
+      "hashtags": 18,
+      "hook_chars": 21,
+      "language": "ko",
+      "score": 79,
+      "verdict": "revise",
+      "rules": [
+        "hashtag-spam",
+        "hashtag-spam",
+        "hashtag-spam",
+        "tell-bold-label"
+      ],
+      "tells": [
+        "tell-bold-label"
+      ]
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-04-a11y-lens/instagram-caption.md",
+      "chars": 1047,
+      "hashtags": 13,
+      "hook_chars": 36,
+      "language": "mixed",
+      "score": 79,
+      "verdict": "revise",
+      "rules": [
+        "hashtag-spam",
+        "hashtag-spam",
+        "hashtag-spam",
+        "tell-bold-label"
+      ],
+      "tells": [
+        "tell-bold-label"
+      ]
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-05-design-spec/instagram-caption.md",
+      "chars": 1144,
+      "hashtags": 17,
+      "hook_chars": 27,
+      "language": "ko",
+      "score": 79,
+      "verdict": "revise",
+      "rules": [
+        "hashtag-spam",
+        "hashtag-spam",
+        "hashtag-spam",
+        "tell-bold-label"
+      ],
+      "tells": [
+        "tell-bold-label"
+      ]
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-06-plan-guard/instagram-caption.md",
+      "chars": 1590,
+      "hashtags": 14,
+      "hook_chars": 56,
+      "language": "mixed",
+      "score": 79,
+      "verdict": "revise",
+      "rules": [
+        "hashtag-spam",
+        "hashtag-spam",
+        "hashtag-spam",
+        "tell-bold-label"
+      ],
+      "tells": [
+        "tell-bold-label"
+      ]
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-07-migrate-guard/instagram-caption.md",
+      "chars": 2456,
+      "hashtags": 15,
+      "hook_chars": 33,
+      "language": "mixed",
+      "score": 70,
+      "verdict": "hold",
+      "rules": [
+        "caption-too-long",
+        "caption-too-long",
+        "hashtag-spam",
+        "hashtag-spam",
+        "hashtag-spam",
+        "tell-not-x-but-y",
+        "tell-bold-label"
+      ],
+      "tells": [
+        "tell-not-x-but-y",
+        "tell-bold-label"
+      ]
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-08-sheet-guard/instagram-caption.md",
+      "chars": 2234,
+      "hashtags": 14,
+      "hook_chars": 30,
+      "language": "ko",
+      "score": 70,
+      "verdict": "hold",
+      "rules": [
+        "caption-too-long",
+        "caption-too-long",
+        "hashtag-spam",
+        "hashtag-spam",
+        "hashtag-spam",
+        "tell-bold-label"
+      ],
+      "tells": [
+        "tell-bold-label"
+      ]
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-09-log-triage/instagram-caption.md",
+      "chars": 2994,
+      "hashtags": 14,
+      "hook_chars": 24,
+      "language": "ko",
+      "score": 70,
+      "verdict": "hold",
+      "rules": [
+        "caption-too-long",
+        "caption-too-long",
+        "hashtag-spam",
+        "hashtag-spam",
+        "hashtag-spam",
+        "tell-bold-label"
+      ],
+      "tells": [
+        "tell-bold-label"
+      ]
+    },
+    {
+      "file": "/workspace/daily-mcp-skills/day-10-test-radar/instagram-caption.md",
+      "chars": 2500,
+      "hashtags": 14,
+      "hook_chars": 34,
+      "language": "ko",
+      "score": 70,
+      "verdict": "hold",
+      "rules": [
+        "caption-too-long",
+        "caption-too-long",
+        "hashtag-spam",
+        "hashtag-spam",
+        "hashtag-spam",
+        "tell-not-x-but-y",
+        "tell-bold-label"
+      ],
+      "tells": [
+        "tell-not-x-but-y",
+        "tell-bold-label"
+      ]
+    }
+  ],
+  "summary": {
+    "media_count": 13,
+    "over_peak": 8,
+    "hot": 10,
+    "quiet": 0,
+    "no_audio": 2,
+    "landscape": 1,
+    "over_2200": 4,
+    "hook_over_18": 10,
+    "with_tells": 10,
+    "caption_count": 10
+  }
+}
