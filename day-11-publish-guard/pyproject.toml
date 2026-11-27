@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "publish-guard-mcp"
+version = "0.1.0"
+description = "ffmpeg-skill × humanizer — one gate before upload: measure the file against each platform's delivery spec, then read the caption for AI tells without losing a single fact."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "where-is-the-error" }]
+keywords = ["mcp", "model-context-protocol", "ffmpeg", "ffprobe", "reels", "shorts", "caption", "loudness", "safe-zone", "editing"]
+dependencies = ["mcp>=2.3,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+publish-guard = "publish_guard.cli:main"
+publish-guard-mcp = "publish_guard.server:main"
+
+[tool.setuptools.packages.find]
+include = ["publish_guard*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
