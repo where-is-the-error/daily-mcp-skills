@@ -1,0 +1,58 @@
+{
+  "before": {
+    "score": 65,
+    "verdict": "hold",
+    "findings": [
+      "bar-truncated-baseline",
+      "low-contrast-mark",
+      "tiny-font",
+      "unsorted-bars",
+      "no-source",
+      "no-alt"
+    ]
+  },
+  "corrected": {
+    "score": 100,
+    "verdict": "pass",
+    "findings": []
+  },
+  "after": {
+    "score": 100,
+    "verdict": "pass",
+    "findings": []
+  },
+  "compare": {
+    "before_score": 65,
+    "after_score": 100,
+    "delta": 35,
+    "before_verdict": "hold",
+    "after_verdict": "pass",
+    "before_title": "지역별 매출 (억원)",
+    "after_title": "서울 1,240억으로 1위, 세종은 260억 — 격차 4.8배",
+    "fixed": [
+      "bar-truncated-baseline",
+      "low-contrast-mark",
+      "no-alt",
+      "no-source",
+      "tiny-font",
+      "unsorted-bars"
+    ],
+    "remaining": [],
+    "new": [],
+    "lost_categories": [],
+    "lost_values": [],
+    "fixed_count": 6
+  },
+  "pie": {
+    "score": 42,
+    "categories_after": [
+      "서울",
+      "부산",
+      "인천",
+      "대구",
+      "기타"
+    ],
+    "sum_before": 93.0,
+    "sum_after": 93.0
+  }
+}

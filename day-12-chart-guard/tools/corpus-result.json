@@ -1,0 +1,106 @@
+{
+  "files": 820,
+  "checked": 665,
+  "errors": 155,
+  "error_sample": [
+    {
+      "file": "arc_params.vl.json",
+      "error": "hconcat(가로 이어붙이기) 스펙은 읽지 않습니다 — 그림 하나짜리 스펙을 주세요."
+    },
+    {
+      "file": "bar_count_minimap.vl.json",
+      "error": "hconcat(가로 이어붙이기) 스펙은 읽지 않습니다 — 그림 하나짜리 스펙을 주세요."
+    },
+    {
+      "file": "bar_grouped_repeated.vl.json",
+      "error": "repeat(반복) 스펙은 읽지 않습니다 — 그림 하나짜리 스펙을 주세요."
+    },
+    {
+      "file": "brush_table.vl.json",
+      "error": "hconcat(가로 이어붙이기) 스펙은 읽지 않습니다 — 그림 하나짜리 스펙을 주세요."
+    },
+    {
+      "file": "concat_bar_layer_circle.vl.json",
+      "error": "vconcat(세로 이어붙이기) 스펙은 읽지 않습니다 — 그림 하나짜리 스펙을 주세요."
+    },
+    {
+      "file": "concat_bar_scales_discretize.vl.json",
+      "error": "hconcat(가로 이어붙이기) 스펙은 읽지 않습니다 — 그림 하나짜리 스펙을 주세요."
+    },
+    {
+      "file": "concat_bar_scales_discretize_2_cols.vl.json",
+      "error": "concat(여러 그림 이어붙이기) 스펙은 읽지 않습니다 — 그림 하나짜리 스펙을 주세요."
+    },
+    {
+      "file": "concat_hover.vl.json",
+      "error": "hconcat(가로 이어붙이기) 스펙은 읽지 않습니다 — 그림 하나짜리 스펙을 주세요."
+    },
+    {
+      "file": "concat_hover_filter.vl.json",
+      "error": "hconcat(가로 이어붙이기) 스펙은 읽지 않습니다 — 그림 하나짜리 스펙을 주세요."
+    },
+    {
+      "file": "concat_layer_voyager_result.vl.json",
+      "error": "vconcat(세로 이어붙이기) 스펙은 읽지 않습니다 — 그림 하나짜리 스펙을 주세요."
+    },
+    {
+      "file": "concat_marginal_histograms.vl.json",
+      "error": "vconcat(세로 이어붙이기) 스펙은 읽지 않습니다 — 그림 하나짜리 스펙을 주세요."
+    },
+    {
+      "file": "concat_population_pyramid.vl.json",
+      "error": "hconcat(가로 이어붙이기) 스펙은 읽지 않습니다 — 그림 하나짜리 스펙을 주세요."
+    }
+  ],
+  "kinds": {
+    "bar": 277,
+    "unknown": 145,
+    "line": 100,
+    "scatter": 88,
+    "area": 39,
+    "pie": 13,
+    "histogram": 3
+  },
+  "verdicts": {
+    "pass": 534,
+    "warn": 129,
+    "hold": 2
+  },
+  "findings": {
+    "missing-axis-title": 108,
+    "baseline-undeclared": 73,
+    "low-contrast-mark": 40,
+    "line-for-categorical": 31,
+    "unsorted-bars": 28,
+    "pie-too-many": 6,
+    "missing-unit": 6,
+    "zero-height-bar": 5,
+    "label-overlap": 5,
+    "too-many-bars": 2,
+    "dual-axis": 2,
+    "thousands-separator": 2,
+    "gradient-for-groups": 1,
+    "rainbow-palette": 1,
+    "log-axis-unlabeled": 1,
+    "decimal-noise": 1,
+    "color-reused": 1
+  },
+  "skipped": {
+    "값": 539,
+    "data.values 가 없습니다": 466,
+    "y 축의 zero 를 선언하지 않아 Vega-Lite 기본값(true)으로 계산했습니다.": 307,
+    "y 축의 zero 를 선언하지 않아 Vega-Lite 기본값(false)으로 계산했습니다.": 171,
+    "레이어 2겹 중 첫 겹만 읽었습니다": 169,
+    "차트 형식": 145,
+    "mark 'layer' 는 이 검사기가 모르는 형식입니다": 28,
+    "레이어가 서로 다른 y 필드를 그립니다": 27,
+    "mark 'rule' 는 이 검사기가 모르는 형식입니다": 27,
+    "레이어 3겹 중 첫 겹만 읽었습니다": 26
+  },
+  "false_positive_truncated_with_zero": 0,
+  "excluded": [
+    "no-alt",
+    "no-source",
+    "weak-title"
+  ]
+}

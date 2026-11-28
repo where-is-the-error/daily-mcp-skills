@@ -1,0 +1,66 @@
+{
+  "cases": [
+    {
+      "name": "truncated-20",
+      "y_min": 20,
+      "values": [
+        25,
+        45
+      ],
+      "predicted_ratio": 5.0,
+      "measured_ratio": 5.0952,
+      "error_pct": 1.9,
+      "tolerance_pct": 3.67,
+      "pixels": [
+        63,
+        321
+      ],
+      "model_pixels": [
+        216.0,
+        1080.0
+      ]
+    },
+    {
+      "name": "truncated-1150",
+      "y_min": 1150,
+      "values": [
+        1180,
+        1240
+      ],
+      "predicted_ratio": 3.0,
+      "measured_ratio": 3.0294,
+      "error_pct": 0.98,
+      "tolerance_pct": 3.44,
+      "pixels": [
+        68,
+        206
+      ],
+      "model_pixels": [
+        360.0,
+        1080.0
+      ]
+    },
+    {
+      "name": "zero-baseline",
+      "y_min": 0,
+      "values": [
+        25,
+        45
+      ],
+      "predicted_ratio": 1.8,
+      "measured_ratio": 1.8,
+      "error_pct": 0.0,
+      "tolerance_pct": 1.58,
+      "pixels": [
+        185,
+        333
+      ],
+      "model_pixels": [
+        600.0,
+        1080.0
+      ]
+    }
+  ],
+  "max_error_pct": 1.9,
+  "passed": true
+}

@@ -1,0 +1,65 @@
+{
+  "dataset": "https://raw.githubusercontent.com/vega/vega-datasets/main/data/stocks.csv",
+  "symbol": "IBM",
+  "labels": [
+    "2009-04",
+    "2009-05",
+    "2009-06",
+    "2009-07",
+    "2009-08",
+    "2009-09",
+    "2009-10",
+    "2009-11",
+    "2009-12",
+    "2010-01",
+    "2010-02",
+    "2010-03"
+  ],
+  "values": [
+    101.29,
+    104.85,
+    103.01,
+    116.34,
+    117.0,
+    118.55,
+    119.54,
+    125.79,
+    130.32,
+    121.85,
+    127.16,
+    125.55
+  ],
+  "before": {
+    "score": 85,
+    "verdict": "hold",
+    "y_min": 101.0,
+    "findings": [
+      "bar-truncated-baseline"
+    ],
+    "evidence": {
+      "bar-truncated-baseline": "y축 하한 101 · 2009-04 101.29 → 2009-12 130.32 가 화면에서 101.10배, 실제 1.29배 (과장 78.6배)"
+    }
+  },
+  "after": {
+    "score": 100,
+    "verdict": "pass",
+    "findings": []
+  },
+  "compare": {
+    "before_score": 85,
+    "after_score": 100,
+    "delta": 15,
+    "before_verdict": "hold",
+    "after_verdict": "pass",
+    "before_title": "IBM 종가 12개월",
+    "after_title": "IBM 종가는 101달러에서 130달러로 1.29배 올랐다",
+    "fixed": [
+      "bar-truncated-baseline"
+    ],
+    "remaining": [],
+    "new": [],
+    "lost_categories": [],
+    "lost_values": [],
+    "fixed_count": 1
+  }
+}
