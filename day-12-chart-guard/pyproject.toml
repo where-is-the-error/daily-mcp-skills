@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chart-guard-mcp"
+version = "0.1.0"
+description = "mcp-server-chart × dataviz-skills(roast-my-chart) — one gate before publishing a chart: measure how the axis distorts the numbers, then check 41 caveats without losing a single value."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "where-is-the-error" }]
+keywords = ["mcp", "model-context-protocol", "chart", "dataviz", "vega-lite", "chart.js", "accessibility", "alt-text", "data-honesty"]
+dependencies = ["mcp>=2.3,<3"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+chart-guard = "chart_guard.cli:main"
+chart-guard-mcp = "chart_guard.server:main"
+
+[tool.setuptools.packages.find]
+include = ["chart_guard*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
