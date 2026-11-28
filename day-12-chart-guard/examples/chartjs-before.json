@@ -1,0 +1,54 @@
+{
+  "type": "bar",
+  "data": {
+    "labels": [
+      "1월",
+      "2월",
+      "3월",
+      "4월",
+      "5월",
+      "6월"
+    ],
+    "datasets": [
+      {
+        "label": "신규",
+        "data": [
+          1200,
+          1340,
+          1280,
+          1510,
+          1620,
+          1580
+        ],
+        "backgroundColor": "#e15759"
+      },
+      {
+        "label": "해지",
+        "data": [
+          210,
+          260,
+          240,
+          330,
+          290,
+          310
+        ],
+        "backgroundColor": "#59a14f"
+      }
+    ]
+  },
+  "options": {
+    "scales": {
+      "y": {
+        "beginAtZero": false,
+        "title": {
+          "text": "건수"
+        }
+      }
+    },
+    "plugins": {
+      "legend": {
+        "display": true
+      }
+    }
+  }
+}

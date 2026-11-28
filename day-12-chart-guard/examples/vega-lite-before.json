@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "지역별 신규 가입",
+    "subtitle": "2026년 3분기"
+  },
+  "data": {
+    "values": [
+      {
+        "지역": "서울",
+        "가입": 1240
+      },
+      {
+        "지역": "부산",
+        "가입": 1180
+      },
+      {
+        "지역": "인천",
+        "가입": 1060
+      },
+      {
+        "지역": "대전",
+        "가입": 810
+      },
+      {
+        "지역": "대구",
+        "가입": 790
+      },
+      {
+        "지역": "광주",
+        "가입": 660
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {
+      "field": "지역",
+      "type": "nominal",
+      "axis": {
+        "labelAngle": 0
+      }
+    },
+    "y": {
+      "field": "가입",
+      "type": "quantitative",
+      "scale": {
+        "domain": [
+          600,
+          1300
+        ]
+      },
+      "axis": {
+        "title": "가입자"
+      }
+    }
+  },
+  "config": {
+    "axis": {
+      "labelFontSize": 11
+    }
+  }
+}

@@ -28,6 +28,7 @@
 | 09 | [Grafana MCP](https://github.com/grafana/mcp-grafana) + [ClickHouse MCP](https://github.com/ClickHouse/mcp-clickhouse) | [`log-triage`](day-09-log-triage/) — 로그를 넘기기 전에: **서명·폭주·첫 오류·스택·마스킹** | 134+4 → 11 | 304 passed | 21.5s |
 | 10 | [codebase-memory-mcp](https://github.com/DeusData/codebase-memory-mcp) + [GitHub MCP Server](https://github.com/github/github-mcp-server) | [`test-radar`](day-10-test-radar/) — 바뀐 코드에 **닿는 테스트만**, 확신 없으면 전체 실행 | 17+96 → 10 | 308 passed | 21.5s |
 | 11 | [ffmpeg-skill](https://github.com/kajisho5/ffmpeg-skill) + [humanizer](https://github.com/blader/humanizer) | [`publish-guard`](day-11-publish-guard/) — 올리기 전 **파일 규격·음량·safe zone·AI 글투**, 고쳐도 사실은 안 지움 | 42+26 → 10 | 389 passed | 21.5s |
+| 12 | [mcp-server-chart](https://github.com/antvis/mcp-server-chart) + [dataviz-skills `roast-my-chart`](https://github.com/holtzy/dataviz-skills/tree/main/roast-my-chart) | [`chart-guard`](day-12-chart-guard/) — 차트를 올리기 전, **축이 만드는 화면 비율 vs 실제 값 비율**·규칙 41종·125자 alt | 27+1 → 10 | 432 passed | 21.5s |
 
 ## 다음 화 만드는 법 (Day 02~)
 
@@ -39,6 +40,46 @@
 6. **목록 표에 한 줄 추가**하고 커밋. 커밋은 `feat(day-NN)` / `test(day-NN)` / `docs(day-NN)` / `content(day-NN)`으로 나눈다.
 
 > 릴스 제작에는 `ffmpeg`가 필요하다. 없으면 `pip install imageio-ffmpeg`로 받은 바이너리 경로를 `ffmpeg`로 심볼릭 링크해 쓴다.
+
+## Day 12 미리보기
+
+```bash
+cd day-12-chart-guard
+pip install -e ".[dev]"
+chart-guard check examples/before.json         # 65/100 · 보류 (exit 2)
+chart-guard distortion examples/before.json    # 화면 길이비 vs 실제 값 비율
+chart-guard fix examples/before.json > /tmp/fixed.json
+chart-guard check /tmp/fixed.json              # 100/100 · 통과
+python tools/corpus_probe.py --dir <vega-lite>/examples/specs   # 공개 예제 820개 실측
+python tools/render_check.py                   # 계산 vs matplotlib 픽셀 교차검증
+```
+
+```text
+차트 검사 — 지역별 매출 (억원)
+
+판정: 보류 (65/100) · 막음 1 · 주의 1 · 참고 4 · 규칙 41종 검사
+
+숫자를 왜곡하는 것 (1)
+  · 막대의 축을 0에서 자르지 않았다
+    본 것: y축 하한 180 · 세종 210 → 서울 1,240 가 화면에서 35.33배, 실제 5.90배 (과장 6.0배)
+    고치기: y축 하한을 0으로: 두 막대의 길이는 5.90배로 돌아간다(지금은 35.33배).
+
+고치면 이렇게 바뀝니다
+  · 축을 0으로 내리면 세종·서울 의 길이 비가 35.33배 → 5.90배가 됩니다
+```
+
+```text
+공개 Vega-Lite 예제 820개:  읽음 665 · 판정 pass 534 · warn 129 · hold 2
+  hold 2건은 둘 다 공식 듀얼축 예제 — 잡아야 할 것을 잡았다
+  '0에서 시작한 차트를 잘렸다고 한' 거짓 양성 0
+IBM 12개월 종가, y축 101:  85/100 · 보류 — "화면에서 101.10배, 실제 1.29배 (과장 78.6배)"
+IBM 12개월 종가, y축 0:    100/100 · 통과 — 잃은 범주 0 · 잃은 값 0
+```
+
+- 10개 툴: `read_chart` · `describe_chart` · `distortion_report` · `find_problems` · `chart_check` · `fix_plan` · `alt_text` · `compare_charts` · `rule_catalog` · `overview`
+- 규칙 41종(왜곡 12 · 형식 9 · 색 7 · 읽기 10 · 발행 3), 규칙마다 **문제가 아닌 때**(`fine_when`)를 명시
+- 실측: 공개 예제 **820개 → 665개 판독** · matplotlib 렌더 픽셀과 **오차 1.90%(1px 양자화 허용 내)** · 실제 데이터 **IBM 12개월**
+- 읽기 전용 · 스펙 파일 불변 · 차트를 그리지 않음 · 이미지 픽셀은 **읽지 않음**(한계 명시)
 
 ## Day 11 미리보기
 
